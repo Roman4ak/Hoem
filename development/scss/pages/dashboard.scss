@@ -1,0 +1,111 @@
+.tenant {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__header {
+        height: fit-content;
+        background-color: $white;
+    }
+    &__avatar {
+       height: 100px;
+       width: 100px;
+       border-radius: 100%; 
+    }
+    &__profile {
+        display: flex;
+    }
+    &__buttons {
+        @media screen and (max-width: 992px) {
+            margin-top: 16px;
+        }
+    }   
+    &__title {
+        font-weight: bold;
+    }
+    &__link {
+        text-decoration: none;
+        &:hover {
+            color: $black;
+        }
+    }
+    &__edit {
+        border: 1px $grey03 solid;
+        border-radius: 8px;
+        font-weight: bold;
+        height: fit-content;
+        background-color: transparent;
+    }
+    &__share {
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        height: fit-content;
+        color: $white;
+        background-color: $orange;
+    }
+    
+    &__img {
+        object-fit: contain;
+    }
+}
+
+.details {
+    background-color: $white;
+    &__title {
+        font-weight: bold;
+    }
+    &__info {
+        display: flex;
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        line-height: 20px;
+    }
+    &__descr {
+        line-height: 20px;
+    }
+    &__text {
+        max-width: 852px;
+    }
+    &__box {
+        width: 100%;
+        border: 1px $grey03 solid;
+        border-radius: 8px;
+
+        &_large {
+            height: 100%;
+        }
+    }
+    &__mark {
+        border-radius: 8px;
+        background: linear-gradient(90deg, rgba(4,170,106,0.12) 0%, rgba(4,170,106,0) 100%);
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &__check {
+        font-weight: 500;
+    }
+    
+    &__answer {
+        width: 58px;
+        height: 28px;
+        text-transform: uppercase;
+        color: $red;
+        border-radius: 300px;
+        background-color: rgba(226, 96, 97, 0.08);
+        &_approved {
+            color: $green ;
+            background-color: rgba(4, 170, 106, 0.08);
+
+        }
+    }
+}
+
+
+
+.dashboard-main {
+    margin-left: 256px;
+}
+

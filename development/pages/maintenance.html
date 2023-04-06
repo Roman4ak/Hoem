@@ -1,0 +1,383 @@
+@@include('../components/header.html')
+
+
+<section class="maintenance-page">
+
+    <div class="maintenance-page__head">
+        <div class="row align-items-center">
+            <div class="maintenance-page__head__amount d-flex al align-items-center col-12 col-xl-3 ">
+                <div class="maintenance-page__head__number fw-700">6</div>
+                <div class="text-grey text-regular ms-012 fw-500">total request</div>
+            </div>
+
+            <div class="maintenance-page__head__info d-flex flex-column flex-lg-row justify-content-start my-4 my-xl-0 justify-content-xl-end col-12 col-xl-7">
+                <div
+                    class="maintenance-page__head__date maintenance-page__head__background justify-content-center align-items-center d-flex">
+                    <div class="text-regular text-grey me-2">Date move:</div>
+                    <div class="text-regular text-black me-010 fw-600">Select date range</div>
+                    <img src="../img/ci_calendar-calendar.svg" alt="">
+                </div>
+                <div
+                    class="maintenance-page__head__property maintenance-page__head__background justify-content-center align-items-center my-3 my-lg-0 d-flex me-012 ms-012">
+                    <div class="text-regular text-grey me-2">Property:</div>
+                    <div class="text-small text-white fw-600  property-number px-2 py-02 me-1 ms-2">3</div>
+                    <div class="fw-600 mt-02">Selected</div>
+                    <div class="arrow-bottom ms-012 mb-1"></div>
+                </div>
+                <div
+                    class="maintenance-page__head__status maintenance-page__head__background justify-content-center align-items-center d-flex">
+                    <div class="text-regular text-grey me-2">Status:</div>
+                    <div class="fw-600">All</div>
+                    <div class="arrow-bottom ms-012 mb-2"></div>
+                </div>
+            </div>
+
+            <div class="maintenance-page__head__button d-flex justify-content-center justify-content-lg-start justify-content-xl-end col-12 col-xl-2">
+                <button class="maintenance-page__head__request orange-btn border-0 pe-3">
+                        <div class="text-text">New Request</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="maintenance-page__body">
+
+        <div class="accordion accordion-flush maintenance-accordion" id="accordionmaintenance">
+
+            <div class="accordion-item maintenance-accordion__item mt-036">
+
+                <h2 class="accordion-header maintenance-accordion__header" id="flush-headingOne">
+                    <button class="accordion-button maintenance-accordion__button border-0 collapsed px-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                        aria-expanded="true" aria-controls="flush-collapseOne">
+                        <div class="maintenance-accordion__title d-flex align-items-center">
+                            <img src="../img/ri_home-5-fill.svg" alt="">
+                            <div class="text-regular text-black mx-010 fw-500">2270 W El Camino Real 12</div>
+                            <div class="text-regular text-grey fw-500">(1)</div>
+                        </div>
+                    </button>
+                    <div class="maintenance-accordion__line"></div>
+                </h2>
+
+                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionmaintenance">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div
+                                class="accordion-item__date d-flex flex-column justify-content-start pe-0 col-lg-4 col-md-12 ">
+                                <div class="text-regular  fw-600">Leaking faucet in kitchen</div>
+                                <div class="text-small mt-2">Requested May 24, 2022</div>
+                            </div>
+
+                            <div
+                                class="accordion-item__information d-flex flex-column flex-sm-row justify-content-lg-center col-lg-6 col-md-9 justify-content-md-start">
+
+                                <div class="accordion-item__unit">
+                                    <div class="text-tiny text-uppercase mb-2">unit</div>
+                                    <a href="#" class="text-regular fw-500 text-orange">Unit #22</a>
+                                </div>
+                                <div class="accordion-item__tenant">
+                                    <div class="text-tiny text-uppercase">BY TENANT</div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img class="me-2 accordion-item__img" src="../img/Frame14076.png" alt="">
+                                        <div class="text-regular fw-500">Arlene McCoy</div>
+                                    </div>
+
+                                </div>
+                                <div class="accordion-item__location">
+                                    <div class="text-tiny text-uppercase">issue location</div>
+                                    <div class="d-flex mt-2">
+                                        <img class="me-2 accordion-item__img"
+                                            src="../img/fluent_warning-24-filled.svg" alt="">
+                                        <div class="text-regular fw-500">Kitchen</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                class="accordion-item__status d-flex flex-column mb-1 justify-content-center col-lg-2 col-md-3 justify-content-md-end">
+                                <div class="text-tiny text-uppercase">status</div>
+                                <div class="mt-2 marker__green">In Review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="flush-collapseOne" class="accordion-collapse collapse show accordion-border"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionmaintenance">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div
+                                class="accordion-item__date d-flex flex-column justify-content-start pe-0 col-lg-4 col-md-12 ">
+                                <div class="text-regular  fw-600">Leaking faucet in kitchen</div>
+                                <div class="text-small mt-2">Requested May 24, 2022</div>
+                            </div>
+
+                            <div
+                                class="accordion-item__information d-flex flex-column flex-sm-row justify-content-lg-center col-lg-6 col-md-9 justify-content-md-start">
+
+                                <div class="accordion-item__unit">
+                                    <div class="text-tiny text-uppercase mb-2">unit</div>
+                                    <a href="#" class="text-regular fw-500 text-orange">Unit #22</a>
+                                </div>
+                                <div class="accordion-item__tenant">
+                                    <div class="text-tiny text-uppercase">BY TENANT</div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img class="me-2 accordion-item__img" src="../img/Frame14076.png" alt="">
+                                        <div class="text-regular fw-500">Arlene McCoy</div>
+                                    </div>
+
+                                </div>
+                                <div class="accordion-item__location">
+                                    <div class="text-tiny text-uppercase">issue location</div>
+                                    <div class="d-flex mt-2">
+                                        <img class="me-2 accordion-item__img"
+                                            src="../img/fluent_warning-24-filled.svg" alt="">
+                                        <div class="text-regular fw-500">Kitchen</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                class="accordion-item__status d-flex flex-column mb-1 justify-content-center col-lg-2 col-md-3 justify-content-md-end">
+                                <div class="text-tiny text-uppercase">status</div>
+                                <div class="mt-2 marker__green">In Review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item maintenance-accordion__item mt-036">
+
+                <h2 class="accordion-header maintenance-accordion__header" id="flush-headingTwo">
+                    <button class="accordion-button maintenance-accordion__button border-0 collapsed px-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <div class="maintenance-accordion__title d-flex align-items-center">
+                            <img src="../img/ri_home-5-fill.svg" alt="">
+                            <div class="text-regular text-black mx-010 fw-500">2270 W El Camino Real 12</div>
+                            <div class="text-regular text-grey fw-500">(1)</div>
+
+                        </div>
+                    </button>
+                    <div class="maintenance-accordion__line"></div>
+                </h2>
+
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionmaintenance">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div
+                                class="accordion-item__date d-flex flex-column justify-content-start pe-0 col-lg-4 col-md-12 ">
+                                <div class="text-regular  fw-600">Leaking faucet in kitchen</div>
+                                <div class="text-small mt-2">Requested May 24, 2022</div>
+                            </div>
+
+                            <div
+                                class="accordion-item__information d-flex flex-column flex-sm-row justify-content-lg-center col-lg-6 col-md-9 justify-content-md-start">
+
+                                <div class="accordion-item__unit">
+                                    <div class="text-tiny text-uppercase mb-2">unit</div>
+                                    <a href="#" class="text-regular fw-500 text-orange">Unit #22</a>
+                                </div>
+                                <div class="accordion-item__tenant">
+                                    <div class="text-tiny text-uppercase">BY TENANT</div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img class="me-2 accordion-item__img" src="../img/Frame14076.png" alt="">
+                                        <div class="text-regular fw-500">Arlene McCoy</div>
+                                    </div>
+
+                                </div>
+                                <div class="accordion-item__location">
+                                    <div class="text-tiny text-uppercase">issue location</div>
+                                    <div class="d-flex mt-2">
+                                        <img class="me-2 accordion-item__img"
+                                            src="../img/fluent_warning-24-filled.svg" alt="">
+                                        <div class="text-regular fw-500">Kitchen</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                class="accordion-item__status d-flex flex-column mb-1 justify-content-center col-lg-2 col-md-3 justify-content-md-end">
+                                <div class="text-tiny text-uppercase">status</div>
+                                <div class="mt-2 marker__green">In Review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="flush-collapseTwo" class="accordion-collapse collapse accordion-border"
+                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionmaintenance">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div
+                                class="accordion-item__date d-flex flex-column justify-content-start pe-0 col-lg-4 col-md-12 ">
+                                <div class="text-regular  fw-600">Leaking faucet in kitchen</div>
+                                <div class="text-small mt-2">Requested May 24, 2022</div>
+                            </div>
+
+                            <div
+                                class="accordion-item__information d-flex flex-column flex-sm-row justify-content-lg-center col-lg-6 col-md-9 justify-content-md-start">
+
+                                <div class="accordion-item__unit">
+                                    <div class="text-tiny text-uppercase mb-2">unit</div>
+                                    <a href="#" class="text-regular fw-500 text-orange">Unit #22</a>
+                                </div>
+                                <div class="accordion-item__tenant">
+                                    <div class="text-tiny text-uppercase">BY TENANT</div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img class="me-2 accordion-item__img" src="../img/Frame14076.png" alt="">
+                                        <div class="text-regular fw-500">Arlene McCoy</div>
+                                    </div>
+
+                                </div>
+                                <div class="accordion-item__location">
+                                    <div class="text-tiny text-uppercase">issue location</div>
+                                    <div class="d-flex mt-2">
+                                        <img class="me-2 accordion-item__img"
+                                            src="../img/fluent_warning-24-filled.svg" alt="">
+                                        <div class="text-regular fw-500">Kitchen</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                class="accordion-item__status d-flex flex-column mb-1 justify-content-center col-lg-2 col-md-3 justify-content-md-end">
+                                <div class="text-tiny text-uppercase">status</div>
+                                <div class="mt-2 marker__green">In Review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item maintenance-accordion__item mt-036">
+
+                <h2 class="accordion-header maintenance-accordion__header" id="flush-headingThThree">
+                    <button class="accordion-button maintenance-accordion__button border-0 collapsed px-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                        aria-expanded="false" aria-controls="flush-collapseThree">
+                        <div class="maintenance-accordion__title d-flex align-items-center">
+                            <img src="../img/ri_home-5-fill.svg" alt="">
+                            <div class="text-regular text-black mx-010 fw-500">2270 W El Camino Real 12</div>
+                            <div class="text-regular text-grey fw-500">(1)</div>
+
+                        </div>
+                    </button>
+                    <div class="maintenance-accordion__line"></div>
+                </h2>
+
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionmaintenance">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div
+                                class="accordion-item__date d-flex flex-column justify-content-start pe-0 col-lg-4 col-md-12 ">
+                                <div class="text-regular  fw-600">Leaking faucet in kitchen</div>
+                                <div class="text-small mt-2">Requested May 24, 2022</div>
+                            </div>
+
+                            <div
+                                class="accordion-item__information d-flex flex-column flex-sm-row justify-content-lg-center col-lg-6 col-md-9 justify-content-md-start">
+
+                                <div class="accordion-item__unit">
+                                    <div class="text-tiny text-uppercase mb-2">unit</div>
+                                    <a href="#" class="text-regular fw-500 text-orange">Unit #22</a>
+                                </div>
+                                <div class="accordion-item__tenant">
+                                    <div class="text-tiny text-uppercase">BY TENANT</div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img class="me-2 accordion-item__img" src="../img/Frame14076.png" alt="">
+                                        <div class="text-regular fw-500">Arlene McCoy</div>
+                                    </div>
+
+                                </div>
+                                <div class="accordion-item__location">
+                                    <div class="text-tiny text-uppercase">issue location</div>
+                                    <div class="d-flex mt-2">
+                                        <img class="me-2 accordion-item__img"
+                                            src="../img/fluent_warning-24-filled.svg" alt="">
+                                        <div class="text-regular fw-500">Kitchen</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                class="accordion-item__status d-flex flex-column mb-1 justify-content-center col-lg-2 col-md-3 justify-content-md-end">
+                                <div class="text-tiny text-uppercase">status</div>
+                                <div class="mt-2 marker__green">In Review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="flush-collapseThree" class="accordion-collapse collapse accordion-border"
+                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionmaintenance">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div
+                                class="accordion-item__date d-flex flex-column justify-content-start pe-0 col-lg-4 col-md-12 ">
+                                <div class="text-regular  fw-600">Leaking faucet in kitchen</div>
+                                <div class="text-small mt-2">Requested May 24, 2022</div>
+                            </div>
+
+                            <div
+                                class="accordion-item__information d-flex flex-column flex-sm-row justify-content-lg-center col-lg-6 col-md-9 justify-content-md-start">
+
+                                <div class="accordion-item__unit">
+                                    <div class="text-tiny text-uppercase mb-2">unit</div>
+                                    <a href="#" class="text-regular fw-500 text-orange">Unit #22</a>
+                                </div>
+                                <div class="accordion-item__tenant">
+                                    <div class="text-tiny text-uppercase">BY TENANT</div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img class="me-2 accordion-item__img" src="../img/Frame14076.png" alt="">
+                                        <div class="text-regular fw-500">Arlene McCoy</div>
+                                    </div>
+
+                                </div>
+                                <div class="accordion-item__location">
+                                    <div class="text-tiny text-uppercase">issue location</div>
+                                    <div class="d-flex mt-2">
+                                        <img class="me-2 accordion-item__img"
+                                            src="../img/fluent_warning-24-filled.svg" alt="">
+                                        <div class="text-regular fw-500">Kitchen</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                class="accordion-item__status d-flex flex-column mb-1 justify-content-center col-lg-2 col-md-3 justify-content-md-end">
+                                <div class="text-tiny text-uppercase">status</div>
+                                <div class="mt-2 marker__green">In Review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('../components/footer.html')

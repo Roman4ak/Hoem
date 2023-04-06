@@ -1,0 +1,125 @@
+.marker {
+
+    &__yellow {
+        background-color: $yellow;
+        color: $text-yellow;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__grape {
+        background-color: $grape;
+        color: $text-grape;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__green {
+        background-color: $green01;
+        color: $green;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__blue {
+        background-color: $blue04;
+        color: $text-blue04;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__grey {
+        background-color: $grey09;
+        color: $grey01;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+
+    &__yellow-large {
+        background-color: $yellow;
+        color: $text-yellow;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__grape-large {
+        background-color: $grape;
+        color: $text-grape;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__green-large {
+        background-color: $green01;
+        color: $green;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__blue-large {
+        background-color: $blue04;
+        color: $text-blue04;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+    &__grey-large {
+        background-color: $grey09;
+        color: $grey01;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 2px 6px;
+    }
+
+
+}

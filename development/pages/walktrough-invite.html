@@ -1,0 +1,76 @@
+@@include('../components/header.html')
+
+<div class="walktrough-page">
+    @@include('../components/walktrough-header.html')
+
+    <main>
+        <section class="walktrough-content walktrough-invite-section">
+
+            <div class="justify-content-center  d-flex flex-column flex-align-center mb-4">
+                <h1 class="walktrough-content__title text-center my-0 fw-700">Invite a tenant to the property</h1>
+                <p class="text-regular text-grey text-center mt-2 mb-0 mt-2">Managing you rental business with Hoem
+                    starts with adding<br> your first property. You can add more later on.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="walktrough-invite-section__container walktrough-invite col-lg-6 offset-lg-3">
+                        <div class="walktrough-invite__form">
+                            <div class="walktrough-invite-section__title text-grey text-small text-uppercase mb-3">
+                                Applicant 1</div>
+
+                            <div class="authentication-container-info__input d-flex justify-content-start mb-4">
+                                <span class="authentication-container-info__input_title text-small mb-2">Fullname</span>
+                                <input class="input-style" type="text" placeholder="Jhon">
+                            </div>
+
+                            <div class="row d-lg-flex">
+                                <div
+                                    class="walktrough-invite__form__email authentication-container-info__input d-flex justify-content-start position-relative mb-0  col-lg-6 mb-3 mb-lg-0">
+                                    <span class="authentication-container-info__input_title text-small mb-2">Email
+                                        address</span>
+                                    <img class="walktrough-invite__img" src="../img/line-md_email.svg" alt="">
+                                    <input class="input-style walktrough-invite__input" type="text"
+                                        placeholder="example@gmail.com">
+                                </div>
+
+                                <div
+                                    class="walktrough-invite__form__phone authentication-container-info__input d-flex justify-content-start position-relative mb-0 col-lg-6">
+                                    <span class="authentication-container-info__input_title text-small mb-2">Phone
+                                        number</span>
+                                    <img class="walktrough-invite__img" src="../img/carbon_phone.svg" alt="">
+                                    <input class="input-style walktrough-invite__input" type="text"
+                                        placeholder="(1)728712652">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="walktrough-invite__button fw-600 text-regular position-relative ps-4 mt-4">Add
+                            applicant</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="walktrough-invite__skip text-center text-regular text-grey">You can do this tep later <a
+                    class="text-orange fw-500 ps-1" href="#">Skip</a></div>
+
+
+
+
+        </section>
+    </main>
+
+    <div class="walktrough-footer">
+        <div class="walktrough-footer__line"></div>
+        <div class="container">
+            <div class="row d-flex justify-content-end py-020 pe-2">
+                <a class=" walktrough-footer__white__btn white-btn me-3" href="#">Previous</a>
+                <a class="walktrough-footer__btn orange-btn" href="#">Next</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+@@include('../components/footer.html')

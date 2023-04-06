@@ -1,0 +1,208 @@
+@@include('../components/header.html')
+
+<section class="section sign-in__section">
+    <div class="d-flex justify-content-between">
+        <div class="authentication-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <div class="authentication-container-img">
+                            <img class="authentication-container-img__img" src="../img/welcome-to-hoem.png"
+                                alt="welcome-to-hoem">
+                            <div class="authentication-container-img__overlay"></div>
+                            <div class="authentication-container-img__logo">
+                                <img src="../img/hoem-logo-welcome.png" alt="hoem-logo-welcome">
+                            </div>
+
+                            <h1 class="authentication-container-img__title">Welcome to Hoem<br> Apartment Management
+                                Tool
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <div class="authentication-container-info d-flex">
+                            <div class="authentication-container-info__buttons d-flex align-self-center">
+                                <a class="authentication-container-info__buttons__registration text-regular text-grey"
+                                    href="#">Don’t
+                                    have an account?</a>
+                                <a class="authentication-container-info__buttons__sign_up text-regular text-orange"
+                                    href="#">Sign
+                                    up</a>
+                            </div>
+
+                            <h2 class="mb-4">Sign in</h2>
+
+                            <p class="text-regular authentication-container-info__subtitle mb-4">Enter your account
+                                information below to
+                                continue.</p>
+
+                            <div class="authentication-container-info__input d-flex justify-content-start">
+                                <span class="authentication-container-info__input_title text-small mb-2">Email</span>
+                                <input class="input-style" type="email" placeholder="Enter your name">
+                            </div>
+
+                            <div class="authentication-container-info__input d-flex justify-content-start">
+
+                                <span class="authentication-container-info__input_title text-small mb-2">Password</span>
+
+                                <div class="password-wrapper d-flex">
+
+                                    <input class="input-style" type="password" placeholder="Enter your password"
+                                        id="myInput">
+                                    <input class="password-wrapper__input" type="checkbox" onclick="myFunction()">
+
+                                    <script>
+                                        function myFunction() {
+                                            var x = document.getElementById("myInput");
+                                            if (x.type === "password") {
+                                                x.type = "text";
+                                            } else {
+                                                x.type = "password";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div class="input-chackbox d-flex justify-content-between">
+
+                                <div class="d-flex align-self-center">
+                                    <div class="checkboxOverride">
+                                        <input type="checkbox" name="" id="checkboxInputOverride" value="1">
+                                        <label for="checkboxInputOverride"></label>
+                                    </div>
+                                    <span class="text-regular fw-400 ms-2">Keep me logged in</span>
+
+                                </div>
+
+                                <a class="authentication-container-info__chackbox__forgot text-regular" href="#"
+                                    data-bs-toggle="modal" data-bs-target="#modal-forgot">Forgot Password ?
+                                </a>
+
+                                <div class="modal fade" id="modal-forgot" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="sign-in-modal__title">Reset password</div>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="sign-in-modal__body">
+                                                <p class="sign-in-modal__subtitle text-blue text-regular ">We'll email
+                                                    you
+                                                    the instruction on how to reset your password</p>
+
+                                                <div
+                                                    class="authentication-container-info__input d-flex justify-content-start">
+                                                    <span
+                                                        class="authentication-container-info__input_title text-small mb-2">Email</span>
+                                                    <input class="input-style" type="email"
+                                                        placeholder="Enter your name">
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="sign-in-modal__buttons justify-content-end d-flex align-items-center">
+                                                <a class="sign-in-modal__buttons__cancel text-large text-black"
+                                                    href="#">Cancel</a>
+                                                <a class="sign-in-modal__buttons__reset orange-btn " href="#">Reset
+                                                    Password</a>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <a class="authentication-container-info__btn orange-btn mt-4" href="#"
+                                data-bs-toggle="modal" data-bs-target="#modal-reset">Continue</a>
+
+                            <div class="modal fade" id="modal-reset" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content reset-modal__content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="reset-modal__body d-flex align-items-center flex-column">
+                                            <div class="reset-modal__body__img">
+                                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M40.0007 3.3335C19.7507 3.3335 3.33398 19.7502 3.33398 40.0002C3.33398 60.2502 19.7507 76.6668 40.0007 76.6668C60.2507 76.6668 76.6673 60.2502 76.6673 40.0002C76.6673 19.7502 60.2507 3.3335 40.0007 3.3335ZM55.894 33.8002C56.1866 33.4656 56.4094 33.076 56.5493 32.6541C56.6891 32.2322 56.7432 31.7865 56.7082 31.3434C56.6733 30.9003 56.5501 30.4687 56.3459 30.0739C56.1417 29.6791 55.8606 29.3292 55.5191 29.0446C55.1777 28.7601 54.7828 28.5467 54.3576 28.417C53.9325 28.2874 53.4857 28.244 53.0436 28.2896C52.6015 28.3351 52.1729 28.4687 51.7831 28.6823C51.3934 28.8959 51.0503 29.1853 50.774 29.5335L36.4407 46.7302L29.024 39.3102C28.3953 38.703 27.5533 38.367 26.6793 38.3746C25.8053 38.3822 24.9693 38.7327 24.3513 39.3508C23.7332 39.9688 23.3827 40.8048 23.3751 41.6788C23.3675 42.5528 23.7035 43.3948 24.3107 44.0235L34.3107 54.0235C34.6382 54.3508 35.0303 54.6063 35.462 54.7737C35.8938 54.9411 36.3556 55.0167 36.8182 54.9957C37.2808 54.9747 37.7339 54.8575 38.1487 54.6517C38.5635 54.4458 38.9308 54.1558 39.2273 53.8002L55.894 33.8002Z"
+                                                        fill="#04AA6A" />
+                                                </svg>
+                                            </div>
+
+                                            <h5 class="reset-modal__body__title text-black">Password reset email has
+                                                been
+                                                sent</h5>
+
+                                            <p class="text-center text-regular text-grey mt-2">A password reset email
+                                                has
+                                                been sent to the following address: <a
+                                                    class="reset-modal__body__email text-black"
+                                                    href="#">username@gmail.com</a></p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <strong class="text-regular">or</strong>
+
+                            <div class="authentication-container-info__sosial">
+                                <div
+                                    class="authentication-container-info__sosial__btn d-flex justify-content-center mb-3">
+                                    <a class="text-regular" href="#">Continue with Google</a>
+                                    <div class="authentication-container-info__sosial__btn__img">
+                                        <img src="../img/google.svg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="authentication-container-info__sosial__btn d-flex justify-content-center mb-3">
+                                    <a class="text-regular" href="#">Continue with Linkedin</a>
+                                    <div class="authentication-container-info__sosial__btn__img">
+                                        <img src="../img/linkedin.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="authentication-container-info__sosial__btn d-flex justify-content-center">
+                                    <a class="text-regular" href="#">Continue with Facebook</a>
+                                    <div class="authentication-container-info__sosial__btn__img">
+                                        <img src="../img/facebook.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="authentication-container-info__terms">
+                                <p class="text-regular">By clicking “Sign up as a landlord”, you agree to our <a
+                                        class="authentication-container-info__terms__terms text-orange" href="#">Terms
+                                        of
+                                        Use</a> <br> and <a
+                                        class="authentication-container-info__terms__policy text-orange"
+                                        href="#">Privacy Policy</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+@@include('../components/footer.html')

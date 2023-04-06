@@ -1,0 +1,680 @@
+@@include('../components/header.html')
+
+<main class="property-page">
+    @@include('../modules/sidebar.html')
+
+
+    <section class="property-wrapper__section">
+        <div class="header d-flex align-items-center mb-4">
+            <header class="container-lg align-items-center px-4">
+                <div class="row">
+                    <span class="col-12 col-sm-12 col-lg-2 mb-4 mb-lg-0 header__title text-tall-large">Dashboard</span>
+
+                    <form class="col-12 col-sm-6 col-lg-6 mb-4 mb-sm-0" role="search">
+                        <input type="search" class="input-style header-search" placeholder="Search for anything here..."
+                            aria-label="Search">
+                        <button class="search__button d-flex justify-content-center">
+                            <img class="search__button__img" src="img/search.svg" alt="search">
+                        </button>
+                    </form>
+
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 px-0 d-flex align-items-center justify-content-sm-end ps-3 ps-sm-0">
+                        <button class="header__plus d-flex justify-content-center align-items-center"></button>
+
+                        <button class="header__notification ms-012">
+                            <img class="header__notification__img" src="img/bell.svg" alt="notifications">
+                        </button>
+
+                        <div
+                            class="header__dropdown ms-012 pe-012 ps-2 d-flex justify-content-between align-items-center ">
+                            <div class="header__profile d-flex align-items-center">
+                                <img class="me-2" src="img/avatar.png" alt="avatar">
+                                <p class="text-regular mb-0">Jesicca</p>
+                            </div>
+                            <div class="header__arrow d-inline-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+        <div>
+            <div class="container">
+
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="d-flex align-item-center mb-4">
+                        <div class="property-header__breadcrumbs__main fw-500 text-regular text-orange">Property
+                            List
+                        </div>
+                        <div class="fw-500 text-regular text-grey">Add new
+                            property
+                        </div>
+                    </div>
+
+                    <section class="property-units__section ">
+                        <div class="property-units__unit d-md-flex pe-2 mb-3">
+                            <img class="property-units__img py-2 me-auto ms-auto" src="../img/image 62.png" alt="">
+
+                            <div class="property-units__info w-100 py-2 ms-md-4">
+
+                                <div class="d-sm-flex align-item-center justify-content-between mb-4 mb-md-0">
+                                    <div class="mb-3 mb-sm-0">
+                                        <div class="text-small fw-500 ps-2 mb-012">
+                                            Appartment</div>
+                                        <h1 class="text-tall-large fw-bold mb-0">Incline 45 Apartments</h1>
+                                    </div>
+
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="d-flex align-items-center property-units__edit me-4"><svg
+                                                class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.0332 12.6875C3.07227 12.6875 3.11133 12.6836 3.15039 12.6777L6.43555 12.1016C6.47461 12.0938 6.51172 12.0762 6.53906 12.0469L14.8184 3.76758C14.8365 3.74951 14.8508 3.72805 14.8606 3.70442C14.8704 3.68079 14.8755 3.65546 14.8755 3.62988C14.8755 3.6043 14.8704 3.57897 14.8606 3.55535C14.8508 3.53172 14.8365 3.51026 14.8184 3.49219L11.5723 0.244141C11.5352 0.207031 11.4863 0.1875 11.4336 0.1875C11.3809 0.1875 11.332 0.207031 11.2949 0.244141L3.01562 8.52344C2.98633 8.55273 2.96875 8.58789 2.96094 8.62695L2.38477 11.9121C2.36577 12.0167 2.37255 12.1244 2.40454 12.2258C2.43654 12.3273 2.49276 12.4193 2.56836 12.4941C2.69727 12.6191 2.85938 12.6875 3.0332 12.6875ZM4.34961 9.28125L11.4336 2.19922L12.8652 3.63086L5.78125 10.7129L4.04492 11.0195L4.34961 9.28125ZM15.1875 14.3281H0.8125C0.466797 14.3281 0.1875 14.6074 0.1875 14.9531V15.6562C0.1875 15.7422 0.257812 15.8125 0.34375 15.8125H15.6562C15.7422 15.8125 15.8125 15.7422 15.8125 15.6562V14.9531C15.8125 14.6074 15.5332 14.3281 15.1875 14.3281Z"
+                                                    fill="#FD7B5C" />
+                                            </svg>Edit</div>
+                                        <div class="property-add__item__info__options me-4"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-sm-flex align-item-center justify-content-between">
+                                    <div class="mb-3 mb-sm-0">
+                                        <div class="text-regular text-grey mb-3">18280 E 45th Ave, Denver, CO 80249
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex align-items-center"><svg class="me-1" width="16"
+                                                    height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.6667 12.6667V3.33333C12.6667 2.6 12.0667 2 11.3333 2H4.66667C3.93333 2 3.33333 2.6 3.33333 3.33333V12.6667H2V14H14V12.6667H12.6667ZM11.3333 12.6667H4.66667V3.33333H11.3333V12.6667Z"
+                                                        fill="#888FA2" />
+                                                    <path d="M6 7.33331H7.33333V8.66665H6V7.33331Z" fill="#888FA2" />
+                                                </svg>8 unit(s)</div>
+
+                                            <span class="property-add__item__info__point mx-2"></span>
+
+                                            <div class="d-flex align-items-center"><svg class="me-1" width="14"
+                                                    height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13.4102 5.87205L13.4103 5.87208C13.4708 5.92585 13.5202 5.99103 13.5556 6.06389C13.591 6.13675 13.6117 6.21587 13.6165 6.29672C13.6213 6.37758 13.6101 6.45859 13.5836 6.53513C13.5571 6.61167 13.5158 6.68225 13.4621 6.74282C13.4083 6.8034 13.3431 6.85279 13.2702 6.88818C13.1974 6.92356 13.1183 6.94425 13.0374 6.94906C12.8741 6.95878 12.7136 6.90322 12.5913 6.79462L12.3674 6.59533L12.2841 6.52126V6.63268V13C12.2841 13.1636 12.2191 13.3204 12.1035 13.4361C11.9879 13.5517 11.831 13.6167 11.6675 13.6167H2.33412C2.17057 13.6167 2.01372 13.5517 1.89807 13.4361C1.78242 13.3204 1.71745 13.1636 1.71745 13V6.63268V6.52126L1.63421 6.59533L1.41026 6.79462C1.28792 6.90322 1.12745 6.95878 0.964157 6.94906C0.80086 6.93935 0.64811 6.86516 0.539511 6.74282C0.430912 6.62049 0.375359 6.46002 0.385074 6.29672C0.394789 6.13343 0.468975 5.98068 0.591312 5.87208L0.591337 5.87205L6.59134 0.538721L6.59135 0.538708C6.70413 0.438375 6.84983 0.382947 7.00078 0.382947C7.15174 0.382947 7.29743 0.438375 7.41022 0.538707L7.41023 0.538721L13.4102 5.87205ZM5.07624 12.3169L5.05308 12.3834H5.12345H8.87812H8.94848L8.92533 12.3169C8.78616 11.9174 8.5261 11.5711 8.18125 11.3261C7.8364 11.081 7.42383 10.9494 7.00078 10.9494C6.57774 10.9494 6.16517 11.081 5.82032 11.3261C5.47547 11.5711 5.21541 11.9174 5.07624 12.3169ZM5.95078 8.66668V8.66675C5.95116 8.9451 6.06189 9.21194 6.25871 9.40876C6.45553 9.60558 6.72237 9.71631 7.00072 9.71668H7.00078C7.20846 9.71668 7.41146 9.6551 7.58413 9.53973C7.7568 9.42435 7.89139 9.26036 7.97086 9.0685C8.05033 8.87664 8.07112 8.66552 8.03061 8.46184C7.9901 8.25816 7.89009 8.07107 7.74325 7.92422C7.5964 7.77738 7.40931 7.67737 7.20563 7.63686C7.00195 7.59634 6.79083 7.61714 6.59897 7.69661C6.4071 7.77608 6.24312 7.91066 6.12774 8.08334C6.01237 8.25601 5.95078 8.45901 5.95078 8.66668ZM11.0008 12.3834H11.0508V12.3334V5.44735V5.4249L11.034 5.40998L7.034 1.85465L7.00078 1.82512L6.96757 1.85465L2.96757 5.40998L2.95079 5.4249V5.44735V12.3334V12.3834H3.00079H3.73412H3.77476L3.78306 12.3436C3.87395 11.9081 4.05236 11.4957 4.30747 11.1313C4.56259 10.767 4.88908 10.4582 5.26713 10.2238L5.31727 10.1928L5.27839 10.1484C4.91888 9.73824 4.71967 9.212 4.71745 8.6666C4.71747 8.06105 4.95804 7.48031 5.38623 7.05212C5.81443 6.62392 6.39521 6.38335 7.00078 6.38335C7.60636 6.38335 8.18714 6.62392 8.61535 7.05212C9.04355 7.48033 9.28412 8.06111 9.28412 8.66668C9.28188 9.21206 9.08267 9.73826 8.72318 10.1484L8.68431 10.1927L8.73443 10.2238C9.11236 10.4583 9.43873 10.767 9.69372 11.1314C9.94872 11.4958 10.127 11.9082 10.2178 12.3436L10.2261 12.3834H10.2668H11.0008Z"
+                                                        fill="#888FA2" stroke="white" stroke-width="0.1" />
+                                                </svg>4 tenant(s)</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="mb-1 text-grey text-regular fw-500 text-sm-end">Rent amount</div>
+                                        <div class="fw-bold text-tall-large ">$ 1,200/mo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs property-units__tabs mb-3">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link active tab__btn text-grey fw-semibold " id="all-tab"
+                                        data-bs-toggle="tab" data-bs-target="#units" type="button" role="tab"
+                                        aria-controls="units" aria-selected="true">Units</button>
+                                </li>
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link tab__btn fw-semibold text-grey" id="single-tab"
+                                        data-bs-toggle="tab" data-bs-target="#leases" type="button" role="tab"
+                                        aria-controls="single" aria-selected="leases">Leases</button>
+                                </li>
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link tab__btn text-grey fw-semibold" id="multiple-tab"
+                                        data-bs-toggle="tab" data-bs-target="#applications" type="button" role="tab"
+                                        aria-controls="applications" aria-selected="false">Applications</button>
+                                </li>
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link tab__btn text-grey fw-semibold" id="multiple-tab"
+                                        data-bs-toggle="tab" data-bs-target="#payments" type="button" role="tab"
+                                        aria-controls="payments" aria-selected="false">Payments</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content w-100" id="myTabContent">
+                            <div class="tab-pane fade show active" id="units" role="tabpanel"
+                                aria-labelledby="units-tab">
+                                <div class="d-md-flex align-item-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center mb-3 mb-md-0">
+                                        <div class="me-012 property-units__number__img">
+                                            <img src="../img/ic_outline-doorback.svg" alt="">
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="fw-bold me-1 property-units__number">8</div>
+                                            <div class="text-grey text-regular fw-500">total units</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-sm-flex ">
+                                        <form class="position-relative me-sm-4 mb-4 mb-sm-0" role="search">
+                                            <input type="search"
+                                                class="input-style position-relative property-units__input"
+                                                placeholder="Search for anything here..." aria-label="Search">
+                                            <button class="property-units__search">
+                                                <img class="property-units__search__img" src="img/search.svg"
+                                                    alt="search">
+                                            </button>
+                                        </form>
+                                        <div class="orange-btn property-units__new">New Unit</div>
+
+                                    </div>
+                                </div>
+
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div
+                                            class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="tab-pane fade" id="leases" role="tabpanel" aria-labelledby="leases-tab">
+
+                                <div class="property-units__add">
+                                    <div class="text-center d-flex flex-column align-items-center">
+                                        <div class="property-units__add__img mb-4">
+                                            <img class="property-create__img__image"
+                                                src="../img/mdi_file-document-plus-outline.svg" alt="">
+                                        </div>
+                                        <h1 class="text-large fw-semibold mb-3">You don’t have any lease yet!</h1>
+                                        <p class="text-regular text-regular text-grey mb-032">Set up a lease for your
+                                            applicants to sign on</p>
+                                        <button class="property-create__button dashed-btn">Add Lease</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="applications" role="tabpanel"
+                                aria-labelledby="applications-tab">
+                                <div class="property-units__add">
+                                    <div class="text-center d-flex flex-column align-items-center">
+                                        <div class="property-units__add__img mb-4">
+                                            <img class="property-create__img__image"
+                                                src="../img/mdi_file-document-plus-outline.svg" alt="">
+                                        </div>
+                                        <h1 class="text-large fw-semibold mb-3">You don’t have any applicants yet!</h1>
+                                        <p class="text-regular text-regular text-grey mb-032">Applicant that apply to
+                                            you property will<br> appear her, yalso can invite applicants</p>
+                                        <button class="property-create__button dashed-btn">Invite Applicants</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="payments" role="tabpanel" aria-labelledby="payments-tab">
+                                <div class="property-units__add">
+                                    <div class="text-center d-flex flex-column align-items-center">
+                                        <div class="property-units__add__img mb-4">
+                                            <img class="property-create__img__image"
+                                                src="../img/mdi_cash.svg" alt="">
+                                        </div>
+                                        <h1 class="text-large fw-semibold mb-3">You don’t have any taransactions yet!</h1>
+                                        <p class="text-regular text-regular text-grey mb-032">Transactions from you applicants for this<br> property will appear here</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+
+@@include('../components/footer.html')

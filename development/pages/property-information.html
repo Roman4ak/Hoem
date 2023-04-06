@@ -1,0 +1,237 @@
+@@include('../components/header.html')
+
+
+<div class="property-page">
+    @@include('../components/property-header__add-unit.html')
+
+    <main>
+        <div class="property-information">
+
+            <div class="container">
+                <div
+                    class="property-information__line col-lg-10 offset-lg-1 d-flex align-items-center justify-content-between pb-020 mb-4 mt-4 mt-lg-0">
+                    <div class="property-information__line__done"></div>
+                    <div class="text-large fw-700">Create Lease</div>
+                    <div class="text-regular fw-600 text-orange">Step 1 of 5</div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-regular fw-600 text-grey me-2">Next step:</div>
+                        <div class="text-regular fw-500">Clauses</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-lg-6 offset-lg-3 pt-3">
+                    <div class="mb-032">
+                        <h1 class="text-tall-large fw-700 mb-2">Rent Information</h1>
+                        <p class="text-regular text-grey mb-0">Amet minim mollit non deserunt ullamco est sit aliqua
+                            dolor do
+                            amet sint.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4 justify-content-between">
+                        <h3 class="text-large fw-600 text-black mb-0">Lease term & Rent info</h3>
+                        <div class="property-information__grey-line"></div>
+                    </div>
+
+                    <form action="">
+                        <div class=" d-flex w-100">
+                            <div
+                                class="authentication-container-info__input position-relative d-flex justify-content-start w-50 me-020">
+                                <span class="authentication-container-info__input_title text-small mb-2">Lease start
+                                    date</span>
+                                <input class="input-style w-100" type="date" placeholder="dd-mm-yyyy" value="">
+                                <div class="custom-calendar">
+                                    <img src="../img/ci_calendar-minus.svg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="authentication-container-info__input position-relative d-flex justify-content-start w-50">
+                                <span class="authentication-container-info__input_title text-small mb-2">Lease end
+                                    date</span>
+                                <input class="input-style w-100" type="date" placeholder="dd-mm-yyyy" value="">
+                                <div class="custom-calendar">
+                                    <img src="../img/ci_calendar-minus.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex w-100 mb-4">
+                            <div
+                                class="authentication-container-info__input  d-flex justify-content-start w-50 me-020 mb-0">
+                                <span class="authentication-container-info__input_title text-small mb-2">Money rent
+                                    amount</span>
+                                <input class="input-style w-100" type="text" placeholder="Enter amount">
+                            </div>
+
+                            <div
+                                class="authentication-container-info__input  d-flex justify-content-start my-0 w-50 list-arrow-input">
+                                <span class="authentication-container-info__input_title text-small mb-2">Monthly due
+                                    day</span>
+
+
+                                <div class="dropdown dropdown-container dropdown-bed">
+
+                                    <div data-path="bed" onclick="bedFunction()" id="bed"
+                                        class="select input-style text-grey dropdown-button__style dropdown-button">
+                                        <input id="bed-input" class="dropdown-input" type="text" id="input"
+                                            placeholder="1st of the month">
+                                    </div>
+
+                                    <ul data-target="bed" class="dropdown-menu dropdown-menu__style"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item bed-item text-grey text-regular mb-1">2st of the month
+                                        </li>
+                                        <li class="dropdown-item bed-item text-grey text-regular mb-1">3st of the month
+                                        </li>
+                                        <li class="dropdown-item bed-item text-grey text-regular mb-1">4st of the month
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <input class="switch-checkbox me-3" type="checkbox">
+                                    <div class="text-large text-black fw-600">Prorated rent</div>
+                                </div>
+                                <div class="property-information__grey-line"></div>
+                            </div>
+
+                            <p class="text-grey text-regular ">A fee will be added if payments for the unpaid balance
+                                haven’t started sending by the day you specified. </p>
+                        </div>
+
+
+
+                        <div class="">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="d-flex align-items-center">
+                                    <input class="switch-checkbox me-3" type="checkbox">
+                                    <div class="text-large text-black fw-600">Last month's rent</div>
+                                </div>
+                                <div class="property-information__grey-line"></div>
+                            </div>
+
+                            <p class="text-grey text-regular ">Add if you need to collect a last month’s rent</p>
+                        </div>
+
+                        <div
+                            class="authentication-container-info__input position-relative d-flex justify-content-start w-50 me-020">
+                            <span class="authentication-container-info__input_title text-small mb-2">Due date</span>
+                            <input class="input-style w-100" type="date" placeholder="dd-mm-yyyy" value="">
+                            <div class="custom-calendar">
+                                <img src="../img/ci_calendar-minus.svg" alt="">
+                            </div>
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="property-footer d-flex ">
+            <div class="container">
+                <div class="row align-item-center justify-content-between">
+                    <a class="col-6 property-footer__cancel text-black text-large fw-600" href="#">Cancel</a>
+                    <a class="col-6 property-footer__orange orange-btn" href="#">Next</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+<script>
+    let intervalId;
+
+    document.querySelectorAll('.dropdown-button').forEach(e => {
+        e.addEventListener('click', e => {
+            const menu = e.currentTarget.dataset.path;
+            document.querySelectorAll('.dropdown-menu').forEach(
+                e => {
+                    if (!document.querySelector(
+                            `[data-target=${menu}]`)
+                        .classList.contains('open')) {
+                        document.querySelector(
+                                `[data-target=${menu}]`)
+                            .classList.add('menu-active');
+                        intervalId = setTimeout(() => {
+                            document.querySelector(
+                                `[data-target=${menu}]`
+                            ).classList.add(
+                                'open');
+                        }, 0);
+                    }
+
+                    if (document.querySelector(
+                            `[data-target=${menu}]`)
+                        .classList.contains('open')) {
+                        clearTimeout(intervalId);
+                        document.querySelector(
+                                `[data-target=${menu}]`)
+                            .classList.remove(
+                                'menu-active');
+                        intervalId = setTimeout(() => {
+                            document.querySelector(
+                                    `[data-target=${menu}]`
+                                ).classList
+                                .remove('open');
+                        }, 0);
+                    }
+                });
+        });
+    });
+
+    function bedFunction() {
+        var element = document.getElementById("bed");
+        element.classList.toggle("dropdown-button__style__active");
+    }
+
+    function bathFunction() {
+        var element = document.getElementById("bath");
+        element.classList.toggle("dropdown-button__style__active");
+    }
+
+    var bed = document.getElementById("bed-input");
+    var bath = document.getElementById("bath-input");
+
+    let bedItem = document.querySelectorAll(
+        ".dropdown-bed .bed-item");
+    bedItem.forEach((e) => {
+        e.addEventListener("click", () => {
+            bed.value = e.innerText;
+            selectContainer.classList.remove("active");
+            bedItem.forEach((e) => {
+                e.classList.remove("selected");
+            });
+            e.classList.add("selected");
+        });
+    });
+
+    let bathItem = document.querySelectorAll(
+        ".dropdown-bath .bath-item");
+    bathItem.forEach((e) => {
+        e.addEventListener("click", () => {
+            bath.value = e.innerText;
+            selectContainer.classList.remove("active");
+            bathItem.forEach((e) => {
+                e.classList.remove("selected");
+            });
+            e.classList.add("selected");
+        });
+    });
+</script>
+
+
+
+
+
+@@include('../components/footer.html')

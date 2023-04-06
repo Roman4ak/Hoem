@@ -1,0 +1,65 @@
+    .nav-tabs {
+        --bs-nav-tabs-border-width: 0px;
+    }
+
+    .nav-link {
+        position: relative;
+
+        @media screen and (max-width: 576px) {
+            padding: 5px 5px;
+            margin: 0px 0px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: calc(100% - 2px);
+            left: 0%;
+            border-radius: 2px 2px 0px 0px;
+            background-color: $orange;
+            transform: rotate(0deg);
+            overflow: hidden;
+            transform: scale(.0);
+            visibility: hidden;
+            transition: .5s;
+        }
+
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .nav-link.active {
+        border: none;
+        color: $black !important;
+
+        &::before {
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+
+    .tabs {
+        background-color: $white;
+    }
+
+    .tab {
+        &__btn {
+            position: relative;
+            margin: 0px 10px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-color: $grey08;
+                width: 24px;
+                height: 2px;
+                transform: rotate(90deg);
+                right: -20px;
+                top: 18px;
+            }
+        }
+    }

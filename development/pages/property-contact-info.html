@@ -1,0 +1,98 @@
+@@include('../components/header.html')
+
+
+<div class="property-page">
+    @@include('../components/property-header__add-unit.html')
+
+    <main>
+        <div class="property-contact-info mb-5">
+
+            <div class="container">
+                <div
+                    class="property-information__line col-lg-10 offset-lg-1 d-flex align-items-center justify-content-between pb-020 mb-4 mt-4 mt-lg-0">
+                    <div class="property-information__line__done__100"></div>
+                    <div class="text-large fw-bold">Create Lease</div>
+                    <div class="text-regular fw-semibold text-orange">Step 5 of 5</div>
+                    <div class="d-flex align-items-center invisible">
+                        <div class="text-regular fw-semibold text-grey me-2">Next step:</div>
+                        <div class="text-regular fw-500">Contact Info</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-lg-6 offset-lg-3 pt-3">
+                    <div class="mb-032">
+                        <h1 class="text-tall-large fw-bold mb-2">Contact Info</h1>
+                        <p class="text-regular text-grey mb-0">Amet minim mollit non deserunt ullamco est sit aliqua
+                            dolor do amet sint.</p>
+                    </div>
+
+                    <form action="">
+                        <div class="d-flex align-items-center mb-4 justify-content-between">
+                            <h3 class="text-large fw-semibold text-black mb-0">Landlord contact information</h3>
+                            <div class="property-information__grey-line property-contact-info__grey-line"></div>
+                        </div>
+
+                        <div class="authentication-container-info__input  d-flex justify-content-start w-100 mb-4">
+                            <span class="authentication-container-info__input_title text-small mb-2">Full name</span>
+                            <input class="input-style w-100" type="text" placeholder="Sofiia Tsisarenko">
+                        </div>
+
+                        <div class="d-flex w-100 mb-032">
+                            <div
+                                class="authentication-container-info__input  d-flex justify-content-start w-50 mb-0 me-020">
+                                <span class="authentication-container-info__input_title text-small mb-2">Email</span>
+                                <input class="input-style w-100" type="email" placeholder="sofia.tsisarenko@gmail.com">
+                            </div>
+                            <div class="authentication-container-info__input  d-flex justify-content-start w-50 mb-0">
+                                <span class="authentication-container-info__input_title text-small mb-2">Phone</span>
+                                <input class="input-style w-100" type="tel" placeholder="(034) 456 5656">
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4 justify-content-between">
+                            <h3 class="text-large fw-semibold text-black mb-0">Tenant contact information</h3>
+                            <div class="property-information__grey-line property-contact-info__grey-line"></div>
+                        </div>
+
+                        <div class="d-flex w-100 property-contact-info__tenant">
+                            <div
+                                class="authentication-container-info__input  d-flex justify-content-start w-50 me-020 mb-0">
+                                <span class="authentication-container-info__input_title text-small mb-2">Tenant
+                                    name</span>
+                                <input class="input-style w-100" type="text" placeholder="Meggie May">
+                            </div>
+                            <div class="authentication-container-info__input  d-flex justify-content-start w-50 mb-0">
+                                <span class="authentication-container-info__input_title text-small mb-2">Email</span>
+                                <input class="input-style w-100" type="email" placeholder="meggie.m@gmail.com ">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="walktrough-invite__button fw-semibold text-regular text-orange position-relative ps-4 mt-4">
+                        Add More</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="property-footer d-flex ">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="property-footer__cancel text-black text-large fw-semibold" href="#">Cancel</a>
+                    <div class="d-flex pe-2">
+                        <a class=" walktrough-footer__white__btn white-btn me-3" href="#">Previous</a>
+                        <a class="property-footer__btn orange-btn" href="#">Next</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+
+
+@@include('../components/footer.html')

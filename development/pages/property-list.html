@@ -1,0 +1,463 @@
+@@include('../components/header.html')
+
+<div class="property-page">
+    @@include('../components/property-header.html')
+    <main>
+        <div class="walktrough-content walktrough-invite-section mb-4">
+
+            <div class="walktrough-list">
+                <div class="container">
+                    <div class="walktrough-list__row row">
+                        <div
+                            class="col-lg-6 offset-lg-1 property-page__title-section justify-content-center d-flex flex-column flex-align-center mb-4">
+                            <h1 class="walktrough-content__title text-start my-0 fw-bold">List a Vacant Property</h1>
+                            <p class="text-regular text-grey text-start mt-2 mb-0 mt-2">Tell your prospective
+                                tenants about your
+                                rental. Market it to<br> your free listing website </p>
+                        </div>
+
+                        <div class="col-lg-6 offset-lg-1">
+
+                            <section class="walktrough-list__info" id="info">
+                                <h3 class="text-large fw-bold mb-012">Basic Info</h3>
+
+                                <div class="d-sm-flex w-100 mb-020">
+                                    <div
+                                        class="authentication-container-info__input  d-flex justify-content-start my-0 w-100 w-sm-50 me-020 mb-3 mb-sm-0 list-arrow-input">
+                                        <span
+                                            class="authentication-container-info__input_title text-small mb-2">Bed<span
+                                                class="text-orange">*</span></span>
+
+
+                                        <div class="dropdown dropdown-container dropdown-bed">
+
+                                            <div data-path="bed" onclick="bedFunction()" id="bed"
+                                                class="select input-style text-grey dropdown-button__style dropdown-button">
+                                                <input id="bed-input" class="dropdown-input" type="text" id="input"
+                                                    placeholder="Select">
+                                            </div>
+
+                                            <ul data-target="bed" class="dropdown-menu dropdown-menu__style"
+                                                aria-labelledby="dropdownMenuButton">
+                                                <li class="dropdown-item bed-item text-grey text-regular mb-1">Home01
+                                                </li>
+                                                <li class="dropdown-item bed-item text-grey text-regular mb-1">Home02
+                                                </li>
+                                                <li class="dropdown-item bed-item text-grey text-regular mb-1">Home03
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="authentication-container-info__input d-flex justify-content-start my-0 w-100 w-sm-50 list-arrow-input">
+                                        <span
+                                            class="authentication-container-info__input_title text-small mb-2">Bath<span
+                                                class="text-orange">*</span></span>
+
+                                        <div class="dropdown dropdown-container dropdown-bath">
+
+                                            <div data-path="bath" onclick="bathFunction()" id="bath"
+                                                class="select input-style text-grey dropdown-button__style dropdown-button">
+                                                <input id="bath-input" class="dropdown-input" type="text" id="input"
+                                                    placeholder="Select">
+                                            </div>
+
+                                            <ul data-target="bath" class="dropdown-menu dropdown-menu__style"
+                                                aria-labelledby="dropdownMenuButton">
+                                                <li class="dropdown-item bath-item text-grey text-regular mb-1">Home01
+                                                </li>
+                                                <li class="dropdown-item bath-item text-grey text-regular mb-1">Home02
+                                                </li>
+                                                <li class="dropdown-item bath-item text-grey text-regular mb-1">Home03
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <script>
+                                            let intervalId;
+
+                                            document.querySelectorAll('.dropdown-button').forEach(e => {
+                                                e.addEventListener('click', e => {
+                                                    const menu = e.currentTarget.dataset.path;
+                                                    document.querySelectorAll('.dropdown-menu').forEach(
+                                                        e => {
+                                                            if (!document.querySelector(
+                                                                    `[data-target=${menu}]`)
+                                                                .classList.contains('open')) {
+                                                                document.querySelector(
+                                                                        `[data-target=${menu}]`)
+                                                                    .classList.add('menu-active');
+                                                                intervalId = setTimeout(() => {
+                                                                    document.querySelector(
+                                                                        `[data-target=${menu}]`
+                                                                    ).classList.add(
+                                                                        'open');
+                                                                }, 0);
+                                                            }
+
+                                                            if (document.querySelector(
+                                                                    `[data-target=${menu}]`)
+                                                                .classList.contains('open')) {
+                                                                clearTimeout(intervalId);
+                                                                document.querySelector(
+                                                                        `[data-target=${menu}]`)
+                                                                    .classList.remove(
+                                                                        'menu-active');
+                                                                intervalId = setTimeout(() => {
+                                                                    document.querySelector(
+                                                                            `[data-target=${menu}]`
+                                                                        ).classList
+                                                                        .remove('open');
+                                                                }, 0);
+                                                            }
+                                                        });
+                                                });
+                                            });
+
+                                            function bedFunction() {
+                                                var element = document.getElementById("bed");
+                                                element.classList.toggle("dropdown-button__style__active");
+                                            }
+
+                                            function bathFunction() {
+                                                var element = document.getElementById("bath");
+                                                element.classList.toggle("dropdown-button__style__active");
+                                            }
+
+                                            var bed = document.getElementById("bed-input");
+                                            var bath = document.getElementById("bath-input");
+
+                                            let bedItem = document.querySelectorAll(
+                                                ".dropdown-bed .bed-item");
+                                            bedItem.forEach((e) => {
+                                                e.addEventListener("click", () => {
+                                                    bed.value = e.innerText;
+                                                    selectContainer.classList.remove("active");
+                                                    bedItem.forEach((e) => {
+                                                        e.classList.remove("selected");
+                                                    });
+                                                    e.classList.add("selected");
+                                                });
+                                            });
+
+                                            let bathItem = document.querySelectorAll(
+                                                ".dropdown-bath .bath-item");
+                                            bathItem.forEach((e) => {
+                                                e.addEventListener("click", () => {
+                                                    bath.value = e.innerText;
+                                                    selectContainer.classList.remove("active");
+                                                    bathItem.forEach((e) => {
+                                                        e.classList.remove("selected");
+                                                    });
+                                                    e.classList.add("selected");
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+
+                                <div class="authentication-container-info__input  d-flex justify-content-start w-100">
+                                    <span class="authentication-container-info__input_title text-small mb-2">SQ.
+                                        Footage<span class="text-orange">*</span></span>
+
+                                    <div class="w-100 position-relative">
+                                        <input class="input-style w-100" type="text" placeholder="Select type">
+                                        <div class="list-right-input text-regular text-grey fw-bold">sq ft</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="authentication-container-info__input  d-flex justify-content-start w-100">
+                                    <span class="authentication-container-info__input_title text-small mb-2">Listing
+                                        headline</span>
+                                    <input class="input-style w-100" type="text"
+                                        placeholder="i.e Beautiful large apartment in the heart of within walking distance of schools">
+                                </div>
+
+                                <div
+                                    class="authentication-container-info__input mb-0 d-flex justify-content-start w-100">
+                                    <span
+                                        class="authentication-container-info__input_title text-small mb-2">Descriptions</span>
+
+                                    <textarea class="input-style" placeholder="Add a brief description" name=""
+                                        rows="5"></textarea>
+                                </div>
+
+                            </section>
+
+                            <section class="walktrough-list__terms" id="terms">
+                                <h3 class="text-large fw-bold mb-012">Rental Terms</h3>
+                                <div class="d-sm-flex w-100">
+                                    <div
+                                        class="authentication-container-info__input  d-flex justify-content-start w-100 w-sm-50 me-020">
+                                        <span class="authentication-container-info__input_title text-small mb-2">Monthly
+                                            Rent<span class="text-orange">*</span></span>
+
+                                        <div class="w-100 position-relative">
+                                            <input class="input-style walktrough-list__terms__input w-100" type="text"
+                                                placeholder="Select type">
+                                            <div class="list-left-input text-large text-grey fw-bold">$</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="authentication-container-info__input  d-flex justify-content-start w-100 w-sm-50">
+                                        <span
+                                            class="authentication-container-info__input_title text-small mb-2">Security
+                                            Deposit<span class="text-grey ms-1">(optional)</span></span>
+
+                                        <div class="w-100 position-relative">
+                                            <input class="input-style walktrough-list__terms__input w-100" type="text"
+                                                placeholder="Select type">
+                                            <div class="list-left-input text-large text-grey fw-bold">$</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="d-sm-flex w-100">
+                                    <div class="d-flex flex-column w-100 w-sm-50 me-020 mb-3 mb-sm-0">
+                                        <div
+                                            class="authentication-container-info__input  d-flex justify-content-start w-100 mb-2">
+                                            <span
+                                                class="authentication-container-info__input_title text-small mb-2">Lease
+                                                Duration in months</span>
+                                            <input class="input-style w-100" type="text"
+                                                placeholder="Input no.of month">
+                                        </div>
+
+                                        <div class="input-chackbox d-flex align-items-center">
+                                            <div class="checkboxOverride d-flex">
+                                                <input type="checkbox" name="" id="checkboxInputMonth" value="1">
+                                                <label class="nput-chackbox__label" for="checkboxInputMonth">Don’t
+                                                    specify a lease duration</label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="d-flex flex-column w-100 w-sm-50 mb-4">
+                                        <div
+                                            class="authentication-container-info__input position-relative d-flex justify-content-start w-100 mb-2">
+                                            <span
+                                                class="authentication-container-info__input_title text-small mb-2">Available
+                                                at</span>
+                                            <input class="input-style w-100" type="date" placeholder="dd-mm-yyyy"
+                                                value="">
+                                            <div class="custom-calendar">
+                                                <img src="../img/ci_calendar-minus.svg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="input-chackbox d-flex align-items-center">
+                                            <div class="checkboxOverride">
+                                                <input type="checkbox" name="" id="checkboxInputAvailable" value="1">
+                                                <label for="checkboxInputAvailable">Don’t specify a lease
+                                                    duration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="walktrough-list__terms__pet">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex flex-column flex-start">
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/dashicons_pets.svg" alt="">
+                                                <span class="fw-semibold text-regular ms-010">Pet Policy</span>
+                                            </div>
+
+                                            <div class="text-grey text-regular fw-400 mt-1 ms-032">Amet minim mollit non
+                                                deserunt ullamco est.</div>
+                                        </div>
+
+                                        <a class="text-orange text-regular fw-semibold" href="#">Edit pet policy →</a>
+                                    </div>
+                                    <div class="walktrough-list__terms__allowed text-regular fw-500 mt-012 ms-032">
+                                        Pets allowed, cats & dogs
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <section class="walktrough-list__amenitites" id="amenitites">
+                                <h3 class="text-large fw-bold mb-012">Amenitites</h3>
+
+                                <div class="walktrough-list__amenitites__container mb-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-regular fw-semibold">Features</h6>
+                                            <p class="text-regular text-grey mt-1">Amet minim mollit non deserunt
+                                                ullamco est.</p>
+                                        </div>
+                                        <div class="walktrough-list__amenitites__number fw-bold">12</div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center mt-012">
+                                        <a class="text-orange text-regular fw-semibold" href="#">Edit amenities →</a>
+                                        <span class="text-small text-grey">selected of 45</span>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="authentication-container-info__input  d-flex justify-content-start w-100 mb-0">
+                                    <span class="authentication-container-info__input_title text-small mb-2">Any Other
+                                        Amenitites <span class="text-grey">(optional)</span></span>
+                                    <input class="input-style w-100" type="text" placeholder="Select type">
+                                </div>
+                            </section>
+
+                            <section class="walktrough-list__photos" id="photos">
+                                <h3 class="text-large fw-bold mb-012">Photos</h3>
+
+                                <div class="walktrough-list__photos__container text-center">
+                                    <div class="walktrough-list__photos__image mb-020">
+                                        <img src="../img/Frame-foto.svg" alt="">
+                                    </div>
+                                    <h5 class="mb-2 fw-bold text-large">Drag your photos here</h5>
+                                    <div class="walktrough-list__photos__description text-small">Add at least 5 photos
+                                    </div>
+                                    <div id="file-btn-trigger" onclick="fileFunction()"
+                                        class="custom-file-input__trigger text-regular text-orange fw-500 text-decoration-underline">
+                                        Choose a file</div>
+                                    <input id="file-btn" type="file" class="custom-file-input">
+                                </div>
+
+                                <div class="text-grey text-regular mt-012">JPEG or PNG formats only, max file size is 10
+                                    MB</div>
+                            </section>
+
+                            <section class="walktrough-list__applicants" id="applicants">
+                                <h3 class="text-large fw-bold mb-012">Screening Applicants</h3>
+
+                                <div class="walktrough-list__applicants__info d-flex align-items-center mb-4">
+                                    <img src="../img/akar-icons_info-fill.svg" alt="">
+                                    <p class="text-small fw-400 my-0 ms-014">Add requirements to weed out tenants below
+                                        minimum credit scores when a tenant fills out an application</p>
+                                </div>
+
+                                <div class="d-sm-flex w-100 ">
+                                    <div
+                                        class="authentication-container-info__input  d-flex justify-content-start w-100 w-sm-50 me-020">
+                                        <span class="authentication-container-info__input_title text-small mb-2">Minimum
+                                            credit score</span>
+
+                                        <div class="w-100 position-relative">
+                                            <input class="input-style  w-100" type="text" placeholder="Input score">
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="authentication-container-info__input  d-flex justify-content-start w-100 w-sm-50">
+                                        <span
+                                            class="authentication-container-info__input_title text-small mb-2">Security
+                                            Deposit</span>
+
+                                        <div class="w-100 position-relative">
+                                            <input class="input-style walktrough-list__terms__input w-100" type="text"
+                                                placeholder="Select type">
+                                            <div class="list-left-input text-large text-grey fw-bold">$</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="walktrough-list__applicants__chackbox mb-020">
+
+                                    <div class="mb-2">
+                                        <div class="input-chackbox d-flex align-items-center">
+                                            <div class="checkboxOverride">
+                                                <input type="checkbox" name="" id="checkboxInputRequire" value="1">
+                                                <label for="checkboxInputRequire">Require credit reports</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-032">
+                                        <p class="text-grey text-regular fw-400 mb-2">Applicants will be prompted to
+                                            submit a credit report with their application. Includes a credit score,
+                                            detailed payment history, and debt overviews. </p>
+                                        <a class="text-green text-regular fw-semibold" href="#">View example</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="walktrough-list__applicants__chackbox">
+
+                                    <div class="mb-2">
+                                        <div class="input-chackbox d-flex align-items-center">
+                                            <div class="checkboxOverride">
+                                                <input type="checkbox" name="" id="checkboxInputRenters" value="1">
+                                                <label for="checkboxInputRenters">Renters insurance</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-032">
+                                        <p class="text-grey text-regular fw-400 mb-2">Applicants will be prompted to
+                                            submit a credit report with their application. Includes a credit score,
+                                            detailed payment history, and debt overviews. </p>
+                                        <a class="text-green text-regular fw-semibold" href="#">View example</a>
+                                    </div>
+
+                                </div>
+
+                            </section>
+                        </div>
+
+                        <div class="walktrough-list__toc property-list__toc col-lg-4 justify-content-start">
+                            @@include('../modules/toc.html')
+                        </div>
+
+                        <script>
+                            window.addEventListener('DOMContentLoaded', () => {
+
+                                const observer = new IntersectionObserver(entries => {
+                                    entries.forEach(entry => {
+                                        const id = entry.target.getAttribute('id');
+                                        if (entry.intersectionRatio > 0) {
+                                            document.querySelector(`nav li a[href="#${id}"]`)
+                                                .parentElement.classList.add('toc-active');
+                                        } else {
+                                            document.querySelector(`nav li a[href="#${id}"]`)
+                                                .parentElement.classList.remove('toc-active');
+                                        }
+                                    });
+                                });
+
+                                // Track all sections that have an `id` applied
+                                document.querySelectorAll('section[id]').forEach((section) => {
+                                    observer.observe(section);
+                                });
+
+                            });
+
+                            function fileFunction() {
+                                document.getElementById("file-btn").click();
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="property-footer d-flex px-2">
+        <div class="property-footer__line"></div>
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <a class="col-6 property-footer__cancel underline-btn" href="#">Cancel</a>
+                <a class="col-6 property-footer__orange orange-btn" href="#">Next</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@@include('../components/footer.html')

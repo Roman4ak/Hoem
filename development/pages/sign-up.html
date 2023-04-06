@@ -1,0 +1,142 @@
+@@include('../components/header.html')
+
+<section class="section sign-up__section">
+    <div class="d-flex justify-content-between">
+        <div class="authentication-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <div class="authentication-container-img">
+                            <img class="authentication-container-img__img" src="../img/welcome-to-hoem.png"
+                                alt="welcome-to-hoem">
+                            <div class="authentication-container-img__overlay"></div>
+                            <div class="authentication-container-img__logo">
+                                <img src="../img/hoem-logo-welcome.png" alt="hoem-logo-welcome">
+                            </div>
+
+                            <h1 class="authentication-container-img__title">Welcome to Hoem<br> Apartment Management
+                                Tool
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <div class="authentication-container-info d-flex">
+                             <div class="authentication-container-info__buttons d-flex align-self-center">
+                            <a class="authentication-container-info__buttons__registration text-regular text-grey" href="#">Already have an account?</a>
+                            <a class="authentication-container-info__buttons__sign_up text-regular text-orange" href="#">Sign in</a>
+                        </div>
+
+                        <h2 class="mb-4">Sign up</h2>
+
+                        <p class="text-regular authentication-container-info__subtitle mb-4">Choose role for your
+                            account</p>
+
+                        <div class="sigl-up__buttons">
+                            <fieldset>
+                                <div class="input__radio mb-3">
+                                    <div id="top-radio" class="input__radio__btn d-flex">
+
+                                        <div id="svg-top-color" class="input__radio__btn__img mt-2">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M28.8849 13.6695L16.8849 3.00282C16.6411 2.78587 16.326 2.66602 15.9996 2.66602C15.6732 2.66602 15.3582 2.78587 15.1143 3.00282L3.11428 13.6695C2.84978 13.9043 2.68938 14.2346 2.66837 14.5876C2.64737 14.9407 2.76748 15.2876 3.00228 15.5522C3.23709 15.8167 3.56735 15.9771 3.92042 15.9981C4.27349 16.0191 4.62044 15.899 4.88495 15.6642L5.33295 15.2655V28.0002C5.33295 28.3538 5.47343 28.6929 5.72348 28.943C5.97352 29.193 6.31266 29.3335 6.66628 29.3335H25.333C25.6866 29.3335 26.0257 29.193 26.2758 28.943C26.5258 28.6929 26.6663 28.3538 26.6663 28.0002V15.2655L27.1143 15.6642C27.3788 15.899 27.7257 16.0191 28.0788 15.9981C28.2536 15.9877 28.4247 15.9429 28.5822 15.8664C28.7398 15.7899 28.8807 15.6831 28.9969 15.5522C29.1132 15.4212 29.2025 15.2686 29.2598 15.1031C29.3171 14.9376 29.3413 14.7624 29.3309 14.5876C29.3205 14.4128 29.2757 14.2417 29.1992 14.0842C29.1227 13.9267 29.0159 13.7858 28.8849 13.6695V13.6695ZM12.245 26.6668C12.5165 25.8874 13.0238 25.2119 13.6966 24.7338C14.3694 24.2557 15.1743 23.9989 15.9996 23.9989C16.825 23.9989 17.6298 24.2557 18.3026 24.7338C18.9754 25.2119 19.4828 25.8874 19.7543 26.6668H12.245ZM13.9996 19.3335C13.9996 18.9379 14.1169 18.5512 14.3367 18.2224C14.5564 17.8935 14.8688 17.6371 15.2342 17.4857C15.5997 17.3344 16.0018 17.2947 16.3898 17.3719C16.7778 17.4491 17.1341 17.6396 17.4138 17.9193C17.6935 18.199 17.884 18.5553 17.9612 18.9433C18.0384 19.3313 17.9988 19.7334 17.8474 20.0989C17.696 20.4643 17.4397 20.7767 17.1108 20.9964C16.7819 21.2162 16.3952 21.3335 15.9996 21.3335C15.4694 21.3328 14.9611 21.1218 14.5862 20.7469C14.2113 20.372 14.0003 19.8637 13.9996 19.3335V19.3335ZM23.9996 26.6668H22.5316C22.3472 25.7828 21.9852 24.9455 21.4674 24.2056C20.9497 23.4658 20.287 22.8388 19.5196 22.3628C20.2546 21.5243 20.6618 20.4485 20.6663 19.3335C20.6663 18.0958 20.1746 16.9088 19.2994 16.0337C18.4243 15.1585 17.2373 14.6668 15.9996 14.6668C14.7619 14.6668 13.575 15.1585 12.6998 16.0337C11.8246 16.9088 11.333 18.0958 11.333 19.3335C11.3374 20.4485 11.7447 21.5243 12.4796 22.3628C11.712 22.8387 11.0491 23.4656 10.5311 24.2055C10.0131 24.9453 9.65082 25.7827 9.46628 26.6668H7.99962V12.8948L15.9996 5.78416L23.9996 12.8948V26.6668Z"
+                                                    fill="#888FA2" />
+                                            </svg>
+                                        </div>
+
+                                        <div
+                                            class="input__radio__btn__info d-flex align-items-start flex-column ">
+                                            <h5 class="input__radio__btn__info__title text-large mb-0">
+                                                Landlord
+                                            </h5>
+                                            <p class="mb-0 text-regular text-grey">Manage your property</p>
+                                        </div>
+                                    </div>
+                                    <input onclick="oneFunction()" class="radio-btn" type="radio" id="huey" name="drone" value="huey" checked>
+                                </div>
+
+                                <div class="input__radio">
+                                    <div id="bottom-radio" class="input__radio__btn d-flex ">
+                                        <div class="input__radio__btn__img mt-2">
+                                            <svg id="svg-bottom-color" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.0004 2.6665C13.4144 2.67142 10.8856 3.42825 8.72203 4.84482C6.55849 6.26139 4.85359 8.27656 3.81498 10.6449C2.77637 13.0132 2.44889 15.6324 2.87243 18.1835C3.29596 20.7346 4.45223 23.1075 6.20039 25.0132C7.44895 26.3666 8.96431 27.4467 10.651 28.1854C12.3376 28.9242 14.159 29.3056 16.0004 29.3056C17.8417 29.3056 19.6631 28.9242 21.3498 28.1854C23.0365 27.4467 24.5518 26.3666 25.8004 25.0132C27.5486 23.1075 28.7048 20.7346 29.1284 18.1835C29.5519 15.6324 29.2244 13.0132 28.1858 10.6449C27.1472 8.27656 25.4423 6.26139 23.2787 4.84482C21.1152 3.42825 18.5864 2.67142 16.0004 2.6665ZM16.0004 26.6665C13.2383 26.6623 10.5856 25.5869 8.60039 23.6665C9.20311 22.1992 10.2284 20.9442 11.5461 20.061C12.8637 19.1778 14.4141 18.7062 16.0004 18.7062C17.5866 18.7062 19.1371 19.1778 20.4547 20.061C21.7723 20.9442 22.7977 22.1992 23.4004 23.6665C21.4152 25.5869 18.7624 26.6623 16.0004 26.6665ZM13.3337 13.3332C13.3337 12.8058 13.4901 12.2902 13.7831 11.8517C14.0762 11.4131 14.4926 11.0713 14.9799 10.8695C15.4672 10.6677 16.0033 10.6148 16.5206 10.7177C17.0379 10.8206 17.5131 11.0746 17.886 11.4476C18.2589 11.8205 18.5129 12.2956 18.6158 12.8129C18.7187 13.3302 18.6659 13.8664 18.4641 14.3537C18.2622 14.8409 17.9204 15.2574 17.4819 15.5504C17.0434 15.8434 16.5278 15.9998 16.0004 15.9998C15.2931 15.9998 14.6149 15.7189 14.1148 15.2188C13.6147 14.7187 13.3337 14.0404 13.3337 13.3332ZM25.2137 21.3332C24.0224 19.2955 22.1889 17.7105 20.0004 16.8265C20.6793 16.0567 21.1216 15.1074 21.2744 14.0924C21.4271 13.0775 21.2837 12.04 20.8614 11.1045C20.4391 10.169 19.7558 9.37525 18.8936 8.81846C18.0314 8.26167 17.0268 7.9655 16.0004 7.9655C14.974 7.9655 13.9694 8.26167 13.1072 8.81846C12.2449 9.37525 11.5617 10.169 11.1394 11.1045C10.7171 12.04 10.5737 13.0775 10.7264 14.0924C10.8792 15.1074 11.3215 16.0567 12.0004 16.8265C9.81185 17.7105 7.97835 19.2955 6.78706 21.3332C5.83765 19.716 5.33602 17.8751 5.33372 15.9998C5.33372 13.1709 6.45753 10.4578 8.45792 8.45737C10.4583 6.45698 13.1714 5.33317 16.0004 5.33317C18.8294 5.33317 21.5425 6.45698 23.5429 8.45737C25.5432 10.4578 26.6671 13.1709 26.6671 15.9998C26.6648 17.8751 26.1631 19.716 25.2137 21.3332Z"
+                                                    fill="#888FA2" />
+                                            </svg>
+                                        </div>
+
+                                        <div
+                                            class="input__radio__btn__info d-flex align-items-start flex-column ">
+                                            <h5 class="input__radio__btn__info__title text-large mb-0">Tenant
+                                            </h5>
+                                            <p class="mb-0 text-regular text-grey">Rent an appartement</p>
+                                        </div>
+                                    </div>
+                                    <input onclick="twoFunction()" class="radio-btn" type="radio" id="dewey" name="drone" value="dewey">
+
+                                </div>
+                            </fieldset>
+
+                            <script>    
+
+                                function oneFunction() {
+                                    var element = document.getElementById("top-radio");
+                                    element.classList.add("radio-active");
+
+                                    var element = document.getElementById("bottom-radio");
+                                    element.classList.remove("radio-active");
+
+                                    var element = document.getElementById("svg-top-color");
+                                    element.classList.add("svg-orange");
+
+                                    var element = document.getElementById("svg-bottom-color");
+                                    element.classList.remove("svg-orange");
+
+                                }
+
+                                function twoFunction() {
+                                    var element = document.getElementById("bottom-radio");
+                                    element.classList.add("radio-active");
+
+                                    var element = document.getElementById("top-radio");
+                                    element.classList.remove("radio-active");
+
+                                    var element = document.getElementById("svg-bottom-color");
+                                    element.classList.add("svg-orange");
+
+                                    var element = document.getElementById("svg-top-color");
+                                    element.classList.remove("svg-orange");
+                                }
+
+                            </script>
+
+
+                        </div>
+
+                        <a class="authentication-container-info__btn orange-btn mt-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#modal-reset">Continue</a>
+
+                        <div class="sign-up-bottom authentication-container-info__terms">
+                            <p class="text-regular">By clicking “Sign up as a landlord”, you agree to our <a
+                                    class="authentication-container-info__terms__terms text-orange" href="#">Terms of
+                                    Use</a> <br> and <a class="authentication-container-info__terms__policy text-orange"
+                                    href="#">Privacy Policy</a>.</p>
+                        </div>
+                        </div>
+                       
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+@@include('../components/footer.html')

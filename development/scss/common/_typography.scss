@@ -1,0 +1,262 @@
+// --------------------------------text size------------------------------
+
+.text-tiny {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.text-small {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.text-regular {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-large {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-title-large {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.text-tall-large {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+// ---------------------------------text color---------------------------------
+
+.text-blue {
+    color: $blue02;
+}
+
+.text-blue04 {
+    color: $text-blue04;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-grey {
+    color: $grey01;
+}
+
+.text-grey02 {
+    color: $grey02;
+}
+
+
+.text-grey03 {
+    color: $grey03;
+}
+
+.text-grey04 {
+    color: $grey04;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+// ----------------------------------button-----------------------------
+
+.orange-btn {
+    color: $white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background: $orange;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        color: $white;
+        opacity: 0.8;
+    }
+}
+
+.white-btn {
+    color: $orange;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background: $white;
+    border: 1px solid $grey03;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        color: $orange;
+        
+    }
+}
+
+.blue-btn {
+    background: $navy;
+    border-radius: 4px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.dashed-btn {
+    background: rgba(253, 123, 92, 0.12);
+    border: 1px dashed $orange;
+    border-radius: 4px;
+    color: $orange;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+
+    &:hover {
+       opacity: 0.8;
+    }
+
+    &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 2px;
+            background-color: $orange;
+            left: 46px;
+            top: 50%;
+        }
+
+        &::before {
+            transform: rotate(90deg) translateX(-1px);
+        }
+
+        &::after {
+            transform: translateY(-50%);
+        }
+}
+
+.orange-border-btn {
+    background: rgba(253, 123, 92, 0.08);
+    border: 1px solid $orange;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $orange;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        color: $white;
+        background-color: $orange;
+    }
+}
+
+.underline-btn {
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    border: none;
+    background: none;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        color: $orange;
+    }
+
+}
+
+.arrow-bottom {
+    border-bottom: 2px solid $grey01;
+    border-left: 2px solid $grey01;
+    height: 9px;
+    width: 9px;
+    cursor: pointer;
+    transform: rotate(315deg);
+}
+
+.accordion-border {
+    position: relative;
+    transition: all .4s ease-in-out;
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        background-color: $background-gray;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+.decline__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: $white;
+    border: 1px solid $grey03;
+    border-radius: 8px;
+    padding: 13px 24px 13px 52px;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background-color: $orange;
+        left: 25px;
+        top: 50%;
+    }
+
+    &::after {
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        color: $orange;
+    }
+
+}
+

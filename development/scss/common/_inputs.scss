@@ -1,0 +1,229 @@
+.input-style {
+    padding: 13px 16px;
+    border: 1px solid $grey03;
+    border-radius: 8px;
+    background: $white;
+    outline-offset: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey05;
+    }
+
+    &:focus-visible {
+        outline: none;
+        border: 1px solid $orange;
+    }
+}
+
+.list-right-input {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: calc(100% - 2px);
+    margin: 1px 1px;
+    padding: 14px 14px 11px 11px;
+    background: $grey02;
+    border-left: 1px solid $grey03;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.list-left-input {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: calc(100% - 2px);
+    margin: 1px 1px;
+    padding: 14px 18px 11px 18px;
+    background: $grey02;
+    border-right: 1px solid $grey03;
+    border-radius: 8px 0px 0px 8px;
+}
+
+input:focus~.list-right-input {
+    border-left: 1px solid $orange;
+}
+
+input:focus~.list-left-input {
+    border-right: 1px solid $orange;
+}
+
+input[type="date"] {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $grey05;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        z-index: 50;
+        width: 18px;
+        height: 20px;
+        position: absolute;
+        right: 14px;
+
+    }
+}
+
+.input-chackbox {
+    input[type="checkbox"] {
+        visibility: hidden;
+
+    }
+
+    .checkboxOverride {
+        position: relative;
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .checkboxOverride input[type="checkbox"]:checked+label:after {
+        opacity: 1;
+        background-color: $navy;
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .checkboxOverride label {
+        background: none repeat scroll 0 0 #ffffff;
+        cursor: pointer;
+        height: 18px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 260px;
+        padding-left: 30px;
+        font-size: 14px;
+        line-height: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #E0E2E7;
+            border-radius: 4px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-40%);
+
+        }
+    }
+
+    .checkboxOverride label:after {
+        content: '';
+        position: absolute;
+        background-image: url(../../img/vector.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        opacity: 0;
+        left: 0;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+}
+
+.custom-file-input {
+    display: none;
+
+    &__trigger {
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.input__radio {
+    position: relative;
+
+    &__btn {
+        border: 1px solid #E0E2E7;
+        border-radius: 8px;
+        padding: 13px 23px;
+        transition: all .2s ease-in-out;
+
+        &__info {
+            margin-left: 16px;
+
+            &__title {
+                font-weight: 600;
+            }
+        }
+    }
+
+    input[type=radio] {
+        width: 60px;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .radio-active {
+        background: rgba(253, 123, 92, 0.04);
+        border: 1px solid #FD7B5C;
+        box-shadow: 0px 0px 0px 3px rgba(253, 123, 92, 0.2);
+    }
+
+    .svg-orange path {
+        fill: $orange !important;
+    }
+
+    .radio-btn {
+        cursor: pointer;
+    }
+}
+
+.switch-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 46px;
+    height: 28px;
+    background-color: #ddd;
+    border-radius: 25px;
+    transition: background .6s;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        transition: left .3s;
+    }
+
+    &:checked {
+        background: $navy;
+
+        &::after {
+            left: 70%;
+        }
+    }
+}
+
+.custom-calendar {
+    position: absolute;
+    right: 14px;
+    top: 37px;
+}

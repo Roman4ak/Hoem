@@ -1,0 +1,755 @@
+@@include('../components/header.html')
+
+<div class="property-page">
+    @@include('../components/property-header.html')
+
+    <main>
+        <div class="property-review">
+            <div class="container">
+                <div class="property-list__row row">
+                    <div
+                        class="col-lg-6 offset-lg-1 property-page__title-section justify-content-center d-flex flex-column flex-align-center">
+                        <h1 class="text-start my-0 fw-bold">Review & Share</h1>
+                        <p class="text-regular text-grey text-start mt-2 mb-0 mt-2">Amet minim mollit non deserunt
+                            ullamco est sit aliqua dolor do amet sint.</p>
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1">
+                        <section class="property-review__location">
+                            <div class="property-review__title d-flex justify-content-between mb-020">
+                                <h3 class="fw-bold property-review__title__title">DAZZLING CHALET Great Royal Location
+                                </h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#modal-property">Edit</a>
+
+                                <div class="modal fade" id="modal-property" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content property-modal__content">
+                                            <div class="modal-header property-modal__header">
+                                                <div class="property-modal__title fw-bold ">Select amenities</div>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="property-modal__body d-flex align-items-center flex-column">
+
+                                                <div class="property-modal__body__item mb-4 w-100">
+                                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                                        <div class="text-large fw-semibold">Property amenities (24)</div>
+                                                        <div class="property-modal__body__item__line"></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <ul class="property-modal__body__item__list ps-0">
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Storage"
+                                                                                id="Storage" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Storage">Storage</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Cabana"
+                                                                                id="Cabana" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Cabana">Cabana</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Lounge"
+                                                                                id="Lounge" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Lounge">Lounge</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="col-4">
+                                                            <ul class="property-modal__body__item__list ps-0">
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Yard" id="Yard"
+                                                                                value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Yard">Yard</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Pool" id="Pool"
+                                                                                value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Pool">Pool</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Movie Theatre"
+                                                                                id="Movie_Theatre" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Movie_Theatre">Movie
+                                                                                Theatre</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <ul class="property-modal__body__item__list ps-0">
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Tennis court"
+                                                                                id="Tennis_court" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Tennis_court">Tennis court</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Playground"
+                                                                                id="Playground" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Playground">Playground</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Concierge"
+                                                                                id="Concierge" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Concierge">Concierge</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="property-modal__body__item mb-4 w-100">
+                                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                                        <div class="text-large fw-semibold">Property amenities (24)</div>
+                                                        <div class="property-modal__body__item__line"></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <ul class="property-modal__body__item__list ps-0">
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Boardroom"
+                                                                                id="Boardroom" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Boardroom">Boardroom
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Sauna"
+                                                                                id="Sauna" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Sauna">Sauna</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Whirlpool"
+                                                                                id="Whirlpool" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Whirlpool">Whirlpool</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <ul class="property-modal__body__item__list ps-0">
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Parking"
+                                                                                id="Parking" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Parking">Parking</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Fireplace"
+                                                                                id="Fireplace" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Fireplace">Fireplace</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Balcony"
+                                                                                id="Balcony" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Balcony">Balcony</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <ul class="property-modal__body__item__list ps-0">
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Deck" id="Deck"
+                                                                                value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Deck">Deck</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Other"
+                                                                                id="Other" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Other">Other</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div
+                                                                        class="input-chackbox d-flex align-items-center">
+                                                                        <div class="checkboxOverride d-flex">
+                                                                            <input type="checkbox" name="Penthouse"
+                                                                                id="Penthouse" value="1">
+                                                                            <label class="nput-chackbox__label"
+                                                                                for="Penthouse">Penthouse</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                class="property-modal__footer d-flex align-items-center w-100 justify-content-end">
+                                                <button class="underline-btn me-4">Cancel</button>
+                                                <button class="orange-btn py-012 px-032">Save</button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-item-center mb-020">
+                                <div class="property-review__location__unit text-large fw-semibold me-3">Unit #1</div>
+                                <div class="text-title-large fw-bold">$2,100 <span
+                                        class="text-large text-grey fw-400">/month</span> </div>
+                            </div>
+
+                            <a class="text-black text-large fw-semibold d-flex align-item-center mb-012" href="#"><svg
+                                    class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.42 4.33C15.0005 4.91038 15.4611 5.59945 15.7753 6.35784C16.0895 7.11624 16.2512 7.9291 16.2512 8.75C16.2512 9.5709 16.0895 10.3838 15.7753 11.1421C15.4611 11.9005 15.0005 12.5896 14.42 13.17L10 17.5875L5.58 13.1687C4.99956 12.5883 4.53913 11.8992 4.225 11.1408C3.91086 10.3824 3.74918 9.56962 3.74918 8.74875C3.74918 7.92788 3.91086 7.11505 4.225 6.35666C4.53913 5.59828 4.99956 4.90919 5.58 4.32875C6.16045 3.7483 6.84953 3.28787 7.60792 2.97374C8.3663 2.65961 9.17913 2.49792 10 2.49792C10.8209 2.49792 11.6337 2.65961 12.3921 2.97374C13.1505 3.28787 13.8396 3.7483 14.42 4.32875V4.33ZM15.745 14.495C16.8814 13.3587 17.6553 11.911 17.9688 10.3349C18.2824 8.75876 18.1215 7.12506 17.5066 5.64037C16.8916 4.15568 15.8502 2.88669 14.5141 1.99387C13.1779 1.10105 11.607 0.624512 10 0.624512C8.393 0.624512 6.82209 1.10105 5.48592 1.99387C4.14976 2.88669 3.10836 4.15568 2.49342 5.64037C1.87847 7.12506 1.71761 8.75876 2.03117 10.3349C2.34473 11.911 3.11863 13.3587 4.255 14.495L8.67375 18.915C8.84788 19.0892 9.05463 19.2275 9.28219 19.3218C9.50976 19.4161 9.75367 19.4646 10 19.4646C10.2463 19.4646 10.4902 19.4161 10.7178 19.3218C10.9454 19.2275 11.1521 19.0892 11.3263 18.915L15.745 14.495ZM10 11.25C10.663 11.25 11.2989 10.9866 11.7678 10.5178C12.2366 10.0489 12.5 9.41304 12.5 8.75C12.5 8.08696 12.2366 7.45107 11.7678 6.98223C11.2989 6.51339 10.663 6.25 10 6.25C9.33696 6.25 8.70108 6.51339 8.23224 6.98223C7.7634 7.45107 7.5 8.08696 7.5 8.75C7.5 9.41304 7.7634 10.0489 8.23224 10.5178C8.70108 10.9866 9.33696 11.25 10 11.25Z"
+                                        fill="#888FA2" />
+                                </svg>C2464 Royal Ln. Mesa, New Jersey 45463</a>
+
+                            <div class="d-flex align-item-center mb-032">
+                                <div class="property-review__location__beds text-large">4 beds<span
+                                        class="point mx-2"><svg width="3" height="4" viewBox="0 0 3 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="1.5" cy="2" r="1.5" fill="#111315" />
+                                        </svg></span></div>
+                                <div class="property-review__location__bath text-large">2 full bath<span
+                                        class="point mx-2"><svg width="3" height="4" viewBox="0 0 3 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="1.5" cy="2" r="1.5" fill="#111315" />
+                                        </svg></span></div>
+                                <div class="property-review__location__sq-ft text-large">2,100 sq ft</div>
+                            </div>
+
+                            <div class="property-review__location__text text-large">
+                                <p>Now Open for Summer 2022 | Create wonderful Tahoe memories at The Dazzling Chalet in
+                                    fabulous West Shore location. The Dazzling Chalet is located near cafes, markets,
+                                    paddle boarding, as well as hiking & biking trails - just 1 block up from the Lake!
+                                    This Architect<span id="dots">...</span><span id="property-more">erisque enim ligula
+                                        venenatis dolor. Donec vitae dui eget
+                                        tellus
+                                        gravida
+                                        venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                                        nibh tempor porta.</span></p>
+
+                                <button class="property-review__show text-green text-decoration-underline"
+                                    onclick="seeMoreFunction()" id="propertyBtn">Show more →</button>
+                            </div>
+
+                            <script>
+                                function seeMoreFunction() {
+                                    var dots = document.getElementById("dots");
+                                    var moreText = document.getElementById("property-more");
+                                    var btnText = document.getElementById("propertyBtn");
+
+                                    if (dots.style.display === "none") {
+                                        dots.style.display = "inline";
+                                        btnText.innerHTML = "Show more →";
+                                        moreText.style.display = "none";
+                                    } else {
+                                        dots.style.display = "none";
+                                        btnText.innerHTML = "Show less →";
+                                        moreText.style.display = "inline";
+                                    }
+                                }
+                            </script>
+
+                        </section>
+
+                        <section class="property-review__features">
+                            <div class="property-review__title d-flex justify-content-between mb-3">
+                                <h3 class="fw-bold text-title-large">Features & Amenitites</h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#">Edit</a>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 mb-4">
+                                    <div class="mb-012 text-large fw-semibold">Features (4)</div>
+                                    <ul class="property-review__features__list ps-4 mb-0">
+                                        <li>Air Conditioning</li>
+                                        <li>Fireplace</li>
+                                        <li>Storage Units</li>
+                                        <li>Security System</li>
+                                    </ul>
+                                    <ul id="features-more" class="property-review__features__list ps-4">
+                                        <li>Air Conditioning</li>
+                                        <li>Fireplace</li>
+                                        <li>Storage Units</li>
+                                        <li>Security System</li>
+                                    </ul>
+                                    <button class="property-review__show text-green text-decoration-underline"
+                                        onclick="FeaturesMoreFunction()" id="featuresBtn">Show more →</button>
+
+                                    <script>
+                                        function FeaturesMoreFunction() {
+                                            var dots = document.getElementById("dots");
+                                            var moreText = document.getElementById("features-more");
+                                            var btnText = document.getElementById("featuresBtn");
+
+                                            if (dots.style.display === "none") {
+                                                dots.style.display = "inline";
+                                                btnText.innerHTML = "Show more →";
+                                                moreText.style.display = "none";
+                                            } else {
+                                                dots.style.display = "none";
+                                                btnText.innerHTML = "Show less →";
+                                                moreText.style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+
+                                <div class="col-6 mb-4">
+                                    <div class="mb-012 text-large fw-semibold">Kithcens (12)</div>
+                                    <ul class="property-review__features__list ps-4 mb-0">
+                                        <li>Dishwasher</li>
+                                        <li>Disposal</li>
+                                        <li>Microwave</li>
+                                        <li>Granite</li>
+                                    </ul>
+                                    <ul id="kithcens-more" class="property-review__features__list ps-4">
+                                        <li>Dishwasher</li>
+                                        <li>Disposal</li>
+                                        <li>Microwave</li>
+                                        <li>Granite Countertops</li>
+                                    </ul>
+                                    <button class="property-review__show text-green text-decoration-underline"
+                                        onclick="KithcensMoreFunction()" id="kithcensBtn">Show more →</button>
+
+                                    <script>
+                                        function KithcensMoreFunction() {
+                                            var dots = document.getElementById("dots");
+                                            var moreText = document.getElementById("kithcens-more");
+                                            var btnText = document.getElementById("kithcensBtn");
+
+                                            if (dots.style.display === "none") {
+                                                dots.style.display = "inline";
+                                                btnText.innerHTML = "Show more →";
+                                                moreText.style.display = "none";
+                                            } else {
+                                                dots.style.display = "none";
+                                                btnText.innerHTML = "Show less →";
+                                                moreText.style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mb-012 text-large fw-semibold">Outdoor Spaces (10)</div>
+                                    <ul class="property-review__features__list ps-4 mb-0">
+                                        <li>Yard</li>
+                                        <li>Grill</li>
+                                        <li>Greenhouse</li>
+                                        <li>Lawn</li>
+                                    </ul>
+                                    <ul id="outdoor-more" class="property-review__features__list ps-4">
+                                        <li>Yard</li>
+                                        <li>Grill</li>
+                                        <li>Greenhouse</li>
+                                        <li>Lawn</li>
+                                    </ul>
+
+                                    <button class="property-review__show text-green text-decoration-underline"
+                                        onclick="OutdoorMoreFunction()" id="outdoorBtn">Show more →</button>
+
+                                    <script>
+                                        function OutdoorMoreFunction() {
+                                            var dots = document.getElementById("dots");
+                                            var moreText = document.getElementById("outdoor-more");
+                                            var btnText = document.getElementById("outdoorBtn");
+
+                                            if (dots.style.display === "none") {
+                                                dots.style.display = "inline";
+                                                btnText.innerHTML = "Show more →";
+                                                moreText.style.display = "none";
+                                            } else {
+                                                dots.style.display = "none";
+                                                btnText.innerHTML = "Show less →";
+                                                moreText.style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mb-012 text-large fw-semibold">Living Spaces (6)</div>
+                                    <ul class="property-review__features__list ps-4 mb-0">
+                                        <li>Bay Window</li>
+                                        <li>Tile Floors</li>
+                                        <li>Hardwood Floors</li>
+                                        <li>Sunroom</li>
+                                    </ul>
+                                    <ul id="living-more" class="property-review__features__list ps-4">
+                                        <li>Bay Window</li>
+                                        <li>Tile Floors</li>
+                                        <li>Hardwood Floors</li>
+                                        <li>Sunroom</li>
+                                    </ul>
+                                    <button class="property-review__show text-green text-decoration-underline"
+                                        onclick="LivingMoreFunction()" id="livingBtn">Show more →</button>
+
+                                    <script>
+                                        function LivingMoreFunction() {
+                                            var dots = document.getElementById("dots");
+                                            var moreText = document.getElementById("living-more");
+                                            var btnText = document.getElementById("livingBtn");
+
+                                            if (dots.style.display === "none") {
+                                                dots.style.display = "inline";
+                                                btnText.innerHTML = "Show more →";
+                                                moreText.style.display = "none";
+                                            } else {
+                                                dots.style.display = "none";
+                                                btnText.innerHTML = "Show less →";
+                                                moreText.style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section class="property-review__photos">
+                            <div class="property-review__title d-flex justify-content-between mb-3">
+                                <h3 class="fw-bold text-title-large">Photos & Videos</h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#">Edit</a>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4 mb-012 property-review__photos__img">
+                                    <div class="position-relative">
+                                        <div class="property-review__photos__delete"></div>
+                                        <img class="w-100 rounded-2" src="../img/image 57.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="col-4 mb-012 property-review__photos__img">
+                                    <div class="position-relative">
+                                        <div class="property-review__photos__delete"></div>
+                                        <img class="w-100 rounded-2" src="../img/image 58.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-4 mb-012 property-review__photos__img">
+                                    <div class="position-relative">
+                                        <div class="property-review__photos__delete"></div>
+                                        <img class="w-100 rounded-2" src="../img/image 59.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-4 property-review__photos__img">
+                                    <div class="position-relative">
+                                        <div class="property-review__photos__delete"></div>
+                                        <img class="w-100 rounded-2" src="../img/image 60.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-4 property-review__photos__img">
+                                    <div class="position-relative">
+                                        <div class="property-review__photos__delete"></div>
+                                        <img class="w-100 rounded-2" src="../img/image 61.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-4 property-review__photos__img">
+                                    <button onclick="addFotoFunction()"
+                                        class="property-review__photos__btn dashed-btn position-relative">Add
+                                        More</button>
+                                    <input class="d-none" id="addFoto" type="file">
+
+                                    <script>
+                                        function addFotoFunction() {
+                                            document.getElementById("addFoto").click();
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section class="property-review__terms">
+                            <div class="property-review__title d-flex justify-content-between mb-3">
+                                <h3 class="fw-bold text-title-large">Rental Terms</h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#">Edit</a>
+                            </div>
+
+                            <div class="row mb-032">
+                                <div class="col-6 mb-4">
+                                    <div class="text-regular text-grey mb-2">Move-in Details</div>
+                                    <strong class="text-large fw-semibold d-flex align-item-center"><svg class="me-2"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H7V2H9V4H15V2H17V4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM15 16H9V14H15V16Z"
+                                                fill="#888FA2" />
+                                        </svg>12 / 09 / 2022</strong>
+                                </div>
+
+                                <div class="col-6 mb-4">
+                                    <div class="text-regular text-grey mb-2">Lease Duration in months</div>
+                                    <strong class="text-large fw-semibold">12 months</strong>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="text-regular text-grey mb-2">Pet Policy</div>
+                                    <strong class="text-large fw-semibold d-flex align-item-center"><svg class="me-2"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.99683 5.22238L7 5.18268V5.14286C7 4.57884 7.15061 3.98047 7.40925 3.55649C7.65821 3.14837 7.93188 3 8.22222 3C8.66732 3 9.17866 3.31724 9.63861 4.09723C10.0855 4.85512 10.3333 5.82275 10.3333 6.57143C10.3333 7.13544 10.1827 7.73381 9.92408 8.1578C9.67512 8.56592 9.40145 8.71429 9.11111 8.71429C8.56413 8.71429 8.0228 8.36184 7.58361 7.61705C7.14606 6.87505 6.93989 5.93622 6.99683 5.22238ZM16.8519 5.28571C16.8519 5.9519 16.61 6.88199 16.1616 7.62743C15.7008 8.39355 15.1889 8.71429 14.7407 8.71429C14.4504 8.71429 14.1767 8.56592 13.9278 8.1578C13.6691 7.73381 13.5185 7.13544 13.5185 6.57143C13.5185 5.90525 13.7604 4.97515 14.2088 4.22971C14.6696 3.46359 15.1815 3.14286 15.6296 3.14286C15.92 3.14286 16.1936 3.29123 16.4426 3.69934C16.7012 4.12333 16.8519 4.7217 16.8519 5.28571ZM17.8148 12.7143C17.8148 11.9932 18.0841 11.075 18.5583 10.3521C19.0419 9.61513 19.5898 9.28571 20.0741 9.28571C20.2609 9.28571 20.4635 9.37534 20.6589 9.65797C20.8625 9.95242 21 10.391 21 10.8571C21 11.5782 20.7308 12.4964 20.2565 13.2193C19.7729 13.9563 19.225 14.2857 18.7407 14.2857C18.4537 14.2857 18.2694 14.1717 18.1151 13.9354C17.9354 13.6603 17.8148 13.2238 17.8148 12.7143ZM3.92593 9.28571C4.32365 9.28571 4.87563 9.59857 5.39424 10.3643C5.8932 11.1011 6.18519 12.0162 6.18519 12.7143C6.18519 13.2238 6.06457 13.6603 5.88491 13.9354C5.73064 14.1717 5.54635 14.2857 5.25926 14.2857C4.86154 14.2857 4.30955 13.9729 3.79095 13.2071C3.29199 12.4704 3 11.5552 3 10.8571C3 10.3476 3.12062 9.91116 3.30028 9.63601C3.45454 9.39975 3.63884 9.28571 3.92593 9.28571ZM5.96296 20.1429C5.96296 18.9262 6.78127 17.2278 8.07946 15.7729C8.71058 15.0657 9.41321 14.4653 10.1046 14.0482C10.8058 13.6251 11.431 13.4286 11.9259 13.4286C12.4209 13.4286 13.046 13.6251 13.7473 14.0482C14.4386 14.4653 15.1413 15.0657 15.7724 15.7729C17.0706 17.2278 17.8889 18.9262 17.8889 20.1429C17.8889 20.3916 17.8373 20.5247 17.7967 20.5948C17.7569 20.6635 17.6958 20.7268 17.5879 20.7868C17.3362 20.9269 16.9192 21 16.3704 21C15.7735 21 15.2027 20.7923 14.4605 20.4987C14.4265 20.4853 14.392 20.4715 14.3569 20.4576C13.6942 20.1944 12.8451 19.8571 11.9259 19.8571C10.9426 19.8571 10.0635 20.189 9.35654 20.4558C9.32362 20.4683 9.29108 20.4805 9.25892 20.4926C8.48591 20.7835 7.8682 21 7.18519 21C6.68387 21 6.36894 20.9042 6.20381 20.7884C6.10146 20.7166 5.96296 20.5807 5.96296 20.1429Z"
+                                                stroke="#888FA2" stroke-width="2" />
+                                        </svg>Pets allowed, cats & dogs</strong>
+                                </div>
+                            </div>
+
+                            <div class="property-review__title d-flex justify-content-between mb-3">
+                                <h3 class="fw-bold text-title-large">Applicant Requirements</h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#">Edit</a>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-6 mb-3">
+                                    <div class="text-regular text-grey mb-2">Minimum Credit score</div>
+                                    <strong class="text-large fw-semibold d-flex align-item-center"><svg class="me-2"
+                                            width="22" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5659 3.09205C10.6979 2.82421 10.9023 2.59869 11.1559 2.44099C11.4096 2.28329 11.7022 2.19971 12.0009 2.19971C12.2995 2.19971 12.5922 2.28329 12.8458 2.44099C13.0994 2.59869 13.3038 2.82421 13.4359 3.09205L15.6599 7.59605L20.6319 8.31805C20.9274 8.36097 21.2051 8.48576 21.4334 8.67831C21.6617 8.87085 21.8316 9.12346 21.9238 9.40754C22.016 9.69162 22.0268 9.99584 21.9551 10.2858C21.8834 10.5757 21.7319 10.8397 21.5179 11.0481L17.9199 14.5541L18.7699 19.5061C18.8204 19.8002 18.7877 20.1026 18.6754 20.3792C18.5631 20.6557 18.3757 20.8953 18.1343 21.0709C17.893 21.2465 17.6073 21.3511 17.3097 21.3728C17.012 21.3946 16.7142 21.3327 16.4499 21.1941L11.9999 18.8541L7.55186 21.1941C7.28754 21.3327 6.98972 21.3946 6.69205 21.3728C6.39438 21.3511 6.10874 21.2465 5.8674 21.0709C5.62605 20.8953 5.43864 20.6557 5.32633 20.3792C5.21402 20.1026 5.1813 19.8002 5.23186 19.5061L6.07986 14.5541L2.48186 11.0481C2.26779 10.8396 2.11636 10.5754 2.04472 10.2853C1.97308 9.99525 1.98409 9.69092 2.07652 9.40678C2.16894 9.12265 2.33907 8.87007 2.56765 8.67765C2.79623 8.48523 3.07413 8.36066 3.36986 8.31805L8.34186 7.59805L10.5639 3.09205H10.5659ZM12.0019 4.70405L10.0419 8.67005C9.9274 8.90247 9.75821 9.10362 9.54884 9.25621C9.33946 9.4088 9.09617 9.50826 8.83986 9.54605L4.45986 10.1821L7.62986 13.2701C7.81556 13.4511 7.95446 13.6746 8.0346 13.9213C8.11473 14.168 8.1337 14.4304 8.08986 14.6861L7.34186 19.0461L11.2579 16.9861C11.4873 16.8655 11.7427 16.8026 12.0019 16.8026C12.2611 16.8026 12.5164 16.8655 12.7459 16.9861L16.6619 19.0461L15.9139 14.6861C15.87 14.4304 15.889 14.168 15.9691 13.9213C16.0493 13.6746 16.1882 13.4511 16.3739 13.2701L19.5419 10.1801L15.1639 9.54405C14.9072 9.50657 14.6635 9.40724 14.4538 9.25464C14.244 9.10204 14.0745 8.90072 13.9599 8.66805L11.9999 4.70405H12.0019Z"
+                                                fill="#888FA2" />
+                                        </svg>680 (Good)</strong>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="text-regular text-grey mb-2">Company Name</div>
+                                    <strong class="text-large fw-semibold d-flex align-item-center"><svg class="me-2"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 12C11.4067 12 10.8266 11.8241 10.3333 11.4944C9.83994 11.1648 9.45542 10.6962 9.22836 10.1481C9.0013 9.59987 8.94189 8.99667 9.05764 8.41473C9.1734 7.83279 9.45912 7.29824 9.87868 6.87868C10.2982 6.45912 10.8328 6.1734 11.4147 6.05764C11.9967 5.94189 12.5999 6.0013 13.1481 6.22836C13.6962 6.45542 14.1648 6.83994 14.4944 7.33329C14.8241 7.82664 15 8.40666 15 9C15 9.79565 14.6839 10.5587 14.1213 11.1213C13.5587 11.6839 12.7956 12 12 12ZM12 8C11.8022 8 11.6089 8.05865 11.4444 8.16853C11.28 8.27841 11.1518 8.43459 11.0761 8.61732C11.0004 8.80004 10.9806 9.00111 11.0192 9.19509C11.0578 9.38907 11.153 9.56725 11.2929 9.70711C11.4327 9.84696 11.6109 9.9422 11.8049 9.98079C11.9989 10.0194 12.2 9.99957 12.3827 9.92388C12.5654 9.84819 12.7216 9.72002 12.8315 9.55557C12.9414 9.39112 13 9.19778 13 9C13 8.73478 12.8946 8.48043 12.7071 8.29289C12.5196 8.10536 12.2652 8 12 8ZM11.29 14.29C11.3851 14.199 11.4972 14.1276 11.62 14.08C11.7397 14.0271 11.8691 13.9998 12 13.9998C12.1309 13.9998 12.2603 14.0271 12.38 14.08C12.5028 14.1276 12.6149 14.199 12.71 14.29L15 16.54C15.1936 16.7336 15.3024 16.9962 15.3024 17.27C15.3024 17.5438 15.1936 17.8064 15 18C14.8064 18.1936 14.5438 18.3024 14.27 18.3024C13.9962 18.3024 13.7336 18.1936 13.54 18L13 17.41V21C13 21.2652 12.8946 21.5196 12.7071 21.7071C12.5196 21.8946 12.2652 22 12 22C11.7348 22 11.4804 21.8946 11.2929 21.7071C11.1054 21.5196 11 21.2652 11 21V17.41L10.46 18C10.2664 18.1936 10.0038 18.3024 9.73 18.3024C9.4562 18.3024 9.19361 18.1936 9 18C8.80639 17.8064 8.69762 17.5438 8.69762 17.27C8.69762 16.9962 8.80639 16.7336 9 16.54L11.29 14.29ZM19 9C19 9.19778 18.9414 9.39112 18.8315 9.55557C18.7216 9.72002 18.5654 9.84819 18.3827 9.92388C18.2 9.99957 17.9989 10.0194 17.8049 9.98079C17.6109 9.9422 17.4327 9.84696 17.2929 9.70711C17.153 9.56725 17.0578 9.38907 17.0192 9.19509C16.9806 9.00111 17.0004 8.80004 17.0761 8.61732C17.1518 8.43459 17.28 8.27841 17.4444 8.16853C17.6089 8.05865 17.8022 8 18 8C18.2652 8 18.5196 8.10536 18.7071 8.29289C18.8946 8.48043 19 8.73478 19 9ZM20 16H17C16.7348 16 16.4804 15.8946 16.2929 15.7071C16.1054 15.5196 16 15.2652 16 15C16 14.7348 16.1054 14.4804 16.2929 14.2929C16.4804 14.1054 16.7348 14 17 14H20C20.2652 14 20.5196 13.8946 20.7071 13.7071C20.8946 13.5196 21 13.2652 21 13V5C21 4.73478 20.8946 4.48043 20.7071 4.29289C20.5196 4.10536 20.2652 4 20 4H4C3.73478 4 3.48043 4.10536 3.29289 4.29289C3.10536 4.48043 3 4.73478 3 5V13C3 13.2652 3.10536 13.5196 3.29289 13.7071C3.48043 13.8946 3.73478 14 4 14H7C7.26522 14 7.51957 14.1054 7.70711 14.2929C7.89464 14.4804 8 14.7348 8 15C8 15.2652 7.89464 15.5196 7.70711 15.7071C7.51957 15.8946 7.26522 16 7 16H4C3.20435 16 2.44129 15.6839 1.87868 15.1213C1.31607 14.5587 1 13.7956 1 13V5C1 4.20435 1.31607 3.44129 1.87868 2.87868C2.44129 2.31607 3.20435 2 4 2H20C20.7956 2 21.5587 2.31607 22.1213 2.87868C22.6839 3.44129 23 4.20435 23 5V13C23 13.7956 22.6839 14.5587 22.1213 15.1213C21.5587 15.6839 20.7956 16 20 16ZM5 9C5 8.80222 5.05865 8.60888 5.16853 8.44443C5.27841 8.27998 5.43459 8.15181 5.61732 8.07612C5.80004 8.00043 6.00111 7.98063 6.19509 8.01921C6.38907 8.0578 6.56725 8.15304 6.70711 8.29289C6.84696 8.43275 6.9422 8.61093 6.98079 8.80491C7.01937 8.99889 6.99957 9.19996 6.92388 9.38268C6.84819 9.56541 6.72002 9.72159 6.55557 9.83147C6.39112 9.94135 6.19778 10 6 10C5.73478 10 5.48043 9.89464 5.29289 9.70711C5.10536 9.51957 5 9.26522 5 9Z"
+                                                fill="#888FA2" />
+                                        </svg>Landlord by Arc.co</strong>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="property-review__terms__terms">Credit Report</div>
+                                    <div class="property-review__terms__terms">Background Check</div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="property-review__map">
+                            <div class="property-review__title d-flex justify-content-between mb-3">
+                                <h3 class="fw-bold text-title-large">Specipic location</h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#">Edit</a>
+                            </div>
+                            <div class="">
+                                <img class="w-100" src="../img/Screen Shot 2022-06-07 at 08.16 1.png" alt="">
+                            </div>
+                        </section>
+
+                        <section class="property-review__information">
+                            <div class="property-review__title d-flex justify-content-between mb-3">
+                                <h3 class="fw-bold text-title-large">Contact Information</h3>
+                                <a class="fw-semibold text-large property-review__edit" href="#">Edit</a>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 mb-4">
+                                    <div class="text-regular text-grey mb-2">Contact Name</div>
+                                    <strong class="text-large fw-semibold">William Jack</strong>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="text-regular text-grey mb-2">Company Name</div>
+                                    <div class="d-flex align-item-center">
+                                        <img class="me-2" src="../img/Frame 13950.png" alt="">
+                                        <strong class="text-large fw-semibold d-flex align-item-center">680 (Good)</strong>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-regular text-grey mb-2">Company Name</div>
+                                    <strong class="text-large fw-semibold d-flex align-item-center"><svg class="me-2"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4 21.9996C13.3173 21.9943 9.40331 20.3701 6.5164 17.4832C3.62949 14.5963 2.00529 10.6823 2 6.59963C2 5.37963 2.48464 4.2096 3.34731 3.34693C4.20998 2.48427 5.38 1.99963 6.6 1.99963C6.85834 1.99766 7.11625 2.0211 7.37 2.06963C7.61531 2.10593 7.85647 2.16622 8.09 2.24963C8.25425 2.30726 8.40061 2.40676 8.51461 2.5383C8.62861 2.66984 8.7063 2.82885 8.74 2.99963L10.11 8.99963C10.1469 9.16249 10.1425 9.33201 10.0971 9.49271C10.0516 9.65341 9.96671 9.80018 9.85 9.91963C9.72 10.0596 9.71 10.0696 8.48 10.7096C9.46499 12.8705 11.1932 14.6058 13.35 15.5996C14 14.3596 14.01 14.3496 14.15 14.2196C14.2694 14.1029 14.4162 14.018 14.5769 13.9726C14.7376 13.9271 14.9071 13.9227 15.07 13.9596L21.07 15.3296C21.2353 15.368 21.3881 15.4478 21.5141 15.5615C21.64 15.6752 21.735 15.8191 21.79 15.9796C21.8744 16.217 21.938 16.4612 21.98 16.7096C22.0202 16.961 22.0403 17.2151 22.04 17.4696C22.0216 18.6844 21.5233 19.8426 20.654 20.6913C19.7847 21.54 18.6149 22.0103 17.4 21.9996ZM6.6 3.99963C5.91125 4.00226 5.25146 4.27703 4.76443 4.76406C4.27741 5.25108 4.00263 5.91087 4 6.59963C4.00265 10.1527 5.41528 13.5595 7.92769 16.0719C10.4401 18.5843 13.8469 19.997 17.4 19.9996C18.0888 19.997 18.7485 19.7222 19.2356 19.2352C19.7226 18.7482 19.9974 18.0884 20 17.3996V17.0696L15.36 15.9996L15.07 16.5496C14.62 17.4196 14.29 18.0496 13.45 17.7096C11.7929 17.1165 10.2887 16.1617 9.04673 14.9145C7.80477 13.6674 6.85622 12.1592 6.27 10.4996C5.91 9.71963 6.59 9.35963 7.45 8.90963L8 8.63963L6.93 3.99963H6.6Z"
+                                                fill="#888FA2" />
+                                        </svg>(415) 543 43 43</strong>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-regular text-grey mb-2">Company Name</div>
+                                    <strong class="text-large fw-semibold d-flex align-item-center"><svg class="me-2"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 4.00049H5C4.20435 4.00049 3.44129 4.31656 2.87868 4.87917C2.31607 5.44178 2 6.20484 2 7.00049V17.0005C2 17.7961 2.31607 18.5592 2.87868 19.1218C3.44129 19.6844 4.20435 20.0005 5 20.0005H19C19.7956 20.0005 20.5587 19.6844 21.1213 19.1218C21.6839 18.5592 22 17.7961 22 17.0005V7.00049C22 6.20484 21.6839 5.44178 21.1213 4.87917C20.5587 4.31656 19.7956 4.00049 19 4.00049ZM18.33 6.00049L12 10.7505L5.67 6.00049H18.33ZM19 18.0005H5C4.73478 18.0005 4.48043 17.8951 4.29289 17.7076C4.10536 17.5201 4 17.2657 4 17.0005V7.25049L11.4 12.8005C11.5731 12.9303 11.7836 13.0005 12 13.0005C12.2164 13.0005 12.4269 12.9303 12.6 12.8005L20 7.25049V17.0005C20 17.2657 19.8946 17.5201 19.7071 17.7076C19.5196 17.8951 19.2652 18.0005 19 18.0005Z"
+                                                fill="#888FA2" />
+                                        </svg>willJack@arc.com</strong>
+                                </div>
+                            </div>
+
+
+
+                        </section>
+
+                    </div>
+
+                    <div class="property-list__toc col-lg-4 justify-content-start mb-4 mb-lg-0">
+                        <div class="property-review__shere">
+                            <div
+                                class="property-review__shere__status d-flex align-item-center justify-content-between">
+                                <div class="text-large fw-semibold">Listing Status</div>
+                                <input class="switch-checkbox" type="checkbox">
+                            </div>
+
+                            <div class="property-review__shere__element">
+                                <h3 class="fw-bold text-title-large">Share your listing</h3>
+                                <p class="text-grey text-regular">Post your rental on social media, your website, or
+                                    anywhere else you want to advertise.</p>
+                                <div class="position-relative property-review__shere__link">
+                                    <input class="w-100 input-style property-review__shere__input"
+                                        placeholder="https://hoem.ca/apply/103456" type="text">
+                                    <button class="blue-btn property-review__shere__btn">Copy</button>
+                                </div>
+                            </div>
+                            <div class="property-review__shere__element">
+                                <h3 class="fw-bold text-title-large">Share an application link</h3>
+                                <p class="text-grey text-regular">To receive applications, send renters your apply link
+                                    directly.</p>
+                                <div class="position-relative property-review__shere__link">
+                                    <input class="w-100 input-style property-review__shere__input"
+                                        placeholder="https://hoem.ca/apply/103456" type="text">
+                                    <button class="blue-btn property-review__shere__btn">Copy</button>
+                                </div>
+                            </div>
+                            <div class="property-review__shere__element">
+                                <h3 class="fw-bold text-title-large">Share an application link</h3>
+                                <p class="text-grey text-regular mb-4">To receive applications, send renters your apply
+                                    link directly.</p>
+                                <a class="property-review__shere__contact text-large fw-semibold text-decoration-none"
+                                    href="#">Contact RE agent</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="property-footer d-flex px-2">
+        <div class="property-footer__line"></div>
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <a class="col-6 property-footer__cancel text-black text-large fw-semibold" href="#">Cancel</a>
+                <a class="col-6 property-footer__orange orange-btn" href="#">Next</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@@include('../components/footer.html')

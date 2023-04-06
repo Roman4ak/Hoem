@@ -1,0 +1,394 @@
+@@include('../components/header.html')
+
+<main class="property-page">
+    @@include('../modules/sidebar.html')
+
+
+    <section class="property-wrapper__section">
+        <div class="header d-flex align-items-center mb-4">
+            <header class="container-lg align-items-center px-4">
+                <div class="row">
+                    <span class="col-12 col-sm-12 col-lg-2 mb-4 mb-lg-0 header__title text-tall-large">Dashboard</span>
+
+                    <form class="col-12 col-sm-6 col-lg-6 mb-4 mb-sm-0" role="search">
+                        <input type="search" class="input-style header-search" placeholder="Search for anything here..."
+                            aria-label="Search">
+                        <button class="search__button d-flex justify-content-center">
+                            <img class="search__button__img" src="img/search.svg" alt="search">
+                        </button>
+                    </form>
+
+                    <div class="col-12 col-sm-6 col-lg-4 px-0 d-flex align-items-center justify-content-sm-end ps-3 ps-sm-0">
+                        <button class="header__plus d-flex justify-content-center align-items-center"></button>
+
+                        <button class="header__notification ms-012">
+                            <img class="header__notification__img" src="img/bell.svg" alt="notifications">
+                        </button>
+
+                        <div
+                            class="header__dropdown ms-012 pe-012 ps-2 d-flex justify-content-between align-items-center ">
+                            <div class="header__profile d-flex align-items-center">
+                                <img class="me-2" src="img/avatar.png" alt="avatar">
+                                <p class="text-regular mb-0">Jesicca</p>
+                            </div>
+                            <div class="header__arrow d-inline-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+        <div class="property-details">
+            <div class="container">
+
+                <div class="col-lg-10 offset-lg-1 ">
+                    <div class="d-flex flex-wrap align-item-center mb-4 ps-4 ps-sm-0">
+                        <div class="property-header__breadcrumbs__main fw-500 text-regular text-orange mb-3 mb-sm-0">PropertyList
+                        </div>
+                        <div class="property-header__breadcrumbs__other fw-500 text-regular text-orange mb-3 mb-sm-0">Incline 45
+                            Apartments</div>
+                        <div class="property-header__breadcrumbs__other fw-500 text-regular text-orange mb-3 mb-sm-0">Lease</div>
+                        <div class="fw-500 text-regular text-grey mb-3 mb-sm-0">Details</div>
+                    </div>
+
+                    <div class="property-details__header d-flex align-items-center  justify-content-sm-between mb-4">
+                        <div class="d-sm-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <div class="property-img-options me-3">
+                                <img class="property-img-options__img" src="../img/akar-icons_arrow-left.svg" alt="">
+                            </div>
+                            <h1 class="text-title-large text-black fw-bold mb-2 mb-sm-0 me-3">Incline 45 Apartments Lease</h1>
+                            </div>
+                            
+
+                            <div class="marker__grey-large me-auto ms-auto me-sm-0 ms-sm-0 mb-2 mb-sm-0">SIGNATURE PENDING</div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="text-regular text-grey me-3">Created on 30 June 2022</span>
+                            <div class="property-img-options me-3">
+                                <img class="property-img-options__img" src="../img/Vector (9).svg" alt="">
+                            </div>
+                            <div class="property-img-options me-3">
+                                <div class="property-add__item__info__options property-img-options__img"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-details__section">
+                        <div class="property-review__title mb-4">
+                            <h3 class="fw-bold text-title-large">Lease term & Rent info</h3>
+                        </div>
+
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <div class="flex-column mb-3 mb-sm-0">
+                                <p class="text-regular text-black mb-2 fw-bold">Lease start date</p>
+                                <div class="text-large d-flex align-items-center"><svg class="me-2" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H7V2H9V4H15V2H17V4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM15 16H9V14H15V16Z"
+                                            fill="#888FA2" />
+                                    </svg>12 / 09 / 2022 </div>
+                            </div>
+                            <div class="flex-column mb-3 mb-sm-0">
+                                <p class="text-regular text-black mb-2 fw-bold">Lease start date</p>
+                                <div class="text-large d-flex align-items-center"><svg class="me-2" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H7V2H9V4H15V2H17V4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM15 16H9V14H15V16Z"
+                                            fill="#888FA2" />
+                                    </svg>12 / 09 / 2023</div>
+                            </div>
+                            <div class="flex-column">
+                                <p class="text-regular text-black mb-2 fw-bold">Money rent amount</p>
+                                <div class="text-large d-flex align-items-center"><svg class="me-2" width="22"
+                                        height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 6C4.80222 6 4.60888 6.05865 4.44443 6.16853C4.27998 6.27841 4.15181 6.43459 4.07612 6.61732C4.00043 6.80004 3.98063 7.00111 4.01921 7.19509C4.0578 7.38907 4.15304 7.56725 4.29289 7.70711C4.43275 7.84696 4.61093 7.9422 4.80491 7.98079C4.99889 8.01937 5.19996 7.99957 5.38268 7.92388C5.56541 7.84819 5.72159 7.72002 5.83147 7.55557C5.94135 7.39112 6 7.19778 6 7C6 6.73478 5.89464 6.48043 5.70711 6.29289C5.51957 6.10536 5.26522 6 5 6ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM19 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V11C0 11.7956 0.31607 12.5587 0.87868 13.1213C1.44129 13.6839 2.20435 14 3 14H19C19.7956 14 20.5587 13.6839 21.1213 13.1213C21.6839 12.5587 22 11.7956 22 11V3C22 2.20435 21.6839 1.44129 21.1213 0.87868C20.5587 0.316071 19.7956 0 19 0ZM20 11C20 11.2652 19.8946 11.5196 19.7071 11.7071C19.5196 11.8946 19.2652 12 19 12H3C2.73478 12 2.48043 11.8946 2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V11ZM11 4C10.4067 4 9.82664 4.17595 9.33329 4.50559C8.83994 4.83524 8.45542 5.30377 8.22836 5.85195C8.0013 6.40013 7.94189 7.00333 8.05764 7.58527C8.1734 8.16721 8.45912 8.70176 8.87868 9.12132C9.29824 9.54088 9.83279 9.8266 10.4147 9.94236C10.9967 10.0581 11.5999 9.9987 12.1481 9.77164C12.6962 9.54458 13.1648 9.16006 13.4944 8.66671C13.8241 8.17336 14 7.59334 14 7C14 6.20435 13.6839 5.44129 13.1213 4.87868C12.5587 4.31607 11.7956 4 11 4ZM11 8C10.8022 8 10.6089 7.94135 10.4444 7.83147C10.28 7.72159 10.1518 7.56541 10.0761 7.38268C10.0004 7.19996 9.98063 6.99889 10.0192 6.80491C10.0578 6.61093 10.153 6.43275 10.2929 6.29289C10.4327 6.15304 10.6109 6.0578 10.8049 6.01921C10.9989 5.98063 11.2 6.00043 11.3827 6.07612C11.5654 6.15181 11.7216 6.27998 11.8315 6.44443C11.9414 6.60888 12 6.80222 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89464 11.2652 8 11 8Z"
+                                            fill="#888FA2" />
+                                    </svg>$2,000</div>
+                            </div>
+                        </div>
+
+                        <div class="flex-column">
+                            <p class="text-regular text-black mb-2 fw-bold">Money due day</p>
+                            <div class="text-large d-flex align-items-center"><svg class="me-2" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H7V2H9V4H15V2H17V4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM15 16H9V14H15V16Z"
+                                        fill="#888FA2" />
+                                </svg>1st of the month</div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="property-details__section">
+
+                        <div class="d-flex align-items-center mb-4">
+                            <h3 class="fw-bold text-title-large me-2">Automatic late fees</h3>
+                            <div class="property-send__marker">on</div>
+                        </div>
+
+                        <div class="d-sm-flex align-items-center property-details">
+                            <div class="flex-column property-details__col mb-3 mb-sm-0">
+                                <p class="text-regular fw-bold text-black mb-2">Late fee amount</p>
+                                <div class="text-large d-flex align-items-center"><svg class="me-2" width="22"
+                                        height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 6C4.80222 6 4.60888 6.05865 4.44443 6.16853C4.27998 6.27841 4.15181 6.43459 4.07612 6.61732C4.00043 6.80004 3.98063 7.00111 4.01921 7.19509C4.0578 7.38907 4.15304 7.56725 4.29289 7.70711C4.43275 7.84696 4.61093 7.9422 4.80491 7.98079C4.99889 8.01937 5.19996 7.99957 5.38268 7.92388C5.56541 7.84819 5.72159 7.72002 5.83147 7.55557C5.94135 7.39112 6 7.19778 6 7C6 6.73478 5.89464 6.48043 5.70711 6.29289C5.51957 6.10536 5.26522 6 5 6ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM19 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V11C0 11.7956 0.31607 12.5587 0.87868 13.1213C1.44129 13.6839 2.20435 14 3 14H19C19.7956 14 20.5587 13.6839 21.1213 13.1213C21.6839 12.5587 22 11.7956 22 11V3C22 2.20435 21.6839 1.44129 21.1213 0.87868C20.5587 0.316071 19.7956 0 19 0ZM20 11C20 11.2652 19.8946 11.5196 19.7071 11.7071C19.5196 11.8946 19.2652 12 19 12H3C2.73478 12 2.48043 11.8946 2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V11ZM11 4C10.4067 4 9.82664 4.17595 9.33329 4.50559C8.83994 4.83524 8.45542 5.30377 8.22836 5.85195C8.0013 6.40013 7.94189 7.00333 8.05764 7.58527C8.1734 8.16721 8.45912 8.70176 8.87868 9.12132C9.29824 9.54088 9.83279 9.8266 10.4147 9.94236C10.9967 10.0581 11.5999 9.9987 12.1481 9.77164C12.6962 9.54458 13.1648 9.16006 13.4944 8.66671C13.8241 8.17336 14 7.59334 14 7C14 6.20435 13.6839 5.44129 13.1213 4.87868C12.5587 4.31607 11.7956 4 11 4ZM11 8C10.8022 8 10.6089 7.94135 10.4444 7.83147C10.28 7.72159 10.1518 7.56541 10.0761 7.38268C10.0004 7.19996 9.98063 6.99889 10.0192 6.80491C10.0578 6.61093 10.153 6.43275 10.2929 6.29289C10.4327 6.15304 10.6109 6.0578 10.8049 6.01921C10.9989 5.98063 11.2 6.00043 11.3827 6.07612C11.5654 6.15181 11.7216 6.27998 11.8315 6.44443C11.9414 6.60888 12 6.80222 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89464 11.2652 8 11 8Z"
+                                            fill="#888FA2" />
+                                    </svg>$2,000</div>
+                            </div>
+                            <div class="flex-column">
+                                <p class="text-regular fw-bold text-black mb-2">Charge a late fee when rent is</p>
+                                <div class="text-large d-flex align-items-center"><svg class="me-2" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H7V2H9V4H15V2H17V4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM15 16H9V14H15V16Z"
+                                            fill="#888FA2" />
+                                    </svg>5 days overdue</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-details__section">
+
+                        <div class="property-review__titlemb-3">
+                            <div class="d-flex align-items-center mb-4">
+                                <h3 class="fw-bold text-title-large me-2">Last month's rent</h3>
+                                <div class="property-send__marker">on</div>
+                            </div>
+
+                            <div class="flex-column">
+                                <p class="text-regular fw-bold text-black mb-2">Charge a late fee when rent is</p>
+                                <div class="text-large d-flex align-items-center"><svg class="me-2" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H7V2H9V4H15V2H17V4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM15 16H9V14H15V16Z"
+                                            fill="#888FA2" />
+                                    </svg>5 days overdue</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="property-details__section">
+                        <div class="property-review__title d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold text-title-large">Clause</h3>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-large text-black fw-bold mb-3">Require credit reports</div>
+
+                            <p class="mb-0 ext-large text-black property-details__text">Lessee shall pay to Lessor or
+                                Lessor's authorized
+                                agent, at the address set
+                                forth above, or
+                                through Avail, or as hereafter changed by written notice to lessee, as rent for the
+                                Premises, Parking, or otherwise the sum as stated above. Rent is due and payable on the
+                                first day of each calendar month, in advance. The timely payment of each installment of
+                                rent
+                                is deemed to be of the essence of this Lease.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-large text-black fw-bold mb-3"> Jointly and Severally Liable</div>
+
+                            <p class="property-details__text">Now Open for Summer 2022 | Create wonderful Tahoe memories
+                                at The Dazzling Chalet in
+                                paddle boarding, as well as hiking & biking trails - just 1 block up from the Lake!
+                                This Architect<span id="rules-dots">...</span><span id="property-more">erisque enim
+                                    ligula
+                                    venenatis dolor. Donec vitae dui eget
+                                    tellus
+                                    gravida
+                                    venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                                    nibh tempor porta.</span></p>
+
+                            <button class="property-review__show text-green text-decoration-underline"
+                                onclick="seeMoreFunction()" id="propertyBtn">Show more →</button>
+                        </div>
+                    </div>
+
+                    <div class="property-details__section">
+                        <div class="property-review__title d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold text-title-large">Rules</h3>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="mb-0 ext-large text-black property-details__text">No additional locks or other
+                                similar devices shall be
+                                attached to any door without Lessor's written consent.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+
+                            <p class="property-details__text">Now Open for Summer 2022 | Create wonderful Tahoe memories
+                                at The Dazzling Chalet in
+                                paddle boarding, as well as hiking & biking trails - just 1 block up from the Lake!
+                                This Architect<span id="dots">...</span><span id="rules-more">erisque enim ligula
+                                    venenatis dolor. Donec vitae dui eget
+                                    tellus
+                                    gravida
+                                    venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                                    nibh tempor porta.</span></p>
+
+                            <button class="property-review__show text-green text-decoration-underline"
+                                onclick="rulesMoreFunction()" id="rulesBtn">Show more →</button>
+                        </div>
+                    </div>
+
+                    <div class="property-details__section">
+                        <div class="property-review__title d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold text-title-large">Disclosures</h3>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-large text-black fw-bold mb-3">Conditions affecting habitability</div>
+
+                            <p class="mb-0 ext-large text-black property-details__text">As the Lessor, you must disclose
+                                any code violations,
+                                code enforcement litigation and/or compliance board proceedings during the previous 12
+                                months for the residence and common area and any notice of intent to terminate utility
+                                service.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-large text-black fw-bold mb-3">Lead Paint Disclosure</div>
+
+                            <p class="property-details__text">Lessees must also receive a federally approved pamphlet on
+                                lead poisoning prevention. Are you aware of any lead-based paint or hazards in the
+                                property?<span id="disc-dots">...</span><span id="disc-more">erisque enim ligula
+                                    venenatis dolor. Donec vitae dui eget
+                                    tellus
+                                    gravida
+                                    venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                                    nibh tempor porta.</span></p>
+
+                            <button class="property-review__show text-green text-decoration-underline"
+                                onclick="discMoreFunction()" id="discBtn">Show more →</button>
+                        </div>
+                    </div>
+
+                    <div class="property-details__section">
+                        <div class="property-review__title d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold text-title-large">Landlord contact information</h3>
+                        </div>
+
+                        <div class="d-sm-flex align-items-center mb-4">
+                            <div class="flex-column property-details__col mb-3 mb-sm-0">
+                                <p class="text-regular text-grey">Landlord Name</p>
+                                <div class="text-large fw-bold d-flex align-items-center">Sofiia Tsisarenko</div>
+                            </div>
+                            <div class="flex-column">
+                                <p class="text-regular text-grey">Email</p>
+                                <div class="text-large fw-bold d-flex align-items-center"><svg class="me-2" width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.8337 0.333984H3.16699C2.50395 0.333984 1.86807 0.597377 1.39923 1.06622C0.930384 1.53506 0.666992 2.17094 0.666992 2.83398V11.1673C0.666992 11.8304 0.930384 12.4662 1.39923 12.9351C1.86807 13.4039 2.50395 13.6673 3.16699 13.6673H14.8337C15.4967 13.6673 16.1326 13.4039 16.6014 12.9351C17.0703 12.4662 17.3337 11.8304 17.3337 11.1673V2.83398C17.3337 2.17094 17.0703 1.53506 16.6014 1.06622C16.1326 0.597377 15.4967 0.333984 14.8337 0.333984ZM14.492 2.00065L9.59199 6.90065C9.51452 6.97876 9.42236 7.04075 9.32081 7.08306C9.21926 7.12537 9.11034 7.14715 9.00033 7.14715C8.89032 7.14715 8.78139 7.12537 8.67984 7.08306C8.5783 7.04075 8.48613 6.97876 8.40866 6.90065L3.50866 2.00065H14.492ZM15.667 11.1673C15.667 11.3883 15.5792 11.6003 15.4229 11.7566C15.2666 11.9129 15.0547 12.0007 14.8337 12.0007H3.16699C2.94598 12.0007 2.73402 11.9129 2.57774 11.7566C2.42146 11.6003 2.33366 11.3883 2.33366 11.1673V3.17565L7.23366 8.07565C7.70241 8.54382 8.33782 8.80678 9.00033 8.80678C9.66283 8.80678 10.2982 8.54382 10.767 8.07565L15.667 3.17565V11.1673Z"
+                                            fill="#888FA2" />
+                                    </svg>sofia.tsisarenko@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="flex-column">
+                            <p class="text-regular text-grey">Phone Number</p>
+                            <div class="text-large fw-bold d-flex align-items-center"><svg class="me-2" width="18"
+                                    height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.1998 9.83379C15.0165 9.83379 14.8248 9.77546 14.6415 9.73379C14.2702 9.65198 13.9054 9.54336 13.5498 9.40879C13.1632 9.26815 12.7383 9.27546 12.3568 9.4293C11.9752 9.58314 11.6641 9.87266 11.4832 10.2421L11.2998 10.6171C10.4882 10.1656 9.74233 9.60482 9.08317 8.95046C8.42881 8.29131 7.86803 7.54546 7.41651 6.73379L7.76651 6.50046C8.13598 6.31956 8.42549 6.0084 8.57933 5.62687C8.73318 5.24534 8.74048 4.82039 8.59984 4.43379C8.46753 4.07748 8.35895 3.71279 8.27484 3.34213C8.23317 3.15879 8.19984 2.96713 8.17484 2.77546C8.07364 2.18848 7.76619 1.65691 7.30786 1.27649C6.84952 0.896074 6.27042 0.6918 5.67484 0.70046H3.17484C2.8157 0.697088 2.46005 0.771138 2.1321 0.917568C1.80415 1.064 1.5116 1.27937 1.27437 1.54903C1.03713 1.81868 0.860785 2.13629 0.75733 2.48022C0.653874 2.82416 0.625739 3.18634 0.67484 3.54213C1.11879 7.03328 2.7132 10.277 5.20622 12.761C7.69924 15.245 10.9488 16.8276 14.4415 17.2588H14.7582C15.3727 17.2597 15.966 17.0342 16.4248 16.6255C16.6885 16.3897 16.8991 16.1006 17.0427 15.7774C17.1864 15.4542 17.2598 15.1042 17.2582 14.7505V12.2505C17.248 11.6716 17.0372 11.1143 16.6618 10.6735C16.2864 10.2328 15.7697 9.93598 15.1998 9.83379ZM15.6165 14.8338C15.6164 14.9521 15.591 15.069 15.5422 15.1768C15.4933 15.2846 15.4221 15.3807 15.3332 15.4588C15.2401 15.5392 15.1312 15.5992 15.0135 15.6351C14.8958 15.671 14.772 15.6819 14.6498 15.6671C11.5289 15.267 8.63004 13.8392 6.41044 11.609C4.19084 9.37887 2.77685 6.47324 2.39151 3.35046C2.37824 3.22839 2.38987 3.1049 2.42567 2.98745C2.46148 2.87 2.52073 2.76103 2.59984 2.66713C2.67793 2.57824 2.77406 2.50699 2.88182 2.45814C2.98959 2.40929 3.10652 2.38394 3.22484 2.38379H5.72484C5.91863 2.37948 6.10786 2.44286 6.25996 2.56302C6.41206 2.68318 6.51751 2.8526 6.55817 3.04213C6.59151 3.2699 6.63317 3.4949 6.68317 3.71713C6.77944 4.15641 6.90756 4.58811 7.06651 5.00879L5.89984 5.55046C5.80009 5.59623 5.71036 5.66125 5.6358 5.74179C5.56125 5.82233 5.50334 5.91681 5.4654 6.01979C5.42746 6.12277 5.41023 6.23224 5.41471 6.34189C5.41919 6.45155 5.44529 6.55925 5.49151 6.65879C6.69084 9.22776 8.75588 11.2928 11.3248 12.4921C11.5277 12.5755 11.7553 12.5755 11.9582 12.4921C12.0621 12.455 12.1576 12.3975 12.2391 12.3231C12.3207 12.2487 12.3866 12.1589 12.4332 12.0588L12.9498 10.8921C13.3806 11.0462 13.8203 11.1742 14.2665 11.2755C14.4887 11.3255 14.7137 11.3671 14.9415 11.4005C15.131 11.4411 15.3005 11.5466 15.4206 11.6987C15.5408 11.8508 15.6042 12.04 15.5998 12.2338L15.6165 14.8338Z"
+                                        fill="#888FA2" />
+                                </svg>
+                                (034) 456 5656</div>
+                        </div>
+                    </div>
+
+                    <div class="property-details__section">
+                        <div class="property-review__title d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold text-title-large">Tenant contact information</h3>
+                        </div>
+
+                        <div class="d-sm-flex align-items-center mb-4">
+                            <div class="flex-column property-details__col mb-3 mb-sm-0">
+                                <p class="text-regular text-grey">Landlord Name</p>
+                                <div class="text-large fw-bold d-flex align-items-center">Meggie May</div>
+                            </div>
+                            <div class="flex-column">
+                                <p class="text-regular text-grey">Email</p>
+                                <div class="text-large fw-bold d-flex align-items-center"><svg class="me-2" width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.8337 0.333984H3.16699C2.50395 0.333984 1.86807 0.597377 1.39923 1.06622C0.930384 1.53506 0.666992 2.17094 0.666992 2.83398V11.1673C0.666992 11.8304 0.930384 12.4662 1.39923 12.9351C1.86807 13.4039 2.50395 13.6673 3.16699 13.6673H14.8337C15.4967 13.6673 16.1326 13.4039 16.6014 12.9351C17.0703 12.4662 17.3337 11.8304 17.3337 11.1673V2.83398C17.3337 2.17094 17.0703 1.53506 16.6014 1.06622C16.1326 0.597377 15.4967 0.333984 14.8337 0.333984ZM14.492 2.00065L9.59199 6.90065C9.51452 6.97876 9.42236 7.04075 9.32081 7.08306C9.21926 7.12537 9.11034 7.14715 9.00033 7.14715C8.89032 7.14715 8.78139 7.12537 8.67984 7.08306C8.5783 7.04075 8.48613 6.97876 8.40866 6.90065L3.50866 2.00065H14.492ZM15.667 11.1673C15.667 11.3883 15.5792 11.6003 15.4229 11.7566C15.2666 11.9129 15.0547 12.0007 14.8337 12.0007H3.16699C2.94598 12.0007 2.73402 11.9129 2.57774 11.7566C2.42146 11.6003 2.33366 11.3883 2.33366 11.1673V3.17565L7.23366 8.07565C7.70241 8.54382 8.33782 8.80678 9.00033 8.80678C9.66283 8.80678 10.2982 8.54382 10.767 8.07565L15.667 3.17565V11.1673Z"
+                                            fill="#888FA2" />
+                                    </svg>meggie.m@gmail.com </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function seeMoreFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("property-more");
+            var btnText = document.getElementById("propertyBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Show more →";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Show less →";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function rulesMoreFunction() {
+            var dots = document.getElementById("rules-dots");
+            var moreText = document.getElementById("rules-more");
+            var btnText = document.getElementById("rulesBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Show more →";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Show less →";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function discMoreFunction() {
+            var dots = document.getElementById("disc-dots");
+            var moreText = document.getElementById("disc-more");
+            var btnText = document.getElementById("discBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Show more →";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Show less →";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+</main>
+
+@@include('../components/footer.html')

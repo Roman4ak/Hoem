@@ -1,0 +1,1379 @@
+@@include('../components/header.html')
+
+<main class="property-page">
+    @@include('../modules/sidebar.html')
+
+
+    <section class="property-wrapper__section">
+        <div class="header d-flex align-items-center mb-4">
+            <header class="container-lg align-items-center px-4">
+                <div class="row">
+                    <span class="col-12 col-sm-12 col-lg-2 mb-4 mb-lg-0 header__title text-tall-large">Dashboard</span>
+
+                    <form class="col-12 col-sm-6 col-lg-6 mb-4 mb-sm-0" role="search">
+                        <input type="search" class="input-style header-search" placeholder="Search for anything here..."
+                            aria-label="Search">
+                        <button class="search__button d-flex justify-content-center">
+                            <img class="search__button__img" src="img/search.svg" alt="search">
+                        </button>
+                    </form>
+
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 px-0 d-flex align-items-center justify-content-sm-end ps-3 ps-sm-0">
+                        <button class="header__plus d-flex justify-content-center align-items-center"></button>
+
+                        <button class="header__notification ms-012">
+                            <img class="header__notification__img" src="img/bell.svg" alt="notifications">
+                        </button>
+
+                        <div
+                            class="header__dropdown ms-012 pe-012 ps-2 d-flex justify-content-between align-items-center ">
+                            <div class="header__profile d-flex align-items-center">
+                                <img class="me-2" src="img/avatar.png" alt="avatar">
+                                <p class="text-regular mb-0">Jesicca</p>
+                            </div>
+                            <div class="header__arrow d-inline-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+        <div>
+            <div class="container">
+
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="d-flex align-item-center mb-4">
+                        <div class="property-header__breadcrumbs__main fw-500 text-regular text-orange">Property
+                            List
+                        </div>
+                        <div class="fw-500 text-regular text-grey">Add new
+                            property
+                        </div>
+                    </div>
+
+                    <section class="property-units__section ">
+                        <div class="property-units__unit d-md-flex pe-2 mb-3">
+                            <img class="property-units__img py-2 me-auto ms-auto" src="../img/image 62.png" alt="">
+
+                            <div class="property-units__info w-100 py-2 ms-md-4">
+
+                                <div class="d-sm-flex align-item-center justify-content-between mb-4 mb-md-0">
+                                    <div class="mb-3 mb-sm-0">
+                                        <div class="text-small fw-500 ps-2 mb-012">
+                                            Appartment</div>
+                                        <h1 class="text-tall-large fw-bold mb-0">Incline 45 Apartments</h1>
+                                    </div>
+
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="d-flex align-items-center property-units__edit me-4"><svg
+                                                class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.0332 12.6875C3.07227 12.6875 3.11133 12.6836 3.15039 12.6777L6.43555 12.1016C6.47461 12.0938 6.51172 12.0762 6.53906 12.0469L14.8184 3.76758C14.8365 3.74951 14.8508 3.72805 14.8606 3.70442C14.8704 3.68079 14.8755 3.65546 14.8755 3.62988C14.8755 3.6043 14.8704 3.57897 14.8606 3.55535C14.8508 3.53172 14.8365 3.51026 14.8184 3.49219L11.5723 0.244141C11.5352 0.207031 11.4863 0.1875 11.4336 0.1875C11.3809 0.1875 11.332 0.207031 11.2949 0.244141L3.01562 8.52344C2.98633 8.55273 2.96875 8.58789 2.96094 8.62695L2.38477 11.9121C2.36577 12.0167 2.37255 12.1244 2.40454 12.2258C2.43654 12.3273 2.49276 12.4193 2.56836 12.4941C2.69727 12.6191 2.85938 12.6875 3.0332 12.6875ZM4.34961 9.28125L11.4336 2.19922L12.8652 3.63086L5.78125 10.7129L4.04492 11.0195L4.34961 9.28125ZM15.1875 14.3281H0.8125C0.466797 14.3281 0.1875 14.6074 0.1875 14.9531V15.6562C0.1875 15.7422 0.257812 15.8125 0.34375 15.8125H15.6562C15.7422 15.8125 15.8125 15.7422 15.8125 15.6562V14.9531C15.8125 14.6074 15.5332 14.3281 15.1875 14.3281Z"
+                                                    fill="#FD7B5C" />
+                                            </svg>Edit</div>
+                                        <div class="property-add__item__info__options me-4"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-sm-flex align-item-center justify-content-between">
+                                    <div class="mb-3 mb-sm-0">
+                                        <div class="text-regular text-grey mb-3">18280 E 45th Ave, Denver, CO 80249
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex align-items-center"><svg class="me-1" width="16"
+                                                    height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.6667 12.6667V3.33333C12.6667 2.6 12.0667 2 11.3333 2H4.66667C3.93333 2 3.33333 2.6 3.33333 3.33333V12.6667H2V14H14V12.6667H12.6667ZM11.3333 12.6667H4.66667V3.33333H11.3333V12.6667Z"
+                                                        fill="#888FA2" />
+                                                    <path d="M6 7.33331H7.33333V8.66665H6V7.33331Z" fill="#888FA2" />
+                                                </svg>8 unit(s)</div>
+
+                                            <span class="property-add__item__info__point mx-2"></span>
+
+                                            <div class="d-flex align-items-center"><svg class="me-1" width="14"
+                                                    height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13.4102 5.87205L13.4103 5.87208C13.4708 5.92585 13.5202 5.99103 13.5556 6.06389C13.591 6.13675 13.6117 6.21587 13.6165 6.29672C13.6213 6.37758 13.6101 6.45859 13.5836 6.53513C13.5571 6.61167 13.5158 6.68225 13.4621 6.74282C13.4083 6.8034 13.3431 6.85279 13.2702 6.88818C13.1974 6.92356 13.1183 6.94425 13.0374 6.94906C12.8741 6.95878 12.7136 6.90322 12.5913 6.79462L12.3674 6.59533L12.2841 6.52126V6.63268V13C12.2841 13.1636 12.2191 13.3204 12.1035 13.4361C11.9879 13.5517 11.831 13.6167 11.6675 13.6167H2.33412C2.17057 13.6167 2.01372 13.5517 1.89807 13.4361C1.78242 13.3204 1.71745 13.1636 1.71745 13V6.63268V6.52126L1.63421 6.59533L1.41026 6.79462C1.28792 6.90322 1.12745 6.95878 0.964157 6.94906C0.80086 6.93935 0.64811 6.86516 0.539511 6.74282C0.430912 6.62049 0.375359 6.46002 0.385074 6.29672C0.394789 6.13343 0.468975 5.98068 0.591312 5.87208L0.591337 5.87205L6.59134 0.538721L6.59135 0.538708C6.70413 0.438375 6.84983 0.382947 7.00078 0.382947C7.15174 0.382947 7.29743 0.438375 7.41022 0.538707L7.41023 0.538721L13.4102 5.87205ZM5.07624 12.3169L5.05308 12.3834H5.12345H8.87812H8.94848L8.92533 12.3169C8.78616 11.9174 8.5261 11.5711 8.18125 11.3261C7.8364 11.081 7.42383 10.9494 7.00078 10.9494C6.57774 10.9494 6.16517 11.081 5.82032 11.3261C5.47547 11.5711 5.21541 11.9174 5.07624 12.3169ZM5.95078 8.66668V8.66675C5.95116 8.9451 6.06189 9.21194 6.25871 9.40876C6.45553 9.60558 6.72237 9.71631 7.00072 9.71668H7.00078C7.20846 9.71668 7.41146 9.6551 7.58413 9.53973C7.7568 9.42435 7.89139 9.26036 7.97086 9.0685C8.05033 8.87664 8.07112 8.66552 8.03061 8.46184C7.9901 8.25816 7.89009 8.07107 7.74325 7.92422C7.5964 7.77738 7.40931 7.67737 7.20563 7.63686C7.00195 7.59634 6.79083 7.61714 6.59897 7.69661C6.4071 7.77608 6.24312 7.91066 6.12774 8.08334C6.01237 8.25601 5.95078 8.45901 5.95078 8.66668ZM11.0008 12.3834H11.0508V12.3334V5.44735V5.4249L11.034 5.40998L7.034 1.85465L7.00078 1.82512L6.96757 1.85465L2.96757 5.40998L2.95079 5.4249V5.44735V12.3334V12.3834H3.00079H3.73412H3.77476L3.78306 12.3436C3.87395 11.9081 4.05236 11.4957 4.30747 11.1313C4.56259 10.767 4.88908 10.4582 5.26713 10.2238L5.31727 10.1928L5.27839 10.1484C4.91888 9.73824 4.71967 9.212 4.71745 8.6666C4.71747 8.06105 4.95804 7.48031 5.38623 7.05212C5.81443 6.62392 6.39521 6.38335 7.00078 6.38335C7.60636 6.38335 8.18714 6.62392 8.61535 7.05212C9.04355 7.48033 9.28412 8.06111 9.28412 8.66668C9.28188 9.21206 9.08267 9.73826 8.72318 10.1484L8.68431 10.1927L8.73443 10.2238C9.11236 10.4583 9.43873 10.767 9.69372 11.1314C9.94872 11.4958 10.127 11.9082 10.2178 12.3436L10.2261 12.3834H10.2668H11.0008Z"
+                                                        fill="#888FA2" stroke="white" stroke-width="0.1" />
+                                                </svg>4 tenant(s)</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="mb-1 text-grey text-regular fw-500 text-sm-end">Rent amount</div>
+                                        <div class="fw-bold text-tall-large ">$ 1,200/mo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs property-units__tabs mb-3">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link active tab__btn text-grey fw-semibold " id="all-tab"
+                                        data-bs-toggle="tab" data-bs-target="#units" type="button" role="tab"
+                                        aria-controls="units" aria-selected="true">Units</button>
+                                </li>
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link tab__btn fw-semibold text-grey" id="single-tab"
+                                        data-bs-toggle="tab" data-bs-target="#leases" type="button" role="tab"
+                                        aria-controls="single" aria-selected="leases">Leases</button>
+                                </li>
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link tab__btn text-grey fw-semibold" id="multiple-tab"
+                                        data-bs-toggle="tab" data-bs-target="#applications" type="button" role="tab"
+                                        aria-controls="applications" aria-selected="false">Applications</button>
+                                </li>
+
+                                <li class="nav-item tab" role="presentation">
+                                    <button class="nav-link tab__btn text-grey fw-semibold" id="multiple-tab"
+                                        data-bs-toggle="tab" data-bs-target="#payments" type="button" role="tab"
+                                        aria-controls="payments" aria-selected="false">Payments</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content w-100" id="myTabContent">
+                            <div class="tab-pane fade show active" id="units" role="tabpanel" aria-labelledby="units-tab">
+                                <div class="d-md-flex align-item-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center mb-3 mb-md-0">
+                                        <div class="me-012 property-units__number__img">
+                                            <img src="../img/ic_outline-doorback.svg" alt="">
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="fw-bold me-1 property-units__number">8</div>
+                                            <div class="text-grey text-regular fw-500">total units</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-sm-flex ">
+                                        <form class="position-relative me-sm-4 mb-4 mb-sm-0" role="search">
+                                            <input type="search"
+                                                class="input-style position-relative property-units__input"
+                                                placeholder="Search for anything here..." aria-label="Search">
+                                            <button class="property-units__search">
+                                                <img class="property-units__search__img" src="img/search.svg"
+                                                    alt="search">
+                                            </button>
+                                        </form>
+                                        <div class="orange-btn property-units__new">New Unit</div>
+
+                                    </div>
+                                </div>
+
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-units__item py-4">
+                                    <div class="row px-3">
+                                        <div class="col-xl-5 mb-4 mb-xl-0 property-units__item__unit d-flex align-items-center">
+
+                                            <div class="me-3">
+                                                <img class="property-units__item__img" src="../img/image 63.png" alt="">
+                                            </div>
+
+
+                                            <div class="">
+                                                <div class="text-large fw-bold pb-2">Unit #1</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">4</span>bed(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">2</span>bath(s)</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-small text-grey"><span
+                                                            class="text-black fw-bold">748</span>sq ft</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-7 d-flex align-items-center justify-content-between">
+                                            <div class="flex-column ps-xl-4">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2 ">Available
+                                                    on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Available on
+                                                </div>
+                                                <div class="text-regular fw-semibold">14 Jul</div>
+                                            </div>
+
+                                            <div class="flex-column">
+                                                <div class="text-tiny text-uppercase text-grey fw-500 mb-2">Listing
+                                                </div>
+                                                <div class="text-uppercase marker__blue-large">ACTIVE</div>
+                                            </div>
+
+                                            <div class="property-add__item__info__options"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="tab-pane fade" id="leases" role="tabpanel" aria-labelledby="leases-tab">
+                                <div class="d-flex align-item-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="me-012 property-units__number__img">
+                                            <img src="../img/ic_outline-doorback2.svg" alt="">
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="fw-bold me-1 property-units__number">2</div>
+                                            <div class="text-grey text-regular fw-500">Lease</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="orange-btn property-units__new">New Leasing </div>
+
+                                </div>
+
+                                <div class="property-leases__item py-4">
+                                    <div class="px-xl-3 d-xl-flex">
+
+                                        <div class="me-xl-3 mb-3 mb-xl-0">
+                                            <img class="property-leases__item__img me-auto ms-auto " src="../img/image 63.png" alt="">
+                                        </div>
+
+                                        <div class="w-100">
+                                            <div class="">
+                                                <div class="d-sm-flex align-items-center justify-content-between">
+                                                    <div class="fw-bold text-large mb-3">Incline 45 Apartments Lease
+                                                    </div>
+                                                    <div class="marker__grey-large mb-3">SIGNATURE PENDING</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-md-flex align-item-center">
+                                                <div class="me-md-5 mb-3 mb-ms-0">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Lease start & end
+                                                    </div>
+                                                    <div class="text-large fw-semibold d-flex align-item-center"><svg
+                                                            class="me-2" width="18" height="20" viewBox="0 0 18 20"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M16 20H2C1.46957 20 0.960859 19.7893 0.585786 19.4142C0.210714 19.0391 0 18.5304 0 18V4C0 3.46957 0.210714 2.96086 0.585786 2.58579C0.960859 2.21071 1.46957 2 2 2H4V0H6V2H12V0H14V2H16C16.5304 2 17.0391 2.21071 17.4142 2.58579C17.7893 2.96086 18 3.46957 18 4V18C18 18.5304 17.7893 19.0391 17.4142 19.4142C17.0391 19.7893 16.5304 20 16 20ZM2 8V18H16V8H2ZM2 4V6H16V4H2ZM12 14H6V12H12V14Z"
+                                                                fill="#888FA2" />
+                                                        </svg>
+                                                        12 / 09 / 2022 - 12 / 23 / 2023</div>
+                                                </div>
+                                                <div class="me-md-5 mb-3 mb-ms-0">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Money rent amount
+                                                    </div>
+                                                    <div class="text-large fw-semibold d-flex align-items-center"><svg
+                                                            class="me-2" width="22" height="14" viewBox="0 0 22 14"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5 6C4.80222 6 4.60888 6.05865 4.44443 6.16853C4.27998 6.27841 4.15181 6.43459 4.07612 6.61732C4.00043 6.80004 3.98063 7.00111 4.01921 7.19509C4.0578 7.38907 4.15304 7.56725 4.29289 7.70711C4.43275 7.84696 4.61093 7.9422 4.80491 7.98079C4.99889 8.01937 5.19996 7.99957 5.38268 7.92388C5.56541 7.84819 5.72159 7.72002 5.83147 7.55557C5.94135 7.39112 6 7.19778 6 7C6 6.73478 5.89464 6.48043 5.70711 6.29289C5.51957 6.10536 5.26522 6 5 6ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM19 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V11C0 11.7956 0.31607 12.5587 0.87868 13.1213C1.44129 13.6839 2.20435 14 3 14H19C19.7956 14 20.5587 13.6839 21.1213 13.1213C21.6839 12.5587 22 11.7956 22 11V3C22 2.20435 21.6839 1.44129 21.1213 0.87868C20.5587 0.316071 19.7956 0 19 0ZM20 11C20 11.2652 19.8946 11.5196 19.7071 11.7071C19.5196 11.8946 19.2652 12 19 12H3C2.73478 12 2.48043 11.8946 2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V11ZM11 4C10.4067 4 9.82664 4.17595 9.33329 4.50559C8.83994 4.83524 8.45542 5.30377 8.22836 5.85195C8.0013 6.40013 7.94189 7.00333 8.05764 7.58527C8.1734 8.16721 8.45912 8.70176 8.87868 9.12132C9.29824 9.54088 9.83279 9.8266 10.4147 9.94236C10.9967 10.0581 11.5999 9.9987 12.1481 9.77164C12.6962 9.54458 13.1648 9.16006 13.4944 8.66671C13.8241 8.17336 14 7.59334 14 7C14 6.20435 13.6839 5.44129 13.1213 4.87868C12.5587 4.31607 11.7956 4 11 4ZM11 8C10.8022 8 10.6089 7.94135 10.4444 7.83147C10.28 7.72159 10.1518 7.56541 10.0761 7.38268C10.0004 7.19996 9.98063 6.99889 10.0192 6.80491C10.0578 6.61093 10.153 6.43275 10.2929 6.29289C10.4327 6.15304 10.6109 6.0578 10.8049 6.01921C10.9989 5.98063 11.2 6.00043 11.3827 6.07612C11.5654 6.15181 11.7216 6.27998 11.8315 6.44443C11.9414 6.60888 12 6.80222 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89464 11.2652 8 11 8Z"
+                                                                fill="#888FA2" />
+                                                        </svg>$2,000</div>
+                                                </div>
+                                                <div class="">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Tenant</div>
+                                                    <div class="text-large fw-semibold d-flex align-items-center"><svg
+                                                            class="me-2" width="20" height="20" viewBox="0 0 20 20"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M10.0005 0C8.06102 0.00368503 6.16442 0.571311 4.54177 1.63374C2.91911 2.69617 1.64043 4.20754 0.861478 5.98377C0.0825237 7.76 -0.163087 9.72442 0.154563 11.6378C0.472214 13.5511 1.33941 15.3308 2.65054 16.76C3.58696 17.775 4.72348 18.5851 5.98847 19.1392C7.25347 19.6933 8.61952 19.9793 10.0005 19.9793C11.3816 19.9793 12.7476 19.6933 14.0126 19.1392C15.2776 18.5851 16.4141 17.775 17.3505 16.76C18.6617 15.3308 19.5289 13.5511 19.8465 11.6378C20.1642 9.72442 19.9186 7.76 19.1396 5.98377C18.3606 4.20754 17.082 2.69617 15.4593 1.63374C13.8367 0.571311 11.9401 0.00368503 10.0005 0ZM10.0005 18C7.929 17.9969 5.93945 17.1903 4.45054 15.75C4.90258 14.6495 5.67157 13.7083 6.65979 13.0459C7.64801 12.3835 8.81085 12.0298 10.0005 12.0298C11.1902 12.0298 12.3531 12.3835 13.3413 13.0459C14.3295 13.7083 15.0985 14.6495 15.5505 15.75C14.0616 17.1903 12.0721 17.9969 10.0005 18ZM8.00054 8C8.00054 7.60444 8.11784 7.21776 8.3376 6.88886C8.55736 6.55996 8.86972 6.30362 9.23517 6.15224C9.60062 6.00087 10.0028 5.96126 10.3907 6.03843C10.7787 6.1156 11.135 6.30608 11.4148 6.58579C11.6945 6.86549 11.8849 7.22186 11.9621 7.60982C12.0393 7.99778 11.9997 8.39991 11.8483 8.76537C11.6969 9.13082 11.4406 9.44318 11.1117 9.66294C10.7828 9.8827 10.3961 10 10.0005 10C9.4701 10 8.9614 9.78929 8.58632 9.41421C8.21125 9.03914 8.00054 8.53043 8.00054 8ZM16.9105 14C16.0171 12.4718 14.6419 11.283 13.0005 10.62C13.5097 10.0427 13.8415 9.33066 13.956 8.56944C14.0705 7.80822 13.963 7.03011 13.6463 6.3285C13.3296 5.62688 12.8171 5.03156 12.1704 4.61397C11.5238 4.19637 10.7703 3.97425 10.0005 3.97425C9.23075 3.97425 8.47731 4.19637 7.83063 4.61397C7.18395 5.03156 6.67151 5.62688 6.35479 6.3285C6.03807 7.03011 5.93052 7.80822 6.04507 8.56944C6.15961 9.33066 6.49137 10.0427 7.00054 10.62C5.35914 11.283 3.98401 12.4718 3.09054 14C2.37848 12.7871 2.00226 11.4065 2.00054 10C2.00054 7.87827 2.84339 5.84344 4.34368 4.34315C5.84397 2.84285 7.87881 2 10.0005 2C12.1223 2 14.1571 2.84285 15.6574 4.34315C17.1577 5.84344 18.0005 7.87827 18.0005 10C17.9988 11.4065 17.6226 12.7871 16.9105 14Z"
+                                                                fill="#888FA2" />
+                                                        </svg>$2,000</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-leases__item py-4">
+                                    <div class="px-xl-3 d-xl-flex">
+
+                                        <div class="me-xl-3 mb-3 mb-xl-0">
+                                            <img class="property-leases__item__img me-auto ms-auto " src="../img/image 63.png" alt="">
+                                        </div>
+
+                                        <div class="w-100">
+                                            <div class="">
+                                                <div class="d-sm-flex align-items-center justify-content-between">
+                                                    <div class="fw-bold text-large mb-3">Incline 45 Apartments Lease
+                                                    </div>
+                                                    <div class="marker__grey-large mb-3">SIGNATURE PENDING</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-md-flex align-item-center">
+                                                <div class="me-md-5 mb-3 mb-ms-0">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Lease start & end
+                                                    </div>
+                                                    <div class="text-large fw-semibold d-flex align-item-center"><svg
+                                                            class="me-2" width="18" height="20" viewBox="0 0 18 20"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M16 20H2C1.46957 20 0.960859 19.7893 0.585786 19.4142C0.210714 19.0391 0 18.5304 0 18V4C0 3.46957 0.210714 2.96086 0.585786 2.58579C0.960859 2.21071 1.46957 2 2 2H4V0H6V2H12V0H14V2H16C16.5304 2 17.0391 2.21071 17.4142 2.58579C17.7893 2.96086 18 3.46957 18 4V18C18 18.5304 17.7893 19.0391 17.4142 19.4142C17.0391 19.7893 16.5304 20 16 20ZM2 8V18H16V8H2ZM2 4V6H16V4H2ZM12 14H6V12H12V14Z"
+                                                                fill="#888FA2" />
+                                                        </svg>
+                                                        12 / 09 / 2022 - 12 / 23 / 2023</div>
+                                                </div>
+                                                <div class="me-md-5 mb-3 mb-ms-0">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Money rent amount
+                                                    </div>
+                                                    <div class="text-large fw-semibold d-flex align-items-center"><svg
+                                                            class="me-2" width="22" height="14" viewBox="0 0 22 14"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5 6C4.80222 6 4.60888 6.05865 4.44443 6.16853C4.27998 6.27841 4.15181 6.43459 4.07612 6.61732C4.00043 6.80004 3.98063 7.00111 4.01921 7.19509C4.0578 7.38907 4.15304 7.56725 4.29289 7.70711C4.43275 7.84696 4.61093 7.9422 4.80491 7.98079C4.99889 8.01937 5.19996 7.99957 5.38268 7.92388C5.56541 7.84819 5.72159 7.72002 5.83147 7.55557C5.94135 7.39112 6 7.19778 6 7C6 6.73478 5.89464 6.48043 5.70711 6.29289C5.51957 6.10536 5.26522 6 5 6ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM19 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V11C0 11.7956 0.31607 12.5587 0.87868 13.1213C1.44129 13.6839 2.20435 14 3 14H19C19.7956 14 20.5587 13.6839 21.1213 13.1213C21.6839 12.5587 22 11.7956 22 11V3C22 2.20435 21.6839 1.44129 21.1213 0.87868C20.5587 0.316071 19.7956 0 19 0ZM20 11C20 11.2652 19.8946 11.5196 19.7071 11.7071C19.5196 11.8946 19.2652 12 19 12H3C2.73478 12 2.48043 11.8946 2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V11ZM11 4C10.4067 4 9.82664 4.17595 9.33329 4.50559C8.83994 4.83524 8.45542 5.30377 8.22836 5.85195C8.0013 6.40013 7.94189 7.00333 8.05764 7.58527C8.1734 8.16721 8.45912 8.70176 8.87868 9.12132C9.29824 9.54088 9.83279 9.8266 10.4147 9.94236C10.9967 10.0581 11.5999 9.9987 12.1481 9.77164C12.6962 9.54458 13.1648 9.16006 13.4944 8.66671C13.8241 8.17336 14 7.59334 14 7C14 6.20435 13.6839 5.44129 13.1213 4.87868C12.5587 4.31607 11.7956 4 11 4ZM11 8C10.8022 8 10.6089 7.94135 10.4444 7.83147C10.28 7.72159 10.1518 7.56541 10.0761 7.38268C10.0004 7.19996 9.98063 6.99889 10.0192 6.80491C10.0578 6.61093 10.153 6.43275 10.2929 6.29289C10.4327 6.15304 10.6109 6.0578 10.8049 6.01921C10.9989 5.98063 11.2 6.00043 11.3827 6.07612C11.5654 6.15181 11.7216 6.27998 11.8315 6.44443C11.9414 6.60888 12 6.80222 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89464 11.2652 8 11 8Z"
+                                                                fill="#888FA2" />
+                                                        </svg>$2,000</div>
+                                                </div>
+                                                <div class="">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Tenant</div>
+                                                    <div class="text-large fw-semibold d-flex align-items-center"><svg
+                                                            class="me-2" width="20" height="20" viewBox="0 0 20 20"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M10.0005 0C8.06102 0.00368503 6.16442 0.571311 4.54177 1.63374C2.91911 2.69617 1.64043 4.20754 0.861478 5.98377C0.0825237 7.76 -0.163087 9.72442 0.154563 11.6378C0.472214 13.5511 1.33941 15.3308 2.65054 16.76C3.58696 17.775 4.72348 18.5851 5.98847 19.1392C7.25347 19.6933 8.61952 19.9793 10.0005 19.9793C11.3816 19.9793 12.7476 19.6933 14.0126 19.1392C15.2776 18.5851 16.4141 17.775 17.3505 16.76C18.6617 15.3308 19.5289 13.5511 19.8465 11.6378C20.1642 9.72442 19.9186 7.76 19.1396 5.98377C18.3606 4.20754 17.082 2.69617 15.4593 1.63374C13.8367 0.571311 11.9401 0.00368503 10.0005 0ZM10.0005 18C7.929 17.9969 5.93945 17.1903 4.45054 15.75C4.90258 14.6495 5.67157 13.7083 6.65979 13.0459C7.64801 12.3835 8.81085 12.0298 10.0005 12.0298C11.1902 12.0298 12.3531 12.3835 13.3413 13.0459C14.3295 13.7083 15.0985 14.6495 15.5505 15.75C14.0616 17.1903 12.0721 17.9969 10.0005 18ZM8.00054 8C8.00054 7.60444 8.11784 7.21776 8.3376 6.88886C8.55736 6.55996 8.86972 6.30362 9.23517 6.15224C9.60062 6.00087 10.0028 5.96126 10.3907 6.03843C10.7787 6.1156 11.135 6.30608 11.4148 6.58579C11.6945 6.86549 11.8849 7.22186 11.9621 7.60982C12.0393 7.99778 11.9997 8.39991 11.8483 8.76537C11.6969 9.13082 11.4406 9.44318 11.1117 9.66294C10.7828 9.8827 10.3961 10 10.0005 10C9.4701 10 8.9614 9.78929 8.58632 9.41421C8.21125 9.03914 8.00054 8.53043 8.00054 8ZM16.9105 14C16.0171 12.4718 14.6419 11.283 13.0005 10.62C13.5097 10.0427 13.8415 9.33066 13.956 8.56944C14.0705 7.80822 13.963 7.03011 13.6463 6.3285C13.3296 5.62688 12.8171 5.03156 12.1704 4.61397C11.5238 4.19637 10.7703 3.97425 10.0005 3.97425C9.23075 3.97425 8.47731 4.19637 7.83063 4.61397C7.18395 5.03156 6.67151 5.62688 6.35479 6.3285C6.03807 7.03011 5.93052 7.80822 6.04507 8.56944C6.15961 9.33066 6.49137 10.0427 7.00054 10.62C5.35914 11.283 3.98401 12.4718 3.09054 14C2.37848 12.7871 2.00226 11.4065 2.00054 10C2.00054 7.87827 2.84339 5.84344 4.34368 4.34315C5.84397 2.84285 7.87881 2 10.0005 2C12.1223 2 14.1571 2.84285 15.6574 4.34315C17.1577 5.84344 18.0005 7.87827 18.0005 10C17.9988 11.4065 17.6226 12.7871 16.9105 14Z"
+                                                                fill="#888FA2" />
+                                                        </svg>$2,000</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-leases__item py-4">
+                                    <div class="px-xl-3 d-xl-flex">
+
+                                        <div class="me-xl-3 mb-3 mb-xl-0">
+                                            <img class="property-leases__item__img me-auto ms-auto " src="../img/image 63.png" alt="">
+                                        </div>
+
+                                        <div class="w-100">
+                                            <div class="">
+                                                <div class="d-sm-flex align-items-center justify-content-between">
+                                                    <div class="fw-bold text-large mb-3">Incline 45 Apartments Lease
+                                                    </div>
+                                                    <div class="marker__grey-large mb-3">SIGNATURE PENDING</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-md-flex align-item-center">
+                                                <div class="me-md-5 mb-3 mb-ms-0">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Lease start & end
+                                                    </div>
+                                                    <div class="text-large fw-semibold d-flex align-item-center"><svg
+                                                            class="me-2" width="18" height="20" viewBox="0 0 18 20"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M16 20H2C1.46957 20 0.960859 19.7893 0.585786 19.4142C0.210714 19.0391 0 18.5304 0 18V4C0 3.46957 0.210714 2.96086 0.585786 2.58579C0.960859 2.21071 1.46957 2 2 2H4V0H6V2H12V0H14V2H16C16.5304 2 17.0391 2.21071 17.4142 2.58579C17.7893 2.96086 18 3.46957 18 4V18C18 18.5304 17.7893 19.0391 17.4142 19.4142C17.0391 19.7893 16.5304 20 16 20ZM2 8V18H16V8H2ZM2 4V6H16V4H2ZM12 14H6V12H12V14Z"
+                                                                fill="#888FA2" />
+                                                        </svg>
+                                                        12 / 09 / 2022 - 12 / 23 / 2023</div>
+                                                </div>
+                                                <div class="me-md-5 mb-3 mb-ms-0">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Money rent amount
+                                                    </div>
+                                                    <div class="text-large fw-semibold d-flex align-items-center"><svg
+                                                            class="me-2" width="22" height="14" viewBox="0 0 22 14"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5 6C4.80222 6 4.60888 6.05865 4.44443 6.16853C4.27998 6.27841 4.15181 6.43459 4.07612 6.61732C4.00043 6.80004 3.98063 7.00111 4.01921 7.19509C4.0578 7.38907 4.15304 7.56725 4.29289 7.70711C4.43275 7.84696 4.61093 7.9422 4.80491 7.98079C4.99889 8.01937 5.19996 7.99957 5.38268 7.92388C5.56541 7.84819 5.72159 7.72002 5.83147 7.55557C5.94135 7.39112 6 7.19778 6 7C6 6.73478 5.89464 6.48043 5.70711 6.29289C5.51957 6.10536 5.26522 6 5 6ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM19 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V11C0 11.7956 0.31607 12.5587 0.87868 13.1213C1.44129 13.6839 2.20435 14 3 14H19C19.7956 14 20.5587 13.6839 21.1213 13.1213C21.6839 12.5587 22 11.7956 22 11V3C22 2.20435 21.6839 1.44129 21.1213 0.87868C20.5587 0.316071 19.7956 0 19 0ZM20 11C20 11.2652 19.8946 11.5196 19.7071 11.7071C19.5196 11.8946 19.2652 12 19 12H3C2.73478 12 2.48043 11.8946 2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V11ZM11 4C10.4067 4 9.82664 4.17595 9.33329 4.50559C8.83994 4.83524 8.45542 5.30377 8.22836 5.85195C8.0013 6.40013 7.94189 7.00333 8.05764 7.58527C8.1734 8.16721 8.45912 8.70176 8.87868 9.12132C9.29824 9.54088 9.83279 9.8266 10.4147 9.94236C10.9967 10.0581 11.5999 9.9987 12.1481 9.77164C12.6962 9.54458 13.1648 9.16006 13.4944 8.66671C13.8241 8.17336 14 7.59334 14 7C14 6.20435 13.6839 5.44129 13.1213 4.87868C12.5587 4.31607 11.7956 4 11 4ZM11 8C10.8022 8 10.6089 7.94135 10.4444 7.83147C10.28 7.72159 10.1518 7.56541 10.0761 7.38268C10.0004 7.19996 9.98063 6.99889 10.0192 6.80491C10.0578 6.61093 10.153 6.43275 10.2929 6.29289C10.4327 6.15304 10.6109 6.0578 10.8049 6.01921C10.9989 5.98063 11.2 6.00043 11.3827 6.07612C11.5654 6.15181 11.7216 6.27998 11.8315 6.44443C11.9414 6.60888 12 6.80222 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89464 11.2652 8 11 8Z"
+                                                                fill="#888FA2" />
+                                                        </svg>$2,000</div>
+                                                </div>
+                                                <div class="">
+                                                    <div class="text-regular text-grey fw-400 mb-2">Tenant</div>
+                                                    <div class="text-large fw-semibold d-flex align-items-center"><svg
+                                                            class="me-2" width="20" height="20" viewBox="0 0 20 20"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M10.0005 0C8.06102 0.00368503 6.16442 0.571311 4.54177 1.63374C2.91911 2.69617 1.64043 4.20754 0.861478 5.98377C0.0825237 7.76 -0.163087 9.72442 0.154563 11.6378C0.472214 13.5511 1.33941 15.3308 2.65054 16.76C3.58696 17.775 4.72348 18.5851 5.98847 19.1392C7.25347 19.6933 8.61952 19.9793 10.0005 19.9793C11.3816 19.9793 12.7476 19.6933 14.0126 19.1392C15.2776 18.5851 16.4141 17.775 17.3505 16.76C18.6617 15.3308 19.5289 13.5511 19.8465 11.6378C20.1642 9.72442 19.9186 7.76 19.1396 5.98377C18.3606 4.20754 17.082 2.69617 15.4593 1.63374C13.8367 0.571311 11.9401 0.00368503 10.0005 0ZM10.0005 18C7.929 17.9969 5.93945 17.1903 4.45054 15.75C4.90258 14.6495 5.67157 13.7083 6.65979 13.0459C7.64801 12.3835 8.81085 12.0298 10.0005 12.0298C11.1902 12.0298 12.3531 12.3835 13.3413 13.0459C14.3295 13.7083 15.0985 14.6495 15.5505 15.75C14.0616 17.1903 12.0721 17.9969 10.0005 18ZM8.00054 8C8.00054 7.60444 8.11784 7.21776 8.3376 6.88886C8.55736 6.55996 8.86972 6.30362 9.23517 6.15224C9.60062 6.00087 10.0028 5.96126 10.3907 6.03843C10.7787 6.1156 11.135 6.30608 11.4148 6.58579C11.6945 6.86549 11.8849 7.22186 11.9621 7.60982C12.0393 7.99778 11.9997 8.39991 11.8483 8.76537C11.6969 9.13082 11.4406 9.44318 11.1117 9.66294C10.7828 9.8827 10.3961 10 10.0005 10C9.4701 10 8.9614 9.78929 8.58632 9.41421C8.21125 9.03914 8.00054 8.53043 8.00054 8ZM16.9105 14C16.0171 12.4718 14.6419 11.283 13.0005 10.62C13.5097 10.0427 13.8415 9.33066 13.956 8.56944C14.0705 7.80822 13.963 7.03011 13.6463 6.3285C13.3296 5.62688 12.8171 5.03156 12.1704 4.61397C11.5238 4.19637 10.7703 3.97425 10.0005 3.97425C9.23075 3.97425 8.47731 4.19637 7.83063 4.61397C7.18395 5.03156 6.67151 5.62688 6.35479 6.3285C6.03807 7.03011 5.93052 7.80822 6.04507 8.56944C6.15961 9.33066 6.49137 10.0427 7.00054 10.62C5.35914 11.283 3.98401 12.4718 3.09054 14C2.37848 12.7871 2.00226 11.4065 2.00054 10C2.00054 7.87827 2.84339 5.84344 4.34368 4.34315C5.84397 2.84285 7.87881 2 10.0005 2C12.1223 2 14.1571 2.84285 15.6574 4.34315C17.1577 5.84344 18.0005 7.87827 18.0005 10C17.9988 11.4065 17.6226 12.7871 16.9105 14Z"
+                                                                fill="#888FA2" />
+                                                        </svg>$2,000</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="applications" role="tabpanel"
+                                aria-labelledby="applications-tab">
+                                <div class="d-md-flex align-item-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center mb-3 mb-md-0">
+                                        <div class="me-012 property-units__number__img">
+                                            <img src="../img/Vector (8).svg" alt="">
+                                        </div>
+
+                                        <div class="d-flex align-items-center me-4">
+                                            <div class="fw-bold me-1 property-units__number">2</div>
+                                            <div class="text-grey text-regular fw-500">Applicants</div>
+                                        </div>
+
+                                        <div class="orange-border-btn py-010 px-020">View all</div>
+
+                                    </div>
+
+                                    <div class="d-flex ">
+                                        <form class="position-relative me-md-4 w-100" role="search">
+                                            <input type="search"
+                                                class="input-style position-relative property-units__input"
+                                                placeholder="Search for anything here..." aria-label="Search">
+                                            <button class="property-units__search">
+                                                <img class="property-units__search__img" src="img/search.svg"
+                                                    alt="search">
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                                <div class="property-applications__item py-3">
+                                    <div class="d-xl-flex align-items-center justify-content-between w-100 mb-4">
+                                        <div class="d-flex mb-3 mb-xl-0 align-items-center">
+                                            <img class="me-012" src="../img/Frame 691.png" alt="">
+
+                                            <div class="flex-column">
+                                                <div class="fw-semibold text-regular mb-2">Maggie Cooper</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-grey text-small"><svg
+                                                            class="me-2" width="14" height="12" viewBox="0 0 14 12"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.3333 1.33337H1.66667C1.29848 1.33337 1 1.63185 1 2.00004V10C1 10.3682 1.29848 10.6667 1.66667 10.6667H12.3333C12.7015 10.6667 13 10.3682 13 10V2.00004C13 1.63185 12.7015 1.33337 12.3333 1.33337Z"
+                                                                stroke="#888FA2" stroke-width="1.5"
+                                                                stroke-linecap="round" />
+                                                            <path d="M1 2.33337L7 6.00004L13 2.33337" stroke="#888FA2"
+                                                                stroke-width="1.5" stroke-linecap="round" />
+                                                        </svg>mCooper@gmail.com</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-grey text-small"><svg
+                                                            class="me-2" width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.9101 14.6L12.9101 14.5998C7.96462 14.3154 5.1312 12.0839 3.5133 9.59894C1.8989 7.11937 1.49922 4.39512 1.40115 3.12269C1.38444 2.91295 1.40925 2.70198 1.47417 2.50185C1.53913 2.30163 1.64295 2.11619 1.77969 1.95616C1.91643 1.79614 2.08341 1.66466 2.27105 1.56928C2.45869 1.47389 2.6633 1.41647 2.87317 1.4003L2.88086 1.3997V1.4L5.63576 1.4L5.63586 1.4V1.5C5.83614 1.49981 6.03186 1.55976 6.19767 1.67208C6.36349 1.78441 6.49175 1.94394 6.56586 2.13L12.9101 14.6ZM12.9101 14.6H12.9159H13.0009C13.4252 14.6 13.8322 14.4314 14.1322 14.1314C14.4323 13.8313 14.6009 13.4243 14.6009 13V10.3603M12.9101 14.6L6.65862 2.09264C6.65867 2.09276 6.65871 2.09288 6.65876 2.093L7.4185 3.96235L7.41862 3.96266C7.49912 4.16261 7.51909 4.3818 7.47607 4.59301C7.43305 4.80417 7.32896 4.99805 7.17671 5.15057C7.17668 5.1506 7.17665 5.15063 7.17662 5.15066L6.14856 6.18837C6.31844 7.09401 6.75736 7.92789 7.40861 8.58086C8.05982 9.23379 8.89248 9.67489 9.7976 9.84718L10.8455 8.80896L10.8461 8.80832C11.001 8.65771 11.1967 8.55601 11.4089 8.51591C11.6209 8.47586 11.8399 8.49902 12.0388 8.58248L13.923 9.33717L13.9244 9.3377L13.9244 9.33771C14.1259 9.42179 14.2979 9.56399 14.4184 9.74618C14.5388 9.92825 14.6023 10.142 14.6009 10.3603M14.6009 10.3603C14.6009 10.3604 14.6009 10.3606 14.6009 10.3607L14.5009 10.36M14.6009 10.3603V10.36H14.5009M14.5009 10.36V13C14.5009 13.3978 14.3428 13.7794 14.0615 14.0607C13.7802 14.342 13.3987 14.5 13.0009 14.5H12.9159M14.5009 10.36C14.5023 10.1614 14.4445 9.96696 14.335 9.80134C14.2255 9.63571 14.0691 9.50644 13.8859 9.43L12.0009 8.675C11.8199 8.59887 11.6204 8.57771 11.4275 8.61417C11.2346 8.65063 11.0566 8.74308 10.9159 8.88L12.9159 14.5M12.9159 14.5C3.09086 13.935 1.69586 5.645 1.50086 3.115C1.48514 2.91829 1.5084 2.72041 1.56929 2.53271C1.63019 2.345 1.72752 2.17115 1.85571 2.02113C1.98391 1.8711 2.14045 1.74784 2.31636 1.65842C2.49227 1.569 2.6841 1.51516 2.88086 1.5L12.9159 14.5ZM12.977 13.4002L12.9766 13.4002C8.62475 13.1519 6.09325 11.2927 4.61777 9.13604C3.14005 6.97607 2.71567 4.50852 2.60086 3.03611V3C2.60086 2.89391 2.643 2.79217 2.71801 2.71716C2.79303 2.64214 2.89477 2.6 3.00086 2.6H5.57302L6.27375 4.36117L4.89978 5.74966L4.8656 5.7842L4.87163 5.8324L4.90131 6.06989C4.90188 6.07697 4.90283 6.08424 4.90341 6.08868L4.90352 6.08953C4.9049 6.10008 4.90695 6.11444 4.90974 6.13234C4.91534 6.16818 4.92404 6.21881 4.93661 6.28227C4.96175 6.40918 5.00247 6.5878 5.06501 6.80222C5.19003 7.23082 5.40271 7.80405 5.75368 8.39365C6.45675 9.57476 7.7159 10.822 9.92843 11.0992L9.92845 11.0992L10.1685 11.1292L10.2168 11.1353L10.2513 11.101L11.6397 9.72227L13.4009 10.4277V13.0269C13.3975 13.0785 13.3842 13.129 13.3616 13.1756C13.3386 13.2229 13.3065 13.2653 13.2671 13.3002C13.2277 13.3352 13.1818 13.362 13.132 13.3791C13.0822 13.3963 13.0296 13.4034 12.977 13.4002Z"
+                                                                fill="#888FA2" stroke="#888FA2" stroke-width="0.2" />
+                                                        </svg>(+1) 124159265</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <button class="decline__btn me-2">Decline</button>
+                                            <button class="orange-btn px-3">View Details</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 px-2">
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Total income
+                                            </div>
+                                            <div class="text-small fw-semibold">$4000/mo</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">MOVE-IN</div>
+                                            <div class="text-small fw-semibold">9/1/22</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Credit Score
+                                            </div>
+                                            <div class="text-small fw-semibold">744 (Good)</div>
+                                        </div>
+
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Criminal records
+                                            </div>
+                                            <div class="text-small fw-semibold">-</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Eviction records
+                                            </div>
+                                            <div class="text-small fw-semibold">-</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Applied</div>
+                                            <div class="text-small fw-semibold">01/18/20 02:47 PM</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="property-applications__footer d-flex align-items-center w-100">
+                                        <div class="d-flex align-items-center me-5">
+                                            <div class="text-regular text-grey me-3">Credit report</div>
+                                            <div class="text-green text-tiny fw-semibold">Verified</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="text-regular text-grey me-3">Credit report</div>
+                                            <div class="text-green text-tiny fw-semibold">Verified</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="property-applications__item py-3">
+                                    <div class="d-xl-flex align-items-center justify-content-between w-100 mb-4">
+                                        <div class="d-flex mb-3 mb-xl-0 align-items-center">
+                                            <img class="me-012" src="../img/Frame 691.png" alt="">
+
+                                            <div class="flex-column">
+                                                <div class="fw-semibold text-regular mb-2">Maggie Cooper</div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center text-grey text-small"><svg
+                                                            class="me-2" width="14" height="12" viewBox="0 0 14 12"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.3333 1.33337H1.66667C1.29848 1.33337 1 1.63185 1 2.00004V10C1 10.3682 1.29848 10.6667 1.66667 10.6667H12.3333C12.7015 10.6667 13 10.3682 13 10V2.00004C13 1.63185 12.7015 1.33337 12.3333 1.33337Z"
+                                                                stroke="#888FA2" stroke-width="1.5"
+                                                                stroke-linecap="round" />
+                                                            <path d="M1 2.33337L7 6.00004L13 2.33337" stroke="#888FA2"
+                                                                stroke-width="1.5" stroke-linecap="round" />
+                                                        </svg>mCooper@gmail.com</div>
+
+                                                    <span class="property-add__item__info__point mx-2"></span>
+
+                                                    <div class="d-flex align-items-center text-grey text-small"><svg
+                                                            class="me-2" width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.9101 14.6L12.9101 14.5998C7.96462 14.3154 5.1312 12.0839 3.5133 9.59894C1.8989 7.11937 1.49922 4.39512 1.40115 3.12269C1.38444 2.91295 1.40925 2.70198 1.47417 2.50185C1.53913 2.30163 1.64295 2.11619 1.77969 1.95616C1.91643 1.79614 2.08341 1.66466 2.27105 1.56928C2.45869 1.47389 2.6633 1.41647 2.87317 1.4003L2.88086 1.3997V1.4L5.63576 1.4L5.63586 1.4V1.5C5.83614 1.49981 6.03186 1.55976 6.19767 1.67208C6.36349 1.78441 6.49175 1.94394 6.56586 2.13L12.9101 14.6ZM12.9101 14.6H12.9159H13.0009C13.4252 14.6 13.8322 14.4314 14.1322 14.1314C14.4323 13.8313 14.6009 13.4243 14.6009 13V10.3603M12.9101 14.6L6.65862 2.09264C6.65867 2.09276 6.65871 2.09288 6.65876 2.093L7.4185 3.96235L7.41862 3.96266C7.49912 4.16261 7.51909 4.3818 7.47607 4.59301C7.43305 4.80417 7.32896 4.99805 7.17671 5.15057C7.17668 5.1506 7.17665 5.15063 7.17662 5.15066L6.14856 6.18837C6.31844 7.09401 6.75736 7.92789 7.40861 8.58086C8.05982 9.23379 8.89248 9.67489 9.7976 9.84718L10.8455 8.80896L10.8461 8.80832C11.001 8.65771 11.1967 8.55601 11.4089 8.51591C11.6209 8.47586 11.8399 8.49902 12.0388 8.58248L13.923 9.33717L13.9244 9.3377L13.9244 9.33771C14.1259 9.42179 14.2979 9.56399 14.4184 9.74618C14.5388 9.92825 14.6023 10.142 14.6009 10.3603M14.6009 10.3603C14.6009 10.3604 14.6009 10.3606 14.6009 10.3607L14.5009 10.36M14.6009 10.3603V10.36H14.5009M14.5009 10.36V13C14.5009 13.3978 14.3428 13.7794 14.0615 14.0607C13.7802 14.342 13.3987 14.5 13.0009 14.5H12.9159M14.5009 10.36C14.5023 10.1614 14.4445 9.96696 14.335 9.80134C14.2255 9.63571 14.0691 9.50644 13.8859 9.43L12.0009 8.675C11.8199 8.59887 11.6204 8.57771 11.4275 8.61417C11.2346 8.65063 11.0566 8.74308 10.9159 8.88L12.9159 14.5M12.9159 14.5C3.09086 13.935 1.69586 5.645 1.50086 3.115C1.48514 2.91829 1.5084 2.72041 1.56929 2.53271C1.63019 2.345 1.72752 2.17115 1.85571 2.02113C1.98391 1.8711 2.14045 1.74784 2.31636 1.65842C2.49227 1.569 2.6841 1.51516 2.88086 1.5L12.9159 14.5ZM12.977 13.4002L12.9766 13.4002C8.62475 13.1519 6.09325 11.2927 4.61777 9.13604C3.14005 6.97607 2.71567 4.50852 2.60086 3.03611V3C2.60086 2.89391 2.643 2.79217 2.71801 2.71716C2.79303 2.64214 2.89477 2.6 3.00086 2.6H5.57302L6.27375 4.36117L4.89978 5.74966L4.8656 5.7842L4.87163 5.8324L4.90131 6.06989C4.90188 6.07697 4.90283 6.08424 4.90341 6.08868L4.90352 6.08953C4.9049 6.10008 4.90695 6.11444 4.90974 6.13234C4.91534 6.16818 4.92404 6.21881 4.93661 6.28227C4.96175 6.40918 5.00247 6.5878 5.06501 6.80222C5.19003 7.23082 5.40271 7.80405 5.75368 8.39365C6.45675 9.57476 7.7159 10.822 9.92843 11.0992L9.92845 11.0992L10.1685 11.1292L10.2168 11.1353L10.2513 11.101L11.6397 9.72227L13.4009 10.4277V13.0269C13.3975 13.0785 13.3842 13.129 13.3616 13.1756C13.3386 13.2229 13.3065 13.2653 13.2671 13.3002C13.2277 13.3352 13.1818 13.362 13.132 13.3791C13.0822 13.3963 13.0296 13.4034 12.977 13.4002Z"
+                                                                fill="#888FA2" stroke="#888FA2" stroke-width="0.2" />
+                                                        </svg>(+1) 124159265</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <button class="decline__btn me-2">Decline</button>
+                                            <button class="orange-btn px-3">View Details</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 px-2">
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Total income
+                                            </div>
+                                            <div class="text-small fw-semibold">$4000/mo</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">MOVE-IN</div>
+                                            <div class="text-small fw-semibold">9/1/22</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Credit Score
+                                            </div>
+                                            <div class="text-small fw-semibold">744 (Good)</div>
+                                        </div>
+
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Criminal records
+                                            </div>
+                                            <div class="text-small fw-semibold">-</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Eviction records
+                                            </div>
+                                            <div class="text-small fw-semibold">-</div>
+                                        </div>
+                                        <div class="flex-column mb-3 mb-md-0">
+                                            <div class="text-tiny text-uppercase fw-500 text-grey mb-2">Applied</div>
+                                            <div class="text-small fw-semibold">01/18/20 02:47 PM</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="property-applications__footer d-flex align-items-center w-100">
+                                        <div class="d-flex align-items-center me-5">
+                                            <div class="text-regular text-grey me-3">Credit report</div>
+                                            <div class="text-green text-tiny fw-semibold">Verified</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="text-regular text-grey me-3">Credit report</div>
+                                            <div class="text-green text-tiny fw-semibold">Verified</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="payments" role="tabpanel"
+                                aria-labelledby="payments-tab">
+                                <div class="d-flex align-item-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="me-012 property-units__number__img">
+                                            <img src="../img/Vector (8).svg" alt="">
+                                        </div>
+
+                                        <div class="d-flex align-items-center me-4">
+                                            <div class="fw-bold me-1 property-units__number">14</div>
+                                            <div class="text-grey text-regular fw-500">Transactions</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex ">
+                                        <form class="position-relative me-4" role="search">
+                                            <input type="search"
+                                                class="input-style position-relative property-units__input"
+                                                placeholder="Search for anything here..." aria-label="Search">
+                                            <button class="property-units__search">
+                                                <img class="property-units__search__img" src="img/search.svg"
+                                                    alt="search">
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                                <table class="w-100">
+                                    <div>
+                                        <thead class="property-payments__header" height="36px">
+                                            <td class="text-uppercase text-tiny text-grey fw-500 ps-2">due date</td>
+                                            <td class="text-uppercase text-tiny text-grey fw-500">Type</td>
+                                            <td class="text-uppercase text-tiny text-grey fw-500">category</td>
+                                            <td class="text-uppercase text-tiny text-grey fw-500">uNit</td>
+                                            <td class="text-uppercase text-tiny text-grey fw-500">pAYER/payee</td>
+                                            <td class="text-uppercase text-tiny text-grey fw-500">status</td>
+                                            <td class="text-uppercase text-tiny text-grey fw-500">total/paid</td>
+                                            <td class="text-uppercase text-tiny text-grey02 fw-500">View</td>
+                                        </thead>
+                                    </div>
+                                    <tbody>
+                                        <tr class="property-payments__line " height="36px">
+                                            <td class="text-grey text-uppercase text-tiny fw-500 ps-2">june 2022</td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent<svg class="ms-1" width="15"
+                                                            height="16" viewBox="0 0 15 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M3.45281 6.30906L3.2625 6.24758C3.12687 6.66741 2.67718 6.89969 2.25536 6.76233L2.2546 6.76208C1.83479 6.62725 1.60369 6.17565 1.73967 5.75531L1.7397 5.75519C2.61958 3.02972 5.13359 1.2 8 1.2C10.1657 1.2 12.1276 2.24683 13.3375 3.93196L13.7 4.43677V3.81531V1.5C13.7 1.05773 14.0582 0.7 14.5 0.7C14.9426 0.7 15.3 1.0576 15.3 1.5V6C15.3 6.44227 14.9418 6.8 14.5 6.8H10.5C10.0582 6.8 9.7 6.44227 9.7 6C9.7 5.55773 10.0582 5.2 10.5 5.2H11.8875H12.2758L12.0503 4.88386C11.1342 3.59946 9.64402 2.8 8 2.8C5.83217 2.8 3.92694 4.18392 3.26244 6.24777L3.45281 6.30906ZM3.45281 6.30906C3.28344 6.83337 2.72125 7.12437 2.19344 6.9525L11.7368 4.8C10.8497 3.68477 9.49094 3 8 3C5.91875 3 4.09062 4.32812 3.45281 6.30906ZM13.7451 9.24041L13.745 9.24064L13.7545 9.24319C14.1588 9.35147 14.3951 9.81468 14.235 10.2351L14.2347 10.235L14.2315 10.2448C13.352 12.9703 10.8367 14.8 7.97188 14.8C5.83468 14.8 3.87267 13.7541 2.66248 12.0681L2.3 11.563V12.1847V14.5C2.3 14.9423 1.94181 15.3 1.5 15.3C1.05819 15.3 0.7 14.9423 0.7 14.5V10C0.7 9.55773 1.05819 9.2 1.5 9.2H5.5C5.94181 9.2 6.3 9.55773 6.3 10C6.3 10.4423 5.94181 10.8 5.5 10.8H4.1125H3.72409L3.9497 11.1162C4.86616 12.4005 6.35596 13.2 8 13.2C10.1678 13.2 12.073 11.8161 12.7372 9.75478C12.8727 9.33567 13.3213 9.10421 13.7451 9.24041Z"
+                                                                fill="#04AA6A" stroke="white" stroke-width="0.4" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line " height="36px">
+                                            <td class="text-grey text-uppercase text-tiny fw-500 ps-2">june 2022</td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent<svg class="ms-1" width="15"
+                                                            height="16" viewBox="0 0 15 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M3.45281 6.30906L3.2625 6.24758C3.12687 6.66741 2.67718 6.89969 2.25536 6.76233L2.2546 6.76208C1.83479 6.62725 1.60369 6.17565 1.73967 5.75531L1.7397 5.75519C2.61958 3.02972 5.13359 1.2 8 1.2C10.1657 1.2 12.1276 2.24683 13.3375 3.93196L13.7 4.43677V3.81531V1.5C13.7 1.05773 14.0582 0.7 14.5 0.7C14.9426 0.7 15.3 1.0576 15.3 1.5V6C15.3 6.44227 14.9418 6.8 14.5 6.8H10.5C10.0582 6.8 9.7 6.44227 9.7 6C9.7 5.55773 10.0582 5.2 10.5 5.2H11.8875H12.2758L12.0503 4.88386C11.1342 3.59946 9.64402 2.8 8 2.8C5.83217 2.8 3.92694 4.18392 3.26244 6.24777L3.45281 6.30906ZM3.45281 6.30906C3.28344 6.83337 2.72125 7.12437 2.19344 6.9525L11.7368 4.8C10.8497 3.68477 9.49094 3 8 3C5.91875 3 4.09062 4.32812 3.45281 6.30906ZM13.7451 9.24041L13.745 9.24064L13.7545 9.24319C14.1588 9.35147 14.3951 9.81468 14.235 10.2351L14.2347 10.235L14.2315 10.2448C13.352 12.9703 10.8367 14.8 7.97188 14.8C5.83468 14.8 3.87267 13.7541 2.66248 12.0681L2.3 11.563V12.1847V14.5C2.3 14.9423 1.94181 15.3 1.5 15.3C1.05819 15.3 0.7 14.9423 0.7 14.5V10C0.7 9.55773 1.05819 9.2 1.5 9.2H5.5C5.94181 9.2 6.3 9.55773 6.3 10C6.3 10.4423 5.94181 10.8 5.5 10.8H4.1125H3.72409L3.9497 11.1162C4.86616 12.4005 6.35596 13.2 8 13.2C10.1678 13.2 12.073 11.8161 12.7372 9.75478C12.8727 9.33567 13.3213 9.10421 13.7451 9.24041Z"
+                                                                fill="#04AA6A" stroke="white" stroke-width="0.4" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line " height="36px">
+                                            <td class="text-grey text-uppercase text-tiny fw-500 ps-2">june 2022</td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent<svg class="ms-1" width="15"
+                                                            height="16" viewBox="0 0 15 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M3.45281 6.30906L3.2625 6.24758C3.12687 6.66741 2.67718 6.89969 2.25536 6.76233L2.2546 6.76208C1.83479 6.62725 1.60369 6.17565 1.73967 5.75531L1.7397 5.75519C2.61958 3.02972 5.13359 1.2 8 1.2C10.1657 1.2 12.1276 2.24683 13.3375 3.93196L13.7 4.43677V3.81531V1.5C13.7 1.05773 14.0582 0.7 14.5 0.7C14.9426 0.7 15.3 1.0576 15.3 1.5V6C15.3 6.44227 14.9418 6.8 14.5 6.8H10.5C10.0582 6.8 9.7 6.44227 9.7 6C9.7 5.55773 10.0582 5.2 10.5 5.2H11.8875H12.2758L12.0503 4.88386C11.1342 3.59946 9.64402 2.8 8 2.8C5.83217 2.8 3.92694 4.18392 3.26244 6.24777L3.45281 6.30906ZM3.45281 6.30906C3.28344 6.83337 2.72125 7.12437 2.19344 6.9525L11.7368 4.8C10.8497 3.68477 9.49094 3 8 3C5.91875 3 4.09062 4.32812 3.45281 6.30906ZM13.7451 9.24041L13.745 9.24064L13.7545 9.24319C14.1588 9.35147 14.3951 9.81468 14.235 10.2351L14.2347 10.235L14.2315 10.2448C13.352 12.9703 10.8367 14.8 7.97188 14.8C5.83468 14.8 3.87267 13.7541 2.66248 12.0681L2.3 11.563V12.1847V14.5C2.3 14.9423 1.94181 15.3 1.5 15.3C1.05819 15.3 0.7 14.9423 0.7 14.5V10C0.7 9.55773 1.05819 9.2 1.5 9.2H5.5C5.94181 9.2 6.3 9.55773 6.3 10C6.3 10.4423 5.94181 10.8 5.5 10.8H4.1125H3.72409L3.9497 11.1162C4.86616 12.4005 6.35596 13.2 8 13.2C10.1678 13.2 12.073 11.8161 12.7372 9.75478C12.8727 9.33567 13.3213 9.10421 13.7451 9.24041Z"
+                                                                fill="#04AA6A" stroke="white" stroke-width="0.4" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="property-payments__line" height="56px">
+                                            <td class="text-small fw-500 ps-2">12 June 2022</td>
+                                            <td class="text-small fw-500">Income</td>
+                                            <td class="text-small fw-500">
+                                                <div class="d-flex">
+                                                    <span class="text-small fw-500">Rent
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="text-small fw-500">Unit #3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-2" src="../img/Frame 676.png" alt="">
+                                                    <span class="text-small fw-500 text-orange">Jackson F</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="marker__green-large">paid</div>
+                                            </td>
+                                            <td>
+                                                <div class="flex-column">
+                                                    <div class="text-small fw-500"><span
+                                                            class="text-orange">-</span>$1,500</div>
+                                                    <div class="text-small fw-500 text-grey">paid: $0</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    class="property-payments__btn text-small fw-semibold text-decoration-underline">View
+                                                    Details</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+
+@@include('../components/footer.html')

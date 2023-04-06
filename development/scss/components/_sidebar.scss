@@ -1,0 +1,55 @@
+.sidebar {
+    width: 256px;
+    height: 100%;
+    background-color: $navy;
+    padding: 24px 12px;
+    position: fixed;
+    top: 0;
+
+    @media screen and (max-width: 992px) {
+        display: none !important;
+    }
+
+    svg {
+        fill: rgba($white, .56);
+    }
+    &__logo {
+        margin: 0px 12px 28px 12px;
+    }
+    img {
+        margin-right: 8px;
+    }
+    ul {
+        margin-bottom: 28px;
+    }
+    li {
+        position: relative;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+    a {
+        font-weight: 500;
+        position: relative;
+        border-radius: 10px;
+        text-decoration: none;
+        &:hover {
+            color: rgb(200, 200, 228);
+        }
+    }
+    &__notification {
+        background-color: $red;
+        width: 20px;
+        height: 16px;
+        border-radius: 40%;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding-right: 1px;
+    }
+    &_active {
+        background-color: $blue03 !important;
+    }
+}

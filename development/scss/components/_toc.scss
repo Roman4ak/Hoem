@@ -1,0 +1,46 @@
+.section-nav li.toc-active>a {
+    color: $orange !important;
+    font-weight: 600;
+}
+
+.walktrough-list__toc {
+    @media screen and (max-width: 992px) {
+        display: block;
+
+    }
+}
+
+.walktrough-list__list {
+    position: sticky;
+    top: 40px;
+    list-style: none;
+    background-color: $white;
+    border: 1px solid #E0E2E7;
+    border-radius: 8px;
+    padding: 24px 28px;
+
+    @media screen and (max-width: 992px) {
+        margin-top: 30px;
+        margin-left: 0;
+        max-width: 100%;
+        position: relative;
+        transform: translateY(-20%);
+        margin-bottom: 30px;
+        padding: 24px 15px;
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    &__navigation {
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+            transition: all .2s ease-in-out;
+
+        }
+    }
+}

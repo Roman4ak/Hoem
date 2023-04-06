@@ -1,0 +1,168 @@
+.maintenance-page {
+    margin-left: 256px;
+    padding: 24px 24px 46px 24px;
+    background: $background-gray;
+
+    &__head {
+        &__date {
+            min-width: 258px;
+        }
+
+        &__number {
+            font-size: 28px;
+            line-height: 36px;
+
+        }
+
+        &__background {
+            background-color: $white;
+            box-shadow: 0px 1px 4px rgba(11, 21, 59, 0.04);
+            border-radius: 6px;
+            padding: 10px 12px;
+        }
+
+        &__property {
+            @media screen and (max-width: 992px) {
+                margin: 0px;
+            }
+        }
+
+        .property-number {
+            background-color: $green;
+            border-radius: 100px;
+        }
+
+        &__request {
+            position: relative;
+            padding-left: 44px;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                width: 15px;
+                height: 2px;
+                background-color: $white;
+                border-radius: 2px;
+                left: 15px;
+                top: 22px;
+            }
+
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+
+        &__request {
+            min-width: 150px;
+            max-height: 50px;
+        }
+
+        .text-text {
+            width: 101px;
+        }
+    }
+
+    &__body {
+        .maintenance-accordion {
+
+            &__button {
+                background-color: $background-gray;
+                border: none;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: $background-gray;
+                }
+            }
+
+            .accordion-item {
+                border-bottom: 0;
+
+
+                .accordion-button.collapsed {
+                    color: $black;
+
+                    &::after {
+                        background-image: url(../../img/Vector_arrow.svg);
+                        background-position: center;
+                        background-size: auto;
+                        background-color: $white;
+                        transform: rotate(180deg)!important;
+                        border-radius: 100px;
+                        width: 28px;
+                        height: 28px;
+
+                    }
+                }
+
+
+                .accordion-button:not(.collapsed) {
+                    color: $black;
+
+                    &::after {
+                        background-image: url(../../img/Vector_arrow.svg);
+                        background-position: center;
+                        background-size: auto;
+                        background-color: $white;
+                        transform: rotate(0deg)!important;
+                        border-radius: 100px;
+                        width: 28px;
+                        height: 28px;
+                        
+                    }
+                }
+
+
+                &__tenant {
+                    margin: 0px 80px;
+
+                    @media screen and (max-width: 1200px) {
+                        margin: 0px 30px;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        margin: 30px 0px;
+                        flex-direction: column !important;
+                    }
+                }
+                
+                &__date {
+                    @media screen and (max-width: 992px) {
+                        padding-bottom: 30px;
+                    }
+                }
+
+                &__information {
+                    @media screen and (max-width: 768px) {
+                        padding-bottom: 30px;
+                    }
+                }
+
+                &__button {
+                    margin-top: 8px;
+                }
+
+                &__img {
+                    object-fit: cover;
+                }
+            }
+
+            &__line {
+                position: relative;
+                
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: calc(100% - 282px);
+                    left: 242px;
+                    bottom: 29px;
+                    height: 1px;
+                    background-color: $grey03;
+                    z-index: 5;
+                }
+            }
+        }
+    }
+}

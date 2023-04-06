@@ -1,0 +1,46 @@
+
+.sign-up-inputs {
+    margin-bottom: 20px;
+
+    &__input {
+
+        &__top {
+            margin-right: 8px;
+        }
+    }
+}
+
+.password-rules {
+
+    .valid {
+        p {
+            color: $green;
+        }
+
+        .rules_img path {
+            fill: $green;
+        }
+
+        .rules_img rect {
+            stroke: $green;
+        }
+    }
+
+    .invalid {
+        p {
+            color: $red;
+        }
+
+        .rules_img path {
+            fill: $red;
+        }
+
+        .rules_img rect {
+            stroke: $red;
+        }
+    }
+
+
+
+
+}

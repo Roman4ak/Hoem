@@ -1,0 +1,327 @@
+.walktrough-page {
+    background-color: $white;
+    min-height: 100vh;
+}
+
+.walktrough-header {
+    padding: 25px 24px 24px 29px;
+    border-bottom: 1px solid $grey03;
+}
+
+.walktrough-content {
+    margin-top: 134px;
+
+    &__title {
+        margin-top: 43px;
+    }
+
+    &__subtitle {
+        margin-top: 32px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &__btn {
+        max-width: 173px;
+        padding: 12px 41px;
+        margin-top: 44px;
+    }
+
+    &__button {
+        width: 173px;
+    }
+}
+
+.walktrough-registration-section {
+    margin-top: 64px;
+    margin-bottom: 72px;
+}
+
+.walktrough-registration {
+    &__content {
+        .walktrough-content__radio {
+            input[type=radio] {
+                width: 100%;
+            }
+        }
+    }
+
+    &__family {
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        @media screen and (max-width: 992px) {
+            padding-left: 0.75rem;
+            padding-top: 1rem;
+            width: 100%;
+        }
+    }
+
+    &__radiobtn {
+        padding: 13px 30px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 13px 25px;
+        }
+    }
+
+    &__line {
+        height: 1px;
+        background-color: $grey03;
+        width: 100%;
+    }
+
+    &__foto {
+        padding: 68px 78px 32px 78px;
+        border: 2px dashed $grey03;
+        background-color: $white;
+        border-radius: 8px;
+        width: fit-content;
+
+        @media screen and (max-width: 1200px) {
+            padding: 68px 30px 32px 30px;
+        }
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+            padding: 30px 30px 30px 30px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 56px;
+
+        @media screen and (max-width: 992px) {
+            text-align: center;
+        }
+    }
+
+    &__size {
+        max-width: 200px;
+    }
+
+    &__link {
+        margin-left: 45px;
+
+        @media screen and (max-width: 992px) {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+
+    &__image {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.walktrough-footer {
+    position: relative;
+    border-top: 4px solid $grey03;
+
+    &__line {
+        position: absolute;
+        width: 33.3%;
+        height: 4px;
+        top: -4px;
+        left: 0%;
+        background-color: $green02;
+    }
+
+    &__btn,
+    &__white__btn {
+        padding: 12px 36px;
+
+    }
+
+    &__btn {
+        width: 100px;
+    }
+
+    &__white__btn {
+        width: 130px;
+    }
+}
+
+.walktrough-occupied-section {
+    margin-top: 64px;
+    height: calc(100vh - 235px);
+
+    &__btn {
+        padding: 19px 15px;
+    }
+}
+
+.walktrough-invite-section {
+    margin-top: 64px;
+
+    &__container {
+        margin-bottom: 143px;
+    }
+}
+
+.walktrough-invite {
+
+    &__form {
+        background-color: $white;
+        border: 1px solid $grey03;
+        border-radius: 8px;
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    &__input {
+        position: relative;
+        padding-left: 40px;
+        padding-right: 2px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 37px;
+        left: 24px;
+        z-index: 10;
+    }
+
+    &__button {
+        cursor: pointer;
+
+        &:hover {
+            color: $orange;
+            transition: all .2s ease-in-out;
+        }
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 2px;
+            background-color: $orange;
+            left: 0%;
+            top: 50%;
+        }
+
+        &::before {
+            transform: rotate(90deg) translateX(-1px);
+        }
+
+        &::after {
+            transform: translateY(-50%);
+        }
+    }
+
+    &__skip {
+        margin-bottom: 65px;
+    }
+}
+
+
+.walktrough-list {
+    @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
+
+    &__row {
+        display: flex;
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__info {
+        border-bottom: 1px solid $grey03;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__terms {
+        border-bottom: 1px solid $grey03;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
+        &__input {
+            padding: 14px 55px;
+        }
+
+        &__checkbox {
+            width: 18px;
+            height: 18px;
+        }
+
+        &__pet {
+            background-color: $grey02;
+            border: 1px solid $grey03;
+            border-radius: 8px;
+            padding: 16px 16px 20px 18px;
+        }
+
+        &__allowed {
+            background-color: $white;
+            padding: 4px 12px;
+            border-left: 2px solid $orange;
+        }
+    }
+
+    &__amenitites {
+        border-bottom: 1px solid $grey03;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
+        &__container {
+            padding: 16px 28px 16px 20px;
+            border: 1px solid $grey03;
+        }
+
+        &__number {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+
+    &__photos {
+        border-bottom: 1px solid $grey03;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
+        &__container {
+            padding: 44px 0px 32px 0px;
+            border: 2px dashed $grey03;
+            border-radius: 8px;
+        }
+
+        &__choose {
+            margin-top: 60px;
+        }
+
+        &__image {
+            img {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        &__description {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__applicants {
+        &__info {
+            background: rgba(60, 118, 230, 0.06);
+            border-left: 2px solid $blue;
+            padding: 12px 41px 12px 14px;
+        }
+
+        &__chackbox {
+            background: linear-gradient(108.77deg, rgba(59, 187, 138, 0) 59.2%, #3BBB8A 347.76%);
+            border: 1px solid #E0E2E7;
+            border-radius: 8px;
+            padding: 16px 5px 16px 19px;
+        }
+    }
+}

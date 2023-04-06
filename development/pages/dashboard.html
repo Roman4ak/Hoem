@@ -1,0 +1,262 @@
+@@include('../components/header.html')
+
+
+<div class="dashboard-page">
+    @@include('../modules/sidebar.html')
+
+    <div class="dashboard-main">
+        <div class="header d-flex align-items-center">
+            <header class="container align-items-center px-4">
+                <div class="row">
+                    <span class="col-2 col- header__title text-tall-large">Dashboard</span>
+
+                    <form class="col-7 col-lg-6 col-md-5" role="search">
+                        <input type="search" class="input-style header-search" placeholder="Search for anything here..."
+                            aria-label="Search">
+                        <button class="search__button d-flex justify-content-center">
+                            <img class="search__button__img" src="img/search.svg" alt="search">
+                        </button>
+                    </form>
+
+                    <div class="col-3 col-lg-4 col-md-5 px-0 d-flex align-items-center justify-content-end">
+                        <button class="header__plus d-flex justify-content-center align-items-center"></button>
+
+                        <button class="header__notification ms-012">
+                            <img class="header__notification__img" src="img/bell.svg" alt="notifications">
+                        </button>
+
+                        <div
+                            class="header__dropdown ms-012 pe-012 ps-2 d-flex justify-content-between align-items-center ">
+                            <div class="header__profile d-flex align-items-center">
+                                <img class="me-2" src="img/avatar.png" alt="avatar">
+                                <p class="text-regular mb-0">Jesicca</p>
+                            </div>
+                            <div class="header__arrow d-inline-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="container tenant">
+            <div class="row ">
+                <div class="col-md-10 offset-md-1">
+                    <div class="tenant__header d-lg-flex justify-content-between  mb-2 p-4">
+                        <div class="tenant__profile">
+                            <img src="img/tenant_avatar.png" alt="" class="tenant__avatar me-4">
+                            <div class="tenant__profile-descr">
+                                <div class="tenant__title text-tall-large mb-2">John Doe</div>
+
+                                <div class="tenant__mail d-flex mb-2">
+                                    <img class="tenant__img me-2" src="img/mail.svg" alt="mail">
+                                    <a href="mailto:johndoe@gmail.com"
+                                        class="tenant__link text-grey">johndoe@gmail.com</a>
+                                </div>
+                                <div class="tenant__phone d-flex">
+                                    <img class="tenant__img me-2" src="img/phone.svg" alt="phone">
+                                    <a href="tel:451543790" class="tenant__link text-grey">(415) 543 790</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tenant__buttons d-flex">
+                            <button class="tenant__edit text-regular d-flex me-2 px-3 py-2"><img class="me-2"
+                                    src="img/tenant_edit.svg" alt="edit">Edit</button>
+                            <button class="tenant__share text-regular d-flex px-3 py-2"><img class="me-2"
+                                    src="img/tenant_share.svg" alt="share">Share Profile</button>
+                        </div>
+                    </div>
+                    <div class="details mb-2 p-4">
+                        <div class="details__title text-title-large mb-4">Profile Details</div>
+
+
+                        <div class="details__info mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="details__container p-0 col-lg-3 col-md-6 mb-md-3 mb-3">
+                                        <div class="details__subtitle mb-2">Email</div>
+                                        <div class="details__descr">johndoe@gmail.com</div>
+                                    </div>
+                                    <div class="details__container p-0 col-lg-3 col-md-6 mb-md-3 mb-3">
+                                        <div class="details__subtitle mb-2">Phone number</div>
+                                        <div class="details__descr">(415) 543 790</div>
+                                    </div>
+                                    <div class="details__container p-0 col-lg-3 col-md-6 mb-md-3 mb-3">
+                                        <div class="details__subtitle mb-2">Date of birth</div>
+                                        <div class="details__descr">05 May 1987</div>
+                                    </div>
+                                    <div class="details__container p-0 col-lg-3 col-md-6 mb-md-3 mb-3">
+                                        <div class="details__subtitle mb-2">Gender </div>
+                                        <div class="details__descr">Male</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="details__about mb-4">
+                            <div class="details__subtitle mb-2">About</div>
+                            <div class="details__text text-large">For tenants who have a less-than-desirable credit
+                                report or
+                                history
+                                of criminal activity, they won’t bother completing the application and paying an
+                                application
+                                fee if they know they’re unlikely to meet your standards. We’ve seen plenty of tenants
+                                who
+                                have 3 or more evictions on their record easily sign a lease with a landlord because
+                                that
+                                landlord didn’t want to follow the full screening process.</div>
+                        </div>
+                        <div class="details__pets">
+                            <div class="details__subtitle mb-2">Pets</div>
+                            <div class="details__descr">Dog, 2 year old Dalmatian</div>
+                        </div>
+                    </div>
+                    <div class="details mb-2 p-4">
+                        <div class="details__title text-title-large mb-4">Employement Details</div>
+                        <div class="details__box mb-3">
+                            <div class="details__mark mx-2 mt-2 d-flex align-items-center me-2 px-3 py-1">
+                                <img class="me-2" src="img/job.svg" alt="Job">Currently working here
+                            </div>
+
+                            <div class="p-4">
+                                <div class="row">
+                                    <div class="details__container col-lg-4 mb-sm-3 col-md-6">
+                                        <div class="details__subtitle mb-2">Occupation</div>
+                                        <div class="details__descr">Accountant</div>
+                                    </div>
+                                    <div class="details__container col-lg-4 mb-sm-3 col-md-6">
+                                        <div class="details__subtitle mb-2">Working period</div>
+                                        <div class="details__descr">Oct 2018 - Till now</div>
+                                    </div>
+                                    <div class="details__container col-lg-4 mb-sm-3">
+                                        <div class="details__subtitle mb-2">Monthly income</div>
+                                        <div class="details__descr">$1,200</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details__box p-4">
+
+                            <div class="row">
+                                <div class="details__container col-lg-4 mb-sm-3 col-md-6">
+                                    <div class="details__subtitle mb-2">Occupation</div>
+                                    <div class="details__descr">Accountant</div>
+                                </div>
+                                <div class="details__container col-lg-4 mb-sm-3 col-md-6">
+                                    <div class="details__subtitle mb-2">Working period</div>
+                                    <div class="details__descr">Oct 2018 - Till now</div>
+                                </div>
+                                <div class="details__container col-lg-4 mb-sm-3">
+                                    <div class="details__subtitle mb-2">Monthly income</div>
+                                    <div class="details__descr">$1,200</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details mb-2 p-4">
+                        <div class="details__title text-title-large mb-4">Rental History</div>
+                        <div class="details__box details__box_large">
+                            <div class="details__row d-flex p-4">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Past Address</div>
+                                            <div class="details__descr">614 Lake Street, St.<br> Catharines, ON, L2N 6P6
+                                            </div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Country</div>
+                                            <div class="details__descr">USA</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">City</div>
+                                            <div class="details__descr">California (CA)</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">ZIP</div>
+                                            <div class="details__descr">44556576</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Rental Period</div>
+                                            <div class="details__descr">February 2014 - Maret 2018</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Monthly rent</div>
+                                            <div class="details__descr">$2,000</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Landlord name</div>
+                                            <div class="details__descr">Nancy Pong</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Landlord email</div>
+                                            <div class="details__descr">nacnypong@gmal.com</div>
+                                        </div>
+                                        <div class="details__container col-xl-3 mb-sm-3 col-lg-4 col-md-6">
+                                            <div class="details__subtitle mb-2">Landlord contact</div>
+                                            <div class="details__descr">(415) 543 790</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details mb-2 p-4">
+                        <div class="details__title text-title-large mb-4">Application questions</div>
+                        <div class="details__questions d-flex justify-content-between">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="details__column col-xl-4 col-md-6">
+                                        <div class="details__check d-flex mb-4">
+                                            Smoking
+                                            <div
+                                                class="details__answer ms-014 text-small d-flex justify-content-center align-items-center">
+                                                no<img class="ms-2" src="img/red_cross.svg" alt="no"></div>
+                                        </div>
+                                        <div class="details__check d-flex mb-4">
+                                            Bankruptcy
+                                            <div
+                                                class="details__answer ms-014 text-small d-flex justify-content-center align-items-center details__answer_approved">
+                                                yes<img class="ms-2" src="img/green_bird.svg" alt="yes"></div>
+                                        </div>
+                                    </div>
+                                    <div class="details__column col-xl-4 col-md-6">
+                                        <div class="details__check d-flex mb-4">
+                                            Eviction
+                                            <div
+                                                class="details__answer ms-014 text-small d-flex justify-content-center align-items-center">
+                                                no<img class="ms-2" src="img/red_cross.svg" alt="no"></div>
+                                        </div>
+                                        <div class="details__check d-flex mb-4">
+                                            Refusal to Pay Rent
+                                            <div
+                                                class="details__answer ms-014 text-small d-flex justify-content-center align-items-center details__answer_approved">
+                                                yes<img class="ms-2" src="img/green_bird.svg" alt="yes"></div>
+                                        </div>
+                                    </div>
+                                    <div class="details__column col-xl-4 col-md-6">
+                                        <div class="details__check d-flex mb-4">
+                                            Convictions
+                                            <div
+                                                class="details__answer ms-014 text-small d-flex justify-content-center align-items-center">
+                                                no<img class="ms-2" src="img/red_cross.svg" alt="no"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@@include('../components/footer.html')

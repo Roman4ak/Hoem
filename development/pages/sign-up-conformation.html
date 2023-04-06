@@ -1,0 +1,148 @@
+@@include('../components/header.html')
+
+<section class="section sign-in__section">
+    <div class="d-flex justify-content-between">
+        <div class="authentication-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <div class="authentication-container-img">
+                            <img class="authentication-container-img__img" src="../img/welcome-to-hoem.png"
+                                alt="welcome-to-hoem">
+                            <div class="authentication-container-img__overlay"></div>
+                            <div class="authentication-container-img__logo">
+                                <img src="../img/hoem-logo-welcome.png" alt="hoem-logo-welcome">
+                            </div>
+
+                            <h1 class="authentication-container-img__title">Welcome to Hoem<br> Apartment Management
+                                Tool
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <div class="authentication-container-info d-flex">
+                            <div class="authentication-container-info__buttons d-flex align-self-center">
+                                <a class="authentication-container-info__buttons__registration text-regular text-grey03"
+                                    href="#">Already have an account?</a>
+                                <a class="authentication-container-info__buttons__sign_up text-regular text-orange"
+                                    href="#">Sign in</a>
+                            </div>
+
+                            <h2 class="mb-4">Get started</h2>
+
+                            <p class="text-regular authentication-container-info__subtitle mb-4">Enter your account
+                                information below to
+                                continue.</p>
+
+                            <div class="authentication-container-info__input d-flex justify-content-start">
+
+                                <span class="authentication-container-info__input_title text-small mb-2">Password</span>
+
+                                <div class="password-wrapper d-flex">
+
+                                    <input class="input-style" type="password" placeholder="Enter your password"
+                                        id="myInput">
+                                    <input class="password-wrapper__input" type="checkbox" onclick="myFunction()">
+
+                                    <script>
+                                        function myFunction() {
+                                            var x = document.getElementById("myInput");
+                                            if (x.type === "password") {
+                                                x.type = "text";
+                                            } else {
+                                                x.type = "password";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div class="authentication-container-info__input d-flex justify-content-start">
+
+                                <span class="authentication-container-info__input_title text-small mb-2">Confirm
+                                    Password</span>
+
+                                <div class="password-wrapper d-flex">
+
+                                    <input class="input-style" type="password" placeholder="Enter your password"
+                                        id="myInput">
+                                    <input class="password-wrapper__input" type="checkbox" onclick="myFunction()">
+
+                                    <script>
+                                        function myFunction() {
+                                            var x = document.getElementById("myInput");
+                                            if (x.type === "password") {
+                                                x.type = "text";
+                                            } else {
+                                                x.type = "password";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div class="password-rules">
+                                <div class="password-rules__point d-flex align-items-center mb-2">
+                                    <svg class="rules_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.5" y="2.5" width="19" height="19" rx="9.5" fill="white"
+                                            stroke="#E0E2E7" />
+                                        <path
+                                            d="M16.8834 8.19786L11.8571 16.5129C11.6724 16.8179 11.3625 17 11.0272 17C10.7306 17 10.4497 16.8572 10.2571 16.608L7.16552 12.6183C6.91867 12.2996 6.95137 11.8314 7.24059 11.5525C7.52152 11.2805 7.99358 11.2753 8.28096 11.5416L10.9079 13.9741L15.6091 7.31878C15.8431 6.98776 16.328 6.89839 16.6596 7.12726C17.0041 7.36512 17.1027 7.83563 16.8834 8.19786Z"
+                                            fill="#E0E2E7" />
+                                    </svg>
+                                    <p class="text-small mb-0 ms-2">At least 8 characters</p>
+                                </div>
+
+                                <div class="password-rules__point d-flex align-items-center mb-2">
+                                    <svg class="rules_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.5" y="2.5" width="19" height="19" rx="9.5" fill="white"
+                                            stroke="#E0E2E7" />
+                                        <path
+                                            d="M16.8834 8.19786L11.8571 16.5129C11.6724 16.8179 11.3625 17 11.0272 17C10.7306 17 10.4497 16.8572 10.2571 16.608L7.16552 12.6183C6.91867 12.2996 6.95137 11.8314 7.24059 11.5525C7.52152 11.2805 7.99358 11.2753 8.28096 11.5416L10.9079 13.9741L15.6091 7.31878C15.8431 6.98776 16.328 6.89839 16.6596 7.12726C17.0041 7.36512 17.1027 7.83563 16.8834 8.19786Z"
+                                            fill="#E0E2E7" />
+                                    </svg>
+                                    <p class="text-small mb-0 ms-2">At least 1 number</p>
+                                </div>
+
+                                <div class="password-rules__point d-flex align-items-center">
+                                    <svg class="rules_img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.5" y="2.5" width="19" height="19" rx="9.5" fill="white"
+                                            stroke="#E0E2E7" />
+                                        <path
+                                            d="M16.8834 8.19786L11.8571 16.5129C11.6724 16.8179 11.3625 17 11.0272 17C10.7306 17 10.4497 16.8572 10.2571 16.608L7.16552 12.6183C6.91867 12.2996 6.95137 11.8314 7.24059 11.5525C7.52152 11.2805 7.99358 11.2753 8.28096 11.5416L10.9079 13.9741L15.6091 7.31878C15.8431 6.98776 16.328 6.89839 16.6596 7.12726C17.0041 7.36512 17.1027 7.83563 16.8834 8.19786Z"
+                                            fill="#E0E2E7" />
+                                    </svg>
+                                    <p class="text-small mb-0 ms-2">Both upper & lowercase letters</p>
+                                </div>
+
+
+                            </div>
+
+                            <a class="authentication-container-info__btn orange-btn mt-4" href="#">Continue</a>
+
+                            <div class="authentication-container-info__terms">
+                                <p class="text-regular">By clicking “Sign up as a landlord”, you agree to our <a
+                                        class="authentication-container-info__terms__terms text-orange" href="#">Terms
+                                        of
+                                        Use</a> <br> and <a
+                                        class="authentication-container-info__terms__policy text-orange"
+                                        href="#">Privacy Policy</a>.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+@@include('../components/footer.html')

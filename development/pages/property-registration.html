@@ -1,0 +1,215 @@
+@@include('../components/header.html')
+
+<div class="property-page">
+    @@include('../components/property-header.html')
+
+    <main>
+        <section class="walktrough-content walktrough-registration-section">
+
+            <div class="justify-content-center  d-flex flex-column flex-align-center mb-4">
+                <h1 class="walktrough-content__title text-center my-0 fw-bold">Add Your First Property!</h1>
+                <p class="text-regular text-grey text-center mt-2 mb-0 mt-2">Managing you rental business with Hoem
+                    starts with adding<br> your first property. You can add more later on.</p>
+            </div>
+
+            <div class="walktrough-registration__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-1">
+
+                            <form action="">
+                                <div class="mb-4">
+                                    <fieldset class="d-sm-flex justify-content-between w-100">
+                                        <div
+                                            class="input__radio walktrough-registration__family walktrough-content__radio me-3 w-100 w-sm-50 mb-3 mb-sm-0">
+                                            <div id="top-radio"
+                                                class="input__radio__btn walktrough-registration__radiobtn  d-flex">
+                                                <div id="svg-top-color" class="input__radio__btn__img mt-2">
+                                                    <svg width="32" height="30" viewBox="0 0 32 30" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M15.0914 0.328697C15.6226 -0.109566 16.3774 -0.109566 16.9086 0.328697L31.454 12.3287C32.0813 12.8462 32.183 13.7901 31.6812 14.437C31.1794 15.0839 30.264 15.1888 29.6368 14.6713L28.3636 13.6209V28.1038H28.7066C29.7221 28.1038 30.5454 28.9527 30.5454 29.9999H26.9219C26.9176 30 26.9133 30 26.9091 30H5.09095C5.08666 30 5.08238 30 5.07811 29.9999H1.45454C1.45454 28.9527 2.27776 28.1038 3.29326 28.1038H3.6364V13.6209L2.36324 14.6713C1.73595 15.1888 0.820619 15.0839 0.318789 14.437C-0.183042 13.7901 -0.0813381 12.8462 0.54595 12.3287L15.0914 0.328697ZM12 28.1038H19.9999V22.125C19.9999 19.8468 18.2091 18 15.9999 18C13.7908 18 12 19.8468 12 22.125V28.1038ZM19.4994 9.375C19.4994 11.3681 17.9327 12.9837 16 12.9837C14.0674 12.9837 12.5007 11.3681 12.5007 9.375C12.5007 7.38195 14.0674 5.76627 16 5.76627C17.9327 5.76627 19.4994 7.38195 19.4994 9.375Z"
+                                                            fill="#888FA2" />
+                                                    </svg>
+                                                </div>
+
+                                                <div
+                                                    class="input__radio__btn__info d-flex align-items-start flex-column ">
+                                                    <h5 class="input__radio__btn__info__title text-large mb-0">
+                                                        Single Family
+                                                    </h5>
+                                                    <p class="mb-0 text-regular text-grey">Only one unit</p>
+                                                </div>
+                                            </div>
+                                            <input onclick="oneFunction()" class="radio-btn" type="radio" id="huey"
+                                                name="drone" value="huey" checked>
+                                        </div>
+
+                                        <div
+                                            class="input__radio walktrough-registration__family walktrough-content__radio w-100 w-sm-50">
+                                            <div id="bottom-radio"
+                                                class="input__radio__btn walktrough-registration__radiobtn d-flex ">
+                                                <div id="svg-bottom-color" class="input__radio__btn__img mt-2">
+                                                    <svg width="28" height="32" viewBox="0 0 28 32" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1184_45117)">
+                                                            <path
+                                                                d="M26.7768 29.2849H25.5714V1.70175C25.5714 0.899959 24.9239 0.25 24.125 0.25H3.875C3.07615 0.25 2.42857 0.899959 2.42857 1.70175V29.2849H1.22321C0.823819 29.2849 0.5 29.6099 0.5 30.0108V31.2206H27.5V30.0108C27.5 29.6099 27.1762 29.2849 26.7768 29.2849ZM8.21429 4.8472C8.21429 4.44633 8.53811 4.12132 8.9375 4.12132H11.3482C11.7476 4.12132 12.0714 4.44633 12.0714 4.8472V7.26677C12.0714 7.66764 11.7476 7.99265 11.3482 7.99265H8.9375C8.53811 7.99265 8.21429 7.66764 8.21429 7.26677V4.8472ZM8.21429 10.6542C8.21429 10.2533 8.53811 9.92831 8.9375 9.92831H11.3482C11.7476 9.92831 12.0714 10.2533 12.0714 10.6542V13.0738C12.0714 13.4746 11.7476 13.7996 11.3482 13.7996H8.9375C8.53811 13.7996 8.21429 13.4746 8.21429 13.0738V10.6542ZM11.3482 19.6066H8.9375C8.53811 19.6066 8.21429 19.2816 8.21429 18.8807V16.4612C8.21429 16.0603 8.53811 15.7353 8.9375 15.7353H11.3482C11.7476 15.7353 12.0714 16.0603 12.0714 16.4612V18.8807C12.0714 19.2816 11.7476 19.6066 11.3482 19.6066ZM15.9286 29.2849H12.0714V24.2038C12.0714 23.803 12.3952 23.4779 12.7946 23.4779H15.2054C15.6048 23.4779 15.9286 23.803 15.9286 24.2038V29.2849ZM19.7857 18.8807C19.7857 19.2816 19.4619 19.6066 19.0625 19.6066H16.6518C16.2524 19.6066 15.9286 19.2816 15.9286 18.8807V16.4612C15.9286 16.0603 16.2524 15.7353 16.6518 15.7353H19.0625C19.4619 15.7353 19.7857 16.0603 19.7857 16.4612V18.8807ZM19.7857 13.0738C19.7857 13.4746 19.4619 13.7996 19.0625 13.7996H16.6518C16.2524 13.7996 15.9286 13.4746 15.9286 13.0738V10.6542C15.9286 10.2533 16.2524 9.92831 16.6518 9.92831H19.0625C19.4619 9.92831 19.7857 10.2533 19.7857 10.6542V13.0738ZM19.7857 7.26677C19.7857 7.66764 19.4619 7.99265 19.0625 7.99265H16.6518C16.2524 7.99265 15.9286 7.66764 15.9286 7.26677V4.8472C15.9286 4.44633 16.2524 4.12132 16.6518 4.12132H19.0625C19.4619 4.12132 19.7857 4.44633 19.7857 4.8472V7.26677Z"
+                                                                fill="#888FA2" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1184_45117">
+                                                                <rect width="27" height="30.9706" fill="white"
+                                                                    transform="translate(0.5 0.25)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+
+                                                <div
+                                                    class="input__radio__btn__info d-flex align-items-start flex-column ">
+                                                    <h5 class="input__radio__btn__info__title text-large mb-0">
+                                                        Multifamily
+                                                    </h5>
+                                                    <p class="mb-0 text-regular text-grey">One or more units</p>
+                                                </div>
+                                            </div>
+                                            <input onclick="twoFunction()" class="radio-btn" type="radio" id="dewey"
+                                                name="drone" value="dewey">
+
+                                        </div>
+                                    </fieldset>
+
+                                    <script>
+                                        function oneFunction() {
+                                            var element = document.getElementById("top-radio");
+                                            element.classList.add("radio-active");
+
+                                            var element = document.getElementById("bottom-radio");
+                                            element.classList.remove("radio-active");
+
+                                            var element = document.getElementById("svg-top-color");
+                                            element.classList.add("svg-orange");
+
+                                            var element = document.getElementById("svg-bottom-color");
+                                            element.classList.remove("svg-orange");
+
+                                        }
+
+                                        function twoFunction() {
+                                            var element = document.getElementById("bottom-radio");
+                                            element.classList.add("radio-active");
+
+                                            var element = document.getElementById("top-radio");
+                                            element.classList.remove("radio-active");
+
+                                            var element = document.getElementById("svg-bottom-color");
+                                            element.classList.add("svg-orange");
+
+                                            var element = document.getElementById("svg-top-color");
+                                            element.classList.remove("svg-orange");
+                                        }
+                                    </script>
+                                </div>
+
+                                <div class="authentication-container-info__input d-flex justify-content-start">
+                                    <span class="authentication-container-info__input_title text-small mb-2">Property
+                                        type</span>
+                                    <input class="input-style" type="text" placeholder="Select type">
+                                </div>
+                                <div class="walktrough-registration__line mb-4"></div>
+
+                                <div class="text-large text-black fw-bold mb-012">Address detail</div>
+
+                                <div class="authentication-container-info__input d-flex justify-content-start">
+                                    <span
+                                        class="authentication-container-info__input_title text-small mb-2">Street</span>
+                                    <input class="input-style" type="text" placeholder="Enter street name">
+                                </div>
+
+                                <div class="d-flex align-item-center justify-content-between w-100">
+
+                                    <div
+                                        class="authentication-container-info__input  d-flex justify-content-start my-0 w-50">
+                                        <span
+                                            class="authentication-container-info__input_title text-small mb-2 ">City</span>
+                                        <input class="input-style walktrough-registration__input" type="text"
+                                            placeholder="Enter a city name">
+                                    </div>
+
+                                    <div
+                                        class="authentication-container-info__input d-flex justify-content-start my-0 ms-020 w-50 mb-4">
+                                        <span
+                                            class="authentication-container-info__input_title text-small mb-2 ">State</span>
+                                        <input class="input-style walktrough-registration__input" type="text"
+                                            placeholder="Enter a state name">
+                                    </div>
+                                </div>
+
+                                <div class="authentication-container-info__input d-flex justify-content-start mb-4">
+                                    <span class="authentication-container-info__input_title text-small mb-2">ZIP
+                                        code</span>
+                                    <input class="input-style" type="text" placeholder="Enter 4 digit code">
+                                </div>
+
+                                <div class="text-small text-black fw-semibold d-flex mb-2">Specipic location
+                                    <div class="text-grey ms-1">(opsional)</div>
+                                </div>
+
+                                <img class="w-100" src="../img/Frame 3345.png" alt="">
+                            </form>
+
+
+                        </div>
+                        <div class="col-lg-4 walktrough-registration__right justify-content-start">
+                            <div class="text-large text-black mb-012 fw-bold ms-lg-4 ms-xl-3 ms-xxl-5">Cover image</div>
+
+                            <div class="d-flex flex-column align-items-center">
+
+                                <div class="walktrough-registration__foto mb-012">
+                                    <img class="walktrough-registration__image mb-020" src="../img/Frame-foto.svg"
+                                        alt="">
+                                    <div class="walktrough-registration__text text-large text-black fw-bold">Drag
+                                        your
+                                        photos here</div>
+                                    <div onclick="fileFunction()"
+                                        class="walktrough-registration__link text-blue04 text-regular">
+                                        <a href="#">Choose a
+                                            file</a>
+                                        <input class="d-none" id="file-btn" type="file">
+
+                                        <script>
+                                            function fileFunction() {
+                                                document.getElementById("file-btn").click();
+                                            }
+                                        </script>
+                                    </div>
+
+                                </div>
+
+                                <div class="walktrough-registration__size text-regular text-grey text-center">
+                                    JPEG or PNG formats only,
+                                    max file size is 10 MB
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="property-footer d-flex px-2">
+        <div class="property-footer__line"></div>
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <a class="col-6 property-footer__cancel text-black text-large fw-semibold" href="#">Cancel</a>
+                <a class="col-6 property-footer__orange orange-btn" href="#">Next</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@@include('../components/footer.html')
